@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 顧客アドレス帳 -->
+  <class name="jp.co.sint.webshop.data.dto.CustomerAddress" table="CUSTOMER_ADDRESS" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">CUSTOMER_ADDRESS_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 顧客コード -->
+    <property name="customerCode" column="CUSTOMER_CODE" type="string" />
+    <!-- アドレス帳番号 -->
+    <property name="addressNo" column="ADDRESS_NO" type="long" />
+    <!-- アドレス呼称 -->
+    <property name="addressAlias" column="ADDRESS_ALIAS" type="string" />
+    <!-- 宛名：姓 -->
+    <property name="addressLastName" column="ADDRESS_LAST_NAME" type="string" />
+    <!-- 宛名：名 -->
+    <property name="addressFirstName" column="ADDRESS_FIRST_NAME" type="string" />
+    <!-- 宛名姓カナ -->
+    <property name="addressLastNameKana" column="ADDRESS_LAST_NAME_KANA" type="string" />
+    <!-- 宛名名カナ -->
+    <property name="addressFirstNameKana" column="ADDRESS_FIRST_NAME_KANA" type="string" />
+    <!-- 郵便番号 -->
+    <property name="postalCode" column="POSTAL_CODE" type="string" />
+    <!-- 都道府県コード -->
+    <property name="prefectureCode" column="PREFECTURE_CODE" type="string" />
+    <!-- 住所1 -->
+    <property name="address1" column="ADDRESS1" type="string" />
+    <!-- 住所2 -->
+    <property name="address2" column="ADDRESS2" type="string" />
+    <!-- 住所3 -->
+    <property name="address3" column="ADDRESS3" type="string" />
+    <!-- 住所4 -->
+    <property name="address4" column="ADDRESS4" type="string" />
+    <!-- 電話番号 -->
+    <property name="phoneNumber" column="PHONE_NUMBER" type="string" />
+    <!-- 20120106 shen add start -->
+    <!-- 区域编号 -->
+    <property name="areaCode" column="AREA_CODE" type="string" />
+    <!-- 20120106 shen add end -->
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+    <!-- add by V10-CH 170 start -->
+    <property name="cityCode" column="CITY_CODE" type="string" />
+    <!-- mobile番号 -->
+    <property name="mobileNumber" column="MOBILE_NUMBER" type="string" />
+    <!-- add by V10-CH 170 end -->
+  </class>
+</hibernate-mapping>

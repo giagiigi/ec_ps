@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- ショップ別売上集計 -->
+  <class name="jp.co.sint.webshop.data.dto.SalesAmountByShop" table="SALES_AMOUNT_BY_SHOP" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">SALES_AMOUNT_BY_SHOP_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップ別売上集計ID -->
+    <property name="salesAmountByShopId" column="SALES_AMOUNT_BY_SHOP_ID" type="long" />
+    <!-- 集計日 -->
+    <property name="countedDate" column="COUNTED_DATE" type="timestamp" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- クライアントグループ -->
+    <property name="clientGroup" column="CLIENT_GROUP" type="string" />
+    <!-- 支払方法番号 -->
+    <property name="paymentMethodNo" column="PAYMENT_METHOD_NO" type="long" />
+    <!-- ショップ名称 -->
+    <property name="shopName" column="SHOP_NAME" type="string" />
+    <!-- 商品金額累計 -->
+    <property name="totalSalesPrice" column="TOTAL_SALES_PRICE" type="big_decimal" />
+    <!-- 商品消費税額累計 -->
+    <property name="totalSalesPriceTax" column="TOTAL_SALES_PRICE_TAX" type="big_decimal" />
+    <!-- ギフト金額累計 -->
+    <property name="totalGiftPrice" column="TOTAL_GIFT_PRICE" type="big_decimal" />
+    <!-- ギフト消費税額累計 -->
+    <property name="totalGiftTax" column="TOTAL_GIFT_TAX" type="big_decimal" />
+    <!-- 送料累計 -->
+    <property name="totalShippingCharge" column="TOTAL_SHIPPING_CHARGE" type="big_decimal" />
+    <!-- 送料消費税額累計 -->
+    <property name="totalShippingChargeTax" column="TOTAL_SHIPPING_CHARGE_TAX" type="big_decimal" />
+    <!-- 値引額累計 -->
+    <property name="totalDiscountAmount" column="TOTAL_DISCOUNT_AMOUNT" type="big_decimal" />
+    <!-- 返金額累計 -->
+    <property name="totalRefund" column="TOTAL_REFUND" type="big_decimal" />
+    <!-- 返品損金額累計 -->
+    <property name="totalReturnItemLossMoney" column="TOTAL_RETURN_ITEM_LOSS_MONEY" type="big_decimal" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

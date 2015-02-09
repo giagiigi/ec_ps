@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+<!--inquiry-->
+    <entry key="inquirySubjects.0">請選擇</entry>
+    <entry key="inquirySubjects.1">關於會員登錄</entry>
+    <entry key="inquirySubjects.2">關於購買方法</entry>
+    <entry key="inquirySubjects.3">其他的各種咨詢</entry>
+    <entry key="commodityInquirySubject">關於商品</entry>
+    <entry key="orderInquirySubject">關於訂購・預約</entry>
+
+<!--password-->
+    <entry key="frontMessage">密碼必須是6位以上半角英數字，包含字符“-”、“_”、“.”。</entry>
+    <entry key="backMessage">密碼必須是6位以上半角英數字，包含字符“-”、“_”、“.”。</entry>
+
+<!--example-->
+    <entry key="addressAlias">親戚家</entry>
+    <entry key="lastName">山田</entry>
+    <entry key="lastNameKana">ヤマダ</entry>
+    <entry key="firstName"></entry>
+    <entry key="firstNameKana">タロウ</entry>
+    <entry key="postalCode">100001</entry>
+    <entry key="countryName">日本</entry>
+    <entry key="address1">東京都</entry>
+    <entry key="address2">千代田區</entry>
+    <entry key="address3">千代田</entry>
+    <entry key="address4"></entry>
+    <entry key="phoneNumber">000000000000</entry>
+    <entry key="birthDate">1980/1/1</entry>
+    <entry key="sex">男</entry>
+    <entry key="email">test@example.com</entry>
+
+
+<!--mailmagazine-->
+    <entry key="registerMailMagazineTitle">メールマガジン配信登録用URLのお知らせ</entry>
+    <entry key="cancelMailMagazineTitle">メールマガジン配信停止用URLのお知らせ</entry>
+    <entry key="confirmMailMagazineTitle">配信中メールマガジンのお知らせ</entry>
+    <entry key="registerMailMagazineText">
+<![CDATA[{0}先生
+
+承蒙{1}利用，實在謝謝。
+申請的郵件雜誌的送信登記沒完成。
+請在2小時以內單擊以下的URL，完成送信登記。
+
+【登錄完了URL】
+{2}
+
+繼續，請享受舒適的購物。]]>
+          </entry>
+
+    <entry key="cancelMailMagazineText">
+<![CDATA[{0}先生
+
+承蒙{1}利用，實在謝謝。
+申請的郵件雜誌的送信停止沒完成。
+請在2小時以內單擊以下的URL，完成送信停止。
+
+【送信停止完了URL】
+{2}
+
+繼續，請享受舒適的購物。]]>
+          </entry>
+
+    <entry key="confirmMailMagazineText">
+<![CDATA[{0}先生
+
+承蒙{1}利用，實在謝謝。
+現在，顧客送信登記中的郵件雜誌是下面這樣。
+
+{2}
+
+繼續，請享受舒適的購物。]]>
+          </entry>
+
+    <entry key="noExistMailMagazineText">
+<![CDATA[{0}先生
+
+承蒙{1}利用，實在謝謝。
+
+現在，顧客沒有送信登記中的郵件雜誌。
+
+繼續，請享受舒適的購物。]]>
+          </entry>
+
+    <entry key="sign">
+<![CDATA[----------------------------------------
+{0}
+郵政編碼{1}
+{2}
+TEL: {3}
+MAIL: {4}
+不明白的地方請咨詢。
+
+----------------------------------------
+]]>
+          </entry>
+
+
+<!--messages-->
+    <entry key="frontCustomerRegisterMembersRule">
+        <![CDATA[關於個人信息取得的目的，請見下述。
+
+・您登錄的顧客個人信息（公司名、姓名、住址、郵件地址、電話號碼等）會被利用在和商品的發送、售後服務，以及本公司新商品服務相關的通知裏面。
+
+・不希望登錄個人信息的情況下，顧客也可以根據自己的判斷不登錄。但是，可能會無法提供本公司的服務。
+
+・登錄的個人信息會根據服務的內容提供給業務委托對象。我們禁止業務委托對象上述目的以外的信息使用。業務委托對象的服務包括服務器、數據的管理、商品的發送等等。
+
+您如果同意上述內容，並想登錄顧客信息，請按“同意並繼續註冊”按鈕。]]>
+      </entry>
+
+    <entry key="frontGuestPurchaseMembersRule">
+        <![CDATA[關於個人信息取得的目的，請見下述。
+
+・您登錄的顧客個人信息（公司名、姓名、住址、郵件地址、電話號碼等）會被利用在和商品的發送、售後服務，以及本公司新商品服務相關的通知裏面。
+
+・不希望登錄個人信息的情況下，顧客也可以根據自己的判斷不登錄。但是，可能會無法提供本公司的服務。
+
+・登錄的個人信息會根據服務的內容提供給業務委托對象。我們禁止業務委托對象上述目的以外的信息使用。業務委托對象的服務包括服務器、數據的管理、商品的發送等等。
+
+您如果同意上述內容，並想登錄顧客信息，請按“同意並繼續註冊”按鈕。]]>
+      </entry>
+
+    <entry key="mobileCustomerRegisterMembersRule">
+        <![CDATA[關於個人信息取得的目的，請見下述。<br>
+・您登錄的顧客個人信息（公司名、姓名、住址、郵件地址、電話號碼等）會被利用在和商品的發送、售後服務，以及本公司新商品服務相關的通知裏面。<br>
+・不希望登錄個人信息的情況下，顧客也可以根據自己的判斷不登錄。但是，可能會無法提供本公司的服務。<br>
+・登錄的個人信息會根據服務的內容提供給業務委托對象。我們禁止業務委托對象上述目的以外的信息使用。業務委托對象的服務包括服務器、數據的管理、商品的發送等等。<br>
+您如果同意上述內容，並想登錄顧客信息，請按“同意並繼續註冊”按鈕。]]>
+      </entry>
+
+    <entry key="mobileGuestPurchaseMembersRule">
+        <![CDATA[關於個人信息取得的目的，請見下述。<br>
+・您登錄的顧客個人信息（公司名、姓名、住址、郵件地址、電話號碼等）會被利用在和商品的發送、售後服務，以及本公司新商品服務相關的通知裏面。<br>
+・不希望登錄個人信息的情況下，顧客也可以根據自己的判斷不登錄。但是，可能會無法提供本公司的服務。<br>
+・登錄的個人信息會根據服務的內容提供給業務委托對象。我們禁止業務委托對象上述目的以外的信息使用。業務委托對象的服務包括服務器、數據的管理、商品的發送等等。<br>
+您如果同意上述內容，並想登錄顧客信息，請按“同意並繼續註冊”按鈕。]]>
+      </entry>
+
+    <entry key="backContactInformation">
+        <![CDATA[<div class="normal">
+<p>請對系統管理者咨詢上述錯誤內容。</p>
+【咨詢處】<br/>
+管理者內線號碼：XXXXXXX<br/>
+</div>]]>
+      </entry>
+
+    <entry key="frontContactInformation">
+        <![CDATA[<div class="normal">
+<p>如果有由於有關本系統的事宜或不明點，請通過電話或郵件咨詢。</p>
+【咨詢處】<br/>
+系統支持中心<br/>
+郵件地址：service@pinstore.cn
+</div>]]>
+      </entry>
+
+    <entry key="mobileContactInformation">
+        <![CDATA[<div class="normal">
+<p>如果有由於有關本系統的事宜或不明點，請通過電話或郵件咨詢。</p>
+【咨詢處】<br/>
+系統支持中心<br/>
+郵件地址：service@pinstore.cn
+</div>]]>
+      </entry>
+
+<!-- help -->
+        <entry key="helpMessages.U1020220_00">
+<![CDATA[
+        ●定購管理明細
+
+可以「入款日的設定/取消」「訂購信息/出貨信息的更新」「取消的訂購」「退貨」。
+
+在這裏只能做訂購數據金額不能改變範圍內的變更。
+
+
+【設定/清空】
+
+入款日欄有[設定]按鈕/[清空]按鈕，能設定和取消入款日。
+
+設定入款日時，輸入想登記的日期，請按[設定]按鈕。
+
+再者，不會更新入款日以外的訂購信息·出貨信息。
+
+
+
+【更新】
+
+按[更新]按鈕的話，能更新有關聯的事項欄，顧客信息欄，各出貨的信息。
+
+再者，這個操作不會更新入款日信息。
+
+
+
+【取消定購】
+
+按[取消定購]按鈕的話，訂貨會被取消。
+
+取消對象的訂購中包含出貨數據，
+
+被安排出貨，如果有1個出貨完畢的出貨數據，那個訂購就不能被取消。
+
+不能取消訂購時，訂購取消按鈕不會被顯示。
+
+
+
+【修正定購】
+
+訂貨後的內容可以修正。
+
+修正對象的定購中包含的出貨數據，
+
+如果有1個被安排出貨或出貨完畢的出貨數據，那個訂購就不能修正。
+
+不能修正訂購時，修正定購的按鈕不會被顯示。
+
+
+
+【退貨】
+
+出貨的商品，能退貨。
+
+退貨有「商品退貨」和「金額調整」2種。
+
+退貨信息的輸入，在按了[退貨]按鈕之後的退貨信息輸入用畫面中登記。 
+]]></entry>
+        <entry key="helpMessages.U1020230_00">
+<![CDATA[
+●修正定購
+修正定購是  能夠做請求人信息·發送處信息·商品的追加/刪掉·支付方法的變更。
+
+在這裏可以改變訂購數據的金額。
+
+經由以下3個畫面修正接受訂貨信息，發送處/商品的變更畫面，支付方法的變更畫面，訂購內容的確認畫面。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1020260_00">
+<![CDATA[
+●訂購後退貨
+退貨有「商品的退貨」和「金額調整」2種。
+
+
+【商品的退貨】
+
+「商品的退貨」是商品歸還給店鋪。
+
+可以指定退貨的「哪裏『發送』」的「什麽商品」的「幾個」退貨商品。
+
+成為退貨對象的是銷售價格·禮物費用·運費的3項。
+
+銷售價格·禮物費用·運費是分為「(銷售價格 + 禮物費用)×數量」和「運費」的2個。
+
+「運費」是作為退貨損失金額。
+
+
+「商品的退貨」是分為指定出貨完畢商品和件數退貨登記。
+
+不能退訂購的數量以上和還沒出貨商品。
+
+要更改未出貨商品的數量，不是使用退貨登記要使用訂購修正。
+
+
+退貨數量共計的實際出貨了數量成為上限,不過，關於金額也能設定銷售價格以外數值。
+
+(為此，退貨了的訂購數據的銷售額合計了的結果，退貨金額可能會超過銷售額)
+
+
+【金額調整】
+
+「金額調整」是因業務上必要金額的調整所使用項目，退貨對象訂貨數據的金額
+
+中可以輸入被減去的金額。
+
+做「金額調整」時，都以退貨損失金額使用。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1020420_00">
+<![CDATA[
+●出貨管理明細
+
+出貨管理的詳細畫面是聯絡事項·註意事項(只限管理者參照)更新和出貨實際成果的登錄。
+
+
+【聯絡事項·註意事項(只限管理者參照)更新】
+
+聯絡事項·註意事項(只限管理者參照)更新時，只有這2個項目會被更新。
+
+其他的訂購信息和出貨信息不會被更新。
+
+
+【出貨實際成績的登錄】
+
+出貨實際成績是已經出貨商品的實際成績的登錄功能。
+
+出貨實際成績登錄時，出貨實際成績登錄欄中填入項目登錄。
+
+其他的訂購信息或出貨信息不會被更新。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1030510_00">
+<![CDATA[
+●顧客屬性
+面向限定會員的問卷調查制作功能。
+
+問卷調查是有單一選擇題和多數選擇題2種，會要求會員做出回答。
+
+這個問卷調查可以在會員信息登陸/更新時作回答。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1040160_00">
+<![CDATA[
+●關聯建立
+
+【禮品和商品的關聯建立】
+
+禮品和商品關聯建立後，顧客購買商品時和商品建立關聯的禮品能夠被選擇。
+
+
+【宣傳活動和商品的關聯建立】
+
+宣傳活動和商品的關聯建立後，那個商品能夠成為宣傳活動的對象商品。宣傳活動的對象商品是會被適用於被設定建立關系後的宣傳活動的降價率。
+
+1個商品被建立多個關聯時，降價率最高的宣傳活動會被適用。多個宣傳活動不會被適用。
+
+如果，降價率相等時，最早的宣傳活動開始日會被適用。還有，降價率也是開始日相等時，最小的宣傳活動編碼會被適用。
+
+但是，特價期間中或是預約期間中的商品是不會被適用於宣傳活動的。
+
+
+【標簽和商品的關聯建立】
+
+標簽和商品的關系建立後，在服務端的商品詳細頁面中，標簽名會顯示為關鍵字。
+
+
+【商品和商品的關聯建立】（手動關聯建立）
+
+商品和商品間手動建立關聯後，建立關聯的商品在服務端的商品詳細頁面中會被顯示。
+
+建立關聯商品的表示個數有上限。建立關聯商品的個數超過了上限值時，在不會超過上限值範圍內會按照從優先位次高的商品開始顯示。
+
+
+【商品和商品的關聯建立】（自動關聯建立）
+
+商品和商品的自動建立關聯後，在建立關聯的商品服務端的商品詳細頁面中會顯示出「購買這個商品的人還買了那樣的商品」。
+
+建立關系後的商品的顯示個數有上限。超過建立關系的商品的上限數值時，在不會超過上限值範圍內會按照從優先位次高的商品開始顯示。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1040220_00">
+<![CDATA[
+●類別商品的關系建立
+
+類別商品的關系建立是登錄過的類別和商品間建立關系，用各特色商品來分類後在服務端來顯示的功能。
+
+希望建立關聯的商品的商品編碼登錄後，類別和商品會被建立關聯。
+
+
+各類別可以設置3個檢索關鍵字。
+
+例如、「書」類別中是「ISBN」「作者」「發行年月日」的3個檢索關鍵字能夠被登錄。
+
+這個檢索關鍵字稱呼為類別屬性名。
+
+
+各類別裏建立關聯商品是，設定各商品對應的類別屬性名作關鍵字的功能。
+
+例如、「書」類別的類別屬性名有「ISBN」、這個「書」類別是和商品A建立關聯。
+
+「書」類別建立關聯商品A的類別屬性名「ISBN」是設定「ISBN999-9-999-999999-9」的值。
+
+同樣，類別屬性名「作者」是「SI 太郎」、類別屬性名「發行年月日」是設定「1999年12月31日」。
+
+對於這樣的類別屬性名，各商品可以設定的關鍵字稱呼為類別屬性值。
+
+
+例）書的類別裏可以做3個類別屬性，設定類別屬性值
+
+・類別：書
+・類別屬性：①ISBN、②作者、③發行年月日
+・商品A：①ISBN999-9-999-999999-9、②SI太郎、③1999年12月31日
+・商品B：①ISBN888-8-888-888888-8、②SI花子、③1901年12月31日
+
+類別裏類別屬性名登錄後，服務端就可以使用搜索條件進行搜索。
+
+PC服務端時，「詳細檢索頁面」裏選擇檢索對象類別時會被顯示。
+
+]]>
+手機服務端時，類別首頁裏會被顯示。
+
+
+
+●解除和商品建立關聯時是
+類別裏商品建立關聯後，比起關聯建立後的項目會和更上位的類別自動作建立關聯。
+
+
+因為這樣，解除建立關聯時,希望解除建立的關聯類別，請按照逐步深層的順序作解除處理。
+
+再者，從類別樹相關聯建立畫面，附有商品關聯的類別可以一起解除。
+
+        </entry>
+        <entry key="helpMessages.U1040410_00">
+<![CDATA[
+●主標簽
+標記是在獨自店鋪中分組商品的功能。
+
+「帳篷和睡袋裏把『露營』作為標簽」用這種形式使用。
+
+標簽的對象是在標簽建立關聯畫面裏標簽和商品作關聯操作。
+
+和標簽有建立關聯的商品，在服務端的商品詳細頁面中標簽名作為關鍵字表示。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1040510_00">
+<![CDATA[
+●出入庫管理
+
+出入庫、參照過去的庫存數變更履歷。
+
+庫存數被變更時在這個畫面入庫登錄或做了發出登錄
+
+和商品被送出或是取消了送貨時的4項。
+
+再者，關於引正當數和預約數的增減，不能參照履歷。
+
+
+庫存的數量增加或減少時，比如「現在的數量增加3個」或
+「現在的數量減少2個」
+
+
+登錄對現在的數量使之增減幾個。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1040610_00">
+<![CDATA[
+●庫存狀況設定
+
+
+庫存狀況設定，是從有效庫存和閾值的關系自動變更消息的功能。
+
+
+庫存多的場合表示「有很多」，庫存少的場合表示「還有一點點」，庫存沒有場合表示「庫存沒有了」。
+
+
+在這裏登陸過的庫存狀況設定的內容，在選擇產品登陸時的庫存管理區分「庫存管理(狀況表示)」的時候可以使用。
+
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1040810_00">
+<![CDATA[
+●商品詳細布局
+
+商品詳細布局，自由變更PC服務端的商品詳細頁面的布局的功能。
+
+
+稱呼「主要」「自動推薦」「手動推薦」「評論」的模塊的插件，指定各自的插件為表示/非表示。
+
+
+再者，「主要」插件，必須設定在表示區域的最上部。
+
+
+
+【主要】
+
+商品名和價格，把商品放入購物車的按鈕等，是購買商品的必定必要插件。
+
+
+【手動推薦】
+
+主要表示商品和有關聯的商品的插件
+
+商品的關聯，在商品關聯畫面設定。
+
+
+
+【自動推薦】
+
+主要表示商品和有關聯的商品的插件
+
+商品的關聯，由訂單數據自動制作。
+
+
+
+【評論】
+
+
+是為了表示顧客發表了評語的插件。
+
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1050610_00">
+<![CDATA[
+●發送類別設定
+
+配送種類是例如購買了『冷凍食品』時可以使用『Cool便』其他商品可以使用『通常便』一樣，發送方法種類可供選擇。這個發送種類是可以按各種商品進行選擇發送方式的。
+
+登錄發送類別的場合，請必定確認事前登錄地域模塊。
+
+地域塊的登錄，按畫面右面上的[地域模塊]按鈕確認。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1050620_00">
+<![CDATA[
+●發送類別設定詳細
+
+配送種類是例如購買了『冷凍食品』時可以使用『Cool便』其他商品可以使用『通常便』一樣，發送方法種類可供選擇。
+
+
+這個發送種類是可以按各種商品進行選擇發送方式的。
+
+發送類別，請地域模塊登錄結束之後登記。
+
+
+
+【表示區分】
+
+登記了的發送類別，使用那個設定表示/非表示。
+
+如果商品設定了的發送類別非表示設定，那個商品在服務端變得不被表示。
+
+
+
+【交貨時間】
+
+交貨時間、從接受商品的訂購到出貨那個商品需要的時間。
+
+休假日管理登錄的休假日信息和根據交貨時間的設定日數，決定最短的發送可能日。
+
+發送可能日的指定，發送類別的時間指定選擇了「日」「日期和時間雙方」的場合適用。
+
+
+
+【復數商品購買時的運費計算】
+
+復數的商品購買時可以決定使用怎樣的規則進行收取送貨費。
+
+＜每件商品都需要運費＞
+
+　每個商品收費基於地域的運費設定。
+
+
+　［運費設定］
+　　關東　500元
+
+　［訂購內容］
+　　3個商品A和2個商品B，訂購計5個。投送地點的都道府縣是關東模塊。
+
+
+
+　　運費 = 500元×訂購數5個 = 2,500元
+
+
+＜每個商品的運費＋其他商品一律○○元＞※本例為100元。
+
+　基於送貨費的設定各地域的送貨費用收取1個商品的費用，其他也可以使用固定的商品送貨費。
+
+
+　［運費設定］
+　　關東　500元、固定運費　100元
+
+　［訂購內容］
+　　3個商品A和2個商品B，訂購計5個。投送地點的都道府縣是關東模塊。
+
+
+
+　　運費 = (500元×商品1個) + (100元×商品4個) = 900元
+
+
+再者，這個運費規則，出貨單位被適用。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1050810_00">
+<![CDATA[
+●地域模塊設定
+
+地域模塊、例、『關東』有茨城縣・栃木縣・群馬縣・埼玉縣・千葉縣・東京都・神奈川縣、
+
+『中部』有新瀉縣·富山縣·石川縣·福井縣·山梨縣·長野縣·岐阜縣·靜岡縣·愛知縣、
+
+復數的森省市縣可以歸納到一個區域的功能。
+
+運費為了以地域模塊單位設定，請登錄對運費設定必要的地域模塊。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1051110_00">
+<![CDATA[
+●郵件模板
+
+在郵件模板畫面，能預先做好登錄用戶發送的郵件的內容。
+
+
+郵件模板，由「郵件頁眉」，「本文」，「簽名」等件名構成。
+
+
+「本文」，按照郵件種類分成「發送處信息」，「支付處信息」，等更細的模塊。
+
+
+「本文」及「簽名」的各構成模塊，能使用「標記」。
+
+送信內容裏使用標簽，可以進行姓名和地址等，或向多個發送地址送出郵件內容。
+
+能使用的標記，構成的模塊不同。
+
+
+＜標記的使用例＞
+
+・郵件模板本文
+
+客戶名：[@NAME@]  先生
+
+
+・送信使的郵件本文
+
+客戶名：山田 太郎 先生
+
+]]>
+        </entry>
+          <!-- Add bY V10-CH start -->
+          <entry key="helpMessages.U1051120_00">
+<![CDATA[
+●SMS模板
+
+在SMS模板畫面，能預先做好登錄用戶發送的SMS的內容。
+
+
+SMS模板，由「本文」構成。
+
+
+「本文」，按照SMS分成不同的模塊。
+
+
+「本文」的各構成模塊，能使用「標記」。
+
+SMS內容裏使用標簽，可以進行姓名和地址等，或向多個發送地址送出SMS內容。
+
+能使用的標記，構成的模塊不同。
+
+
+＜標記的使用例＞
+
+・SMS模板本文
+
+客戶名：[@NAME@]  先生
+
+
+・送信使的SMS本文
+
+客戶名：山田 太郎 先生
+]]>
+        </entry>
+        <!-- Add by V10-CH end -->
+        <entry key="helpMessages.U1040210_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理論名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>類別編號</td><td>CATEGORY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>PC用類別名稱</td><td>CATEGORY_NAME_PC</td><td>文字</td><td>20</td><td>○</td></tr>
+<tr><td>手機用類別名稱</td><td>CATEGORY_NAME_MOBILE</td><td>文字</td><td>10</td><td>○</td></tr>
+<tr><td>親類別編號</td><td>PARENT_CATEGORY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>路徑</td><td>PATH</td><td>文字</td><td>256</td><td>-</td></tr>
+<tr><td>階層</td><td>DEPTH</td><td>數值</td><td>2</td><td>-</td></tr>
+<tr><td>表示順序</td><td>DISPLAY_ORDER</td><td>數值</td><td>8</td><td>-</td></tr>
+<tr><td>PC商品件數</td><td>COMMODITY_COUNT_PC</td><td>數值</td><td>12</td><td>-</td></tr>
+<tr><td>手機商品件數</td><td>COMMODITY_COUNT_MOBILE</td><td>數值</td><td>12</td><td>-</td></tr>
+<tr><td>數據行ID</td><td>ORM_ROWID</td><td>數值</td><td>38</td><td>-</td></tr>
+<tr><td>作成用戶</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成時間</td><td>CREATED_DATETIME</td><td>日期・時刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新用戶</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新時間</td><td>UPDATED_DATETIME</td><td>日期・時刻</td><td><br/></td><td>-</td></tr>
+</table>
+]]>
+        </entry>
+        <entry key="helpMessages.U1020410_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理論名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>出貨編號</td><td>SHIPPING_NO</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>出貨指示日</td><td>SHIPPING_DIRECT_DATE</td><td>日期</td><td><br/></td><td>-</td></tr>
+<tr><td>出貨日</td><td>SHIPPING_DATE</td><td>日期</td><td><br/></td><td>○</td></tr>
+<tr><td>到達預定日</td><td>ARRIVAL_DATE</td><td>日期</td><td><br/></td><td>-</td></tr>
+<tr><td>到達時間開始</td><td>ARRIVAL_TIME_START</td><td>數值</td><td>2</td><td>-</td></tr>
+<tr><td>到達時間結束</td><td>ARRIVAL_TIME_END</td><td>數值</td><td>2</td><td>-</td></tr>
+<tr><td>送貨公司單據編號</td><td>DELIVERY_SLIP_NO</td><td>文字</td><td>30</td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040510_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理論名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>店鋪編號</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>SKU編號</td><td>SKU_CODE</td><td>文字</td><td>24</td><td>○</td></tr>
+<tr><td>出入庫數量</td><td>STOCK_IO_QUANTITY</td><td>數值</td><td>8</td><td>○</td></tr>
+<tr><td>出入庫區分</td><td>STOCK_IO_TYPE</td><td>數值</td><td>8</td><td>○</td></tr>
+<tr><td>筆記</td><td>MEMO</td><td>文字</td><td>200</td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理論名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>店鋪編號</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品編號</td><td>COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品編號鏈接</td><td>LINK_COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>表示順序</td><td>DISPLAY_ORDER</td><td>數值</td><td>8</td><td>-</td></tr>
+<tr><td>數據行ID</td><td>ORM_ROWID</td><td>數值</td><td>38</td><td>-</td></tr>
+<tr><td>作成用戶</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成時間</td><td>CREATED_DATETIME</td><td>日期・時刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新用戶</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新時間</td><td>UPDATED_DATETIME</td><td>日期・時刻</td><td><br/></td><td>-</td></tr>
+</table>]]>
+
+        </entry>
+        <entry key="helpMessages.U1040160_11">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理論名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>店鋪編號</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>標記編號</td><td>TAG_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品編號</td><td>COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>數據行ID</td><td>ORM_ROWID</td><td>數值</td><td>38</td><td>-</td></tr>
+<tr><td>作成用戶</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成時間</td><td>CREATED_DATETIME</td><td>日期・時刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新用戶</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新時間</td><td>UPDATED_DATETIME</td><td>日期・時刻</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_12">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理論名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>店鋪編號</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>禮物編號</td><td>GIFT_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品編號</td><td>COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>數據行ID</td><td>ORM_ROWID</td><td>數值</td><td>38</td><td>-</td></tr>
+<tr><td>作成用戶</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成時間</td><td>CREATED_DATETIME</td><td>日期・時刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新用戶</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新時間</td><td>UPDATED_DATETIME</td><td>日期・時刻</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_13">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理論名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>店鋪編號</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>活動編號</td><td>CAMPAIGN_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品編號</td><td>COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>數據行ID</td><td>ORM_ROWID</td><td>數值</td><td>38</td><td>-</td></tr>
+<tr><td>作成用戶</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成時間</td><td>CREATED_DATETIME</td><td>日期・時刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新用戶</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新時間</td><td>UPDATED_DATETIME</td><td>日期・時刻</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+
+</properties>

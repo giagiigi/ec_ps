@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping> 
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 商品ヘッダ -->
+  <class name="jp.co.sint.webshop.data.dto.CommodityPriceChangeHistory" table="COMMODITY_PRICE_CHANGE_HISTORY" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">COMMODITY_PRICE_CHANGE_HISTORY_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 商品コード -->
+    <property name="commodityCode" column="COMMODITY_CODE" type="string" />
+    <!-- 提交时间 -->
+    <property name="submitTime" column="SUBMIT_TIME" type="timestamp" />
+    <!-- 提交人 -->
+    <property name="responsiblePerson" column="RESPONSIBLE_PERSON" type="string" />
+    <!-- 改前官网原价 -->
+    <property name="oldOfficialPrice" column="OLD_OFFICIAL_PRICE" type="big_decimal" />
+    <!-- 改后官网原价 -->
+    <property name="newOfficialPrice" column="NEW_OFFICIAL_PRICE" type="big_decimal" />
+    <!-- 改前官网特价 -->
+    <property name="oldOfficialSpecialPrice" column="OLD_OFFICIAL_SPECIAL_PRICE" type="big_decimal" />
+    <!-- 改后官网特价 -->
+    <property name="newOfficialSpecialPrice" column="NEW_OFFICIAL_SPECIAL_PRICE" type="big_decimal" />
+    <!-- 改前淘宝售价 -->
+    <property name="oldTmallPrice" column="OLD_TMALL_PRICE" type="big_decimal" />
+    <!-- 改后淘宝售价 -->
+    <property name="newTmallPrice" column="NEW_TMALL_PRICE" type="big_decimal" />
+    <!-- 改前京东售价 -->
+    <property name="oldJdPrice" column="OLD_JD_PRICE" type="big_decimal" />
+    <!-- 改后京东售价 -->
+    <property name="newJdPrice" column="NEW_JD_PRICE" type="big_decimal" />
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- review flg -->
+    <property name="reviewOrNotFlg" column="REVIEW_OR_NOT_FLG" type="long" /> 
+    <!-- EC售价毛利率 -->
+    <property name="ecProfitMargin" column="ec_profit_margin" type="big_decimal" />
+    <!-- EC特价毛利率 -->
+    <property name="ecSpecialProfitMargin" column="ec_special_profit_margin" type="big_decimal" />
+    <!-- TMALL售价毛利率 -->
+    <property name="tmallProfitMargin" column="tmall_profit_margin" type="big_decimal" />
+    <!-- JD售价毛利率 -->
+    <property name="jdProfitMargin" column="jd_profit_margin" type="big_decimal" />
+  </class>
+</hibernate-mapping>

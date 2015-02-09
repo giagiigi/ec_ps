@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- ポイントルール -->
+  <class name="jp.co.sint.webshop.data.dto.GiftCardReturnApply" table="GIFT_CARD_RETURN_APPLY" lazy="false">
+    <!-- Row Unique Identifier -->
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">GIFT_CARD_RETURN_APPLY_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 顧客コード -->
+    <property name="customerCode" column="CUSTOMER_CODE" type="string" />
+    <!-- 订单编号 -->
+    <property name="orderNo" column="order_no" type="string" />
+    <!-- 礼品卡使用金额 -->
+    <property name="cardUseAmount" column="card_use_amount" type="big_decimal" />
+    <!-- 客服指定退款金额 -->
+    <property name="memberInfoAmount" column="member_info_amount" type="big_decimal" />
+    <!-- 审批确认金额 -->
+    <property name="confirmAmount" column="confirm_amount" type="big_decimal" />
+    <!-- 确认标志 -->
+    <property name="confirmFlg" column="confirm_flg" type="long" />
+    <!-- 退款日期 -->
+    <property name="returnDate" column="return_date" type="timestamp" />
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+
+    
+  </class>
+</hibernate-mapping>

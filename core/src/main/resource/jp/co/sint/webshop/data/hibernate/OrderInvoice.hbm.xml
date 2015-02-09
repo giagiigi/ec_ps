@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 订单发票 -->
+  <class name="jp.co.sint.webshop.data.dto.OrderInvoice" table="ORDER_INVOICE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">ORDER_INVOICE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 订单编号 -->
+    <property name="orderNo" column="ORDER_NO" type="string" />
+    <!-- 顾客编号 -->
+    <property name="customerCode" column="CUSTOMER_CODE" type="string" />
+    <!-- 发票类型 -->
+    <property name="invoiceType" column="INVOICE_TYPE" type="long" />
+    <!-- 商品规格 -->
+    <property name="commodityName" column="COMMODITY_NAME" type="string" />
+    <!-- 姓名 -->
+    <property name="customerName" column="CUSTOMER_NAME" type="string" />
+    <!-- 公司名称 -->
+    <property name="companyName" column="COMPANY_NAME" type="string" />
+    <!-- 纳税人识别号 -->
+    <property name="taxpayerCode" column="TAXPAYER_CODE" type="string" />
+    <!-- 地址 -->
+    <property name="address" column="ADDRESS" type="string" />
+    <!-- 电话号码 -->
+    <property name="tel" column="TEL" type="string" />
+    <!-- 银行名称 -->
+    <property name="bankName" column="BANK_NAME" type="string" />
+    <!-- 银行编号 -->
+    <property name="bankNo" column="BANK_NO" type="string" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

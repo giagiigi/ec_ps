@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- お知らせ -->
+  <class name="jp.co.sint.webshop.data.dto.Information" table="INFORMATION" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">INFORMATION_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- お知らせ番号 -->
+    <property name="informationNo" column="INFORMATION_NO" type="long" />
+    <!-- お知らせ区分 -->
+    <property name="informationType" column="INFORMATION_TYPE" type="long" />
+    <!-- お知らせ開始日時 -->
+    <property name="informationStartDatetime" column="INFORMATION_START_DATETIME" type="timestamp" />
+    <!-- お知らせ終了日時 -->
+    <property name="informationEndDatetime" column="INFORMATION_END_DATETIME" type="timestamp" />
+    <!-- お知らせ内容 -->
+    <property name="informationContent" column="INFORMATION_CONTENT" type="string" />
+    <!-- 20120514 tuxinwei add start -->
+    <!-- お知らせ内容(英文) -->
+    <property name="informationContentEn" column="INFORMATION_CONTENT_EN" type="string" />
+    <!-- お知らせ内容(日本语)-->
+    <property name="informationContentJp" column="INFORMATION_CONTENT_JP" type="string" />
+    <!-- 20120514 tuxinwei add end -->
+    <!-- 表示クライアント区分 -->
+    <property name="displayClientType" column="DISPLAY_CLIENT_TYPE" type="long" />
+    <!-- soukai add 2011/12/19 ob start -->
+    <property name="primaryFlg" column="PRIMARY_FLG" type="long" />
+	<property name="informationUrl" column="INFORMATION_URL" type="string" />
+	<property name="informationUrlEn" column="INFORMATION_URL_EN" type="string" />
+	<property name="informationUrlJp" column="INFORMATION_URL_JP" type="string" />
+    <!-- soukai add 2011/12/19 ob end -->
+    <!-- 表示クライアント区分 -->
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

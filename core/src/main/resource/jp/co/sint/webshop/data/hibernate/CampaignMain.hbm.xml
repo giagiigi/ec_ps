@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- キャンペーン -->
+  <class name="jp.co.sint.webshop.data.dto.CampaignMain" table="CAMPAIGN_MAIN" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">CAMPAIGN_MAIN_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- キャンペーンコード -->
+    <property name="campaignCode" column="CAMPAIGN_CODE" type="string" />
+    <!-- キャンペーン名称 -->
+    <property name="campaignName" column="CAMPAIGN_NAME" type="string" />
+    <!-- 20120521 add by cs_yuli -->
+    <!-- キャンペーン名称 -->
+    <property name="campaignNameEn" column="CAMPAIGN_NAME_EN" type="string" />
+    <!-- キャンペーン名称 -->
+    <property name="campaignNameJp" column="CAMPAIGN_NAME_JP" type="string" />
+    <!-- キャンペーン値引率 -->
+    <property name="campaignType" column="CAMPAIGN_TYPE" type="long" />
+     <!-- 20120521 add by cs_yuli -->
+    <!-- キャンペーン開始日 -->
+    <property name="campaignStartDate" column="CAMPAIGN_START_DATE" type="timestamp" />
+    <!-- キャンペーン終了日 -->
+    <property name="campaignEndDate" column="CAMPAIGN_END_DATE" type="timestamp" />
+    <!-- 2012/11/16 促销对应 ob add start -->
+    <!-- 订购次数限制 -->
+    <property name="orderLimit" column="ORDER_LIMIT" type="long" /> 
+    <!-- 2012/11/16 促销对应 ob add end -->
+    <!-- メモ -->
+    <property name="memo" column="MEMO" type="string" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+    <property name="giftAmount" column="GIFT_AMOUNT" type="long" />
+    
+    <!-- 最小购买商品数  -->
+    <property name="minCommodityNum" column="MIN_COMMODITY_NUM" type="long" />
+    
+  </class>
+</hibernate-mapping>

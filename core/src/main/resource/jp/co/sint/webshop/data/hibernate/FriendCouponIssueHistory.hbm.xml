@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="jp.co.sint.webshop.data.dto.FriendCouponIssueHistory" table="FRIEND_COUPON_ISSUE_HISTORY" lazy="false">
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">FRIEND_COUPON_ISSUE_HISTORY_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 发行规则编号 -->
+    <property name="friendCouponRuleNo" column="FRIEND_COUPON_RULE_NO" type="string" />
+    <!-- 优惠券规则编号（公共优惠券） -->
+    <property name="couponCode" column="COUPON_CODE" type="string" />
+    <!-- 顾客编号 -->
+    <property name="customerCode" column="CUSTOMER_CODE" type="string" />
+    <!-- 发行日期-->
+    <property name="couponIssueDate" column="COUPON_ISSUE_DATE" type="timestamp" />
+    <!-- 发行金额 -->
+    <property name="couponAmount" column="COUPON_AMOUNT" type="big_decimal" />
+    <!-- 临界后获得积分-->
+    <property name="obtainPoint" column="OBTAIN_POINT" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+    
+    <!-- 发行获得积分 -->
+    <property name="issueObtainPoint" column="ISSUE_OBTAIN_POINT" type="long" />    
+    <!-- 临界前获得积分 -->
+    <property name="formerUsePoint" column="FORMER_USE_POINT" type="long" /> 
+    
+    <!-- 优惠券类别 -->
+    <property name="couponIssueType" column="COUPON_ISSUE_TYPE" type="long" />
+    <!-- 优惠券比例 -->
+    <property name="couponProportion" column="COUPON_PROPORTION" type="long" />
+    <!-- 优惠临界人数 -->
+    <property name="couponUseNum" column="coupon_use_num" type="long" /> 
+  </class>
+</hibernate-mapping>

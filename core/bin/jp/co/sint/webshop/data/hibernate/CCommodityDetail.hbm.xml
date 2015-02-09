@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+	<!-- 商品詳細 -->
+	<class name="jp.co.sint.webshop.data.dto.CCommodityDetail" table="C_COMMODITY_DETAIL"
+		lazy="false">
+		<!-- Row Unique Identifier -->
+		<id name="ormRowid" column="ORM_ROWID" type="long">
+			<generator class="sequence">
+				<param name="sequence">C_COMMODITY_DETAIL_SEQ</param>
+			</generator>
+		</id>
+		<!-- Row Version Identifier -->
+		<timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+		<!-- ショップコード -->
+		<property name="shopCode" column="SHOP_CODE" type="string" />
+		<!-- SKUコード -->
+		<property name="skuCode" column="SKU_CODE" type="string" />
+		<!-- SKU名称 -->
+		<property name="skuName" column="SKU_NAME" type="string" />
+		<!-- 商品コード -->
+		<property name="commodityCode" column="COMMODITY_CODE" type="string" />
+		<!--定価フラグ0：非定価 -->
+		<property name="fixedPriceFlag" column="fixed_price_flag" type="long" />
+		<!-- 希望小売価格 -->
+		<property name="suggestePrice" column="suggeste_price" type="big_decimal" />
+		<!-- 仕入価格 -->
+		<property name="purchasePrice" column="PURCHASE_PRICE" type="big_decimal" />
+		<!-- EC商品単価 -->
+		<property name="unitPrice" column="UNIT_PRICE" type="big_decimal" />
+		<!-- EC特別価格 -->
+		<property name="discountPrice" column="DISCOUNT_PRICE" type="big_decimal" />
+		<!-- 規格1値のID -->
+		<property name="standardDetail1Id" column="STANDARD_DETAIL1_ID" type="string" />
+		<!-- 規格詳細1名称 -->
+		<property name="standardDetail1Name" column="STANDARD_DETAIL1_NAME" type="string" />
+		<!-- 規格2値のID -->
+		<property name="standardDetail2Id" column="STANDARD_DETAIL2_ID" type="string" />
+		<!-- 規格詳細2名称 -->
+		<property name="standardDetail2Name" column="STANDARD_DETAIL2_NAME" type="string" />
+		<!-- 商品重量 -->
+		<property name="weight" column="WEIGHT" type="big_decimal" />
+		<!-- 容量 -->
+		<property name="volume" column="volume" type="big_decimal" />
+		<!-- 容量単位 -->
+		<property name="volumeUnit" column="volume_unit" type="string" />
+		<!-- 取扱いフラグ -->
+		<property name="useFlg" column="USE_FLG" type="long" />
+		<!-- 最小仕入数 -->
+		<property name="minimumOrder" column="minimum_Order" type="long" />
+		<!-- 最大仕入数 -->
+		<property name="maximumOrder" column="maximum_Order" type="long" />
+		<!-- 最小単位の仕入数 -->
+		<property name="orderMultiple" column="order_Multiple" type="long" />
+		<!-- 在庫警告日数 -->
+		<property name="stockWarning" column="stock_Warning" type="long" />
+		<!-- TMALLのSKUのID -->
+		<property name="tmallSkuId" column="TMALL_SKU_ID" type="long" />
+		<!-- TMALLの商品単価 -->
+		<property name="tmallUnitPrice" column="TMALL_UNIT_PRICE"
+			type="big_decimal" />
+		<!-- TMALLの特別価格 -->
+		<property name="tmallDiscountPrice" column="TMALL_DISCOUNT_PRICE" type="big_decimal" />
+		<!-- 税率区分 -->
+		<property name="taxClass" column="TAX_CLASS" type="string" />
+		
+		
+		<!-- 下限売価 -->
+		<property name="minPrice" column="MIN_PRICE" type="big_decimal" />
+		<!-- 縦(単位はCM) -->
+		<property name="length" column="LENGTH" type="big_decimal" />
+		<!-- 横(単位はCM) -->
+		<property name="width" column="WIDTH" type="big_decimal" />
+		<!-- 高さ(単位はCM) -->
+		<property name="height" column="HEIGHT" type="big_decimal" />
+		<!-- WEB表示単価単位容量 -->
+		<property name="volumeUnitForPrice" column="VOLUME_UNIT_FOR_PRICE" type="big_decimal" />
+		<!-- 入り数 -->
+		<property name="innerQuantity" column="INNER_QUANTITY" type="long" />
+		<!-- WEB表示単価単位入り数 -->
+		<property name="innerUnitForPrice" column="INNER_UNIT_FOR_PRICE" type="long" />
+		<!-- 取扱いフラグ(TMALL) -->
+		<property name="tmallUseFlg" column="TMALL_USE_FLG" type="long" />
+		<!-- 入り数単位 -->
+		<property name="innerQuantityUnit" column="INNER_QUANTITY_UNIT" type="string" />
+		<!-- データ行ID -->
+		<!-- idとして定義 -->
+		<!-- 作成ユーザ -->
+		<property name="createdUser" column="CREATED_USER" type="string" />
+		<!-- 作成日時 -->
+		<property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+		<!-- 更新ユーザ -->
+		<property name="updatedUser" column="UPDATED_USER" type="string" />
+		<!-- 更新日時 -->
+		<!-- timestampとして定義 -->
+		<!-- 規格詳細1名称英文 -->
+		<property name="standardDetail1NameEn" column="STANDARD_DETAIL1_NAME_EN" type="string" />
+		<!-- 規格詳細1名称日文-->
+		<property name="standardDetail1NameJp" column="STANDARD_DETAIL1_NAME_JP" type="string" />
+		<!-- 規格詳細2名称英文 -->
+		<property name="standardDetail2NameEn" column="STANDARD_DETAIL2_NAME_EN" type="string" />
+		<!-- 規格詳細2名称日文 -->
+		<property name="standardDetail2NameJp" column="STANDARD_DETAIL2_NAME_JP" type="string" />
+		<!-- 箱规 -->
+		<property name="unitBox" column="UNIT_BOX" type="long" />
+		<!-- 2014/4/28 京东WBS对应 ob_李 add start -->
+		<!-- JD使用标志 -->
+		<property name="jdUseFlg" column="JD_USE_FLG" type="long" />
+		<!-- 2014/4/28 京东WBS对应 ob_李 add end -->
+		
+		<property name="averageCost" column="AVERAGE_COST" type="big_decimal" />
+	</class>
+</hibernate-mapping>

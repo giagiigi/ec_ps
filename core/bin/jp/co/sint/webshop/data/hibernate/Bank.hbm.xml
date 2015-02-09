@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 金融機関 -->
+  <class name="jp.co.sint.webshop.data.dto.Bank" table="BANK" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">BANK_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 支払方法番号 -->
+    <property name="paymentMethodNo" column="PAYMENT_METHOD_NO" type="long" />
+    <!-- 金融機関コード -->
+    <property name="bankCode" column="BANK_CODE" type="string" />
+    <!-- 金融機関支店コード -->
+    <property name="bankBranchCode" column="BANK_BRANCH_CODE" type="string" />
+    <!-- 口座番号 -->
+    <property name="accountNo" column="ACCOUNT_NO" type="string" />
+    <!-- 金融機関名称 -->
+    <property name="bankName" column="BANK_NAME" type="string" />
+    <!-- 金融機関名カナ -->
+    <property name="bankKana" column="BANK_KANA" type="string" />
+    <!-- 金融機関支店名称 -->
+    <property name="bankBranchName" column="BANK_BRANCH_NAME" type="string" />
+    <!-- 金融機関支店名カナ -->
+    <property name="bankBranchNameKana" column="BANK_BRANCH_NAME_KANA" type="string" />
+    <!-- 口座種類 -->
+    <property name="accountType" column="ACCOUNT_TYPE" type="long" />
+    <!-- 口座名義 -->
+    <property name="accountName" column="ACCOUNT_NAME" type="string" />
+    <!-- SWIFTコード -->
+    <property name="swiftCode" column="SWIFT_CODE" type="string" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

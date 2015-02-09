@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 埋め込みHTML -->
+  <class name="jp.co.sint.webshop.data.dto.CommodityDescribe" table="COMMODITY_DESCRIBE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">COMMODITY_DESCRIBE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 商品编号 -->
+    <property name="commodityCode" column="COMMODITY_CODE" type="string" />
+    <!-- 商品描述中文 -->
+    <property name="decribeCn" column="DECRIBE_CN" type="string" />
+    <!-- 商品描述英文 -->
+    <property name="decribeEn" column="DECRIBE_EN" type="string" />
+    <!-- 商品描述日文 -->
+    <property name="decribeJp" column="DECRIBE_JP" type="string" />
+    <!-- 商品描述Tmall -->
+    <property name="decribeTmall" column="DECRIBE_TMALL" type="string" />
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- 2014/04/30 京东WBS对应 ob_姚 add start -->
+    <!-- 京东描述内容 -->
+    <property name="decribeJd" column="DECRIBE_JD" type="string" />
+    <!-- 2014/04/30 京东WBS对应 ob_姚 add end -->
+  </class>
+</hibernate-mapping>

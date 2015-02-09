@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- ポイントルール -->
+  <class name="jp.co.sint.webshop.data.dto.NewCouponRuleLssueInfo" table="NEW_COUPON_RULE_LSSUE_INFO" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">NEW_COUPON_RULE_LSSUE_INFO_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 优惠券规则编号 -->
+    <property name="couponCode" column="COUPON_CODE" type="string" />
+    <!-- 商品编号 -->
+    <property name="commodityCode" column="COMMODITY_CODE" type="string" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+    <!-- 品牌编号 -->
+    <property name="brandCode" column="BRAND_CODE" type="string" />
+    <!-- 分类编号 -->
+    <property name="categoryCode" column="CATEGORY_CODE" type="string" />
+    <!-- 明细编号 -->
+    <property name="couponUseNo" column="COUPON_USE_NO" type="long" />
+  </class>
+</hibernate-mapping>

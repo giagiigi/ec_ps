@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping> 
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- タグ -->
+  <class name="jp.co.sint.webshop.data.dto.Brand" table="BRAND" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">BRAND_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- ショップコード -->
+    <property name="brandCode" column="BRAND_CODE" type="string" />
+    <!-- プランド名称 -->
+    <property name="brandName" column="BRAND_NAME" type="string" />  
+    <!--プランドABBR名--> 
+    <property name="brandNameAbbr" column="BRAND_NAME_ABBR" type="string" />   
+ 	<!--商品描述--> 
+    <property name="brandDescription" column="brand_description" type="string" />   
+    <!--商品描述(英文)--> 
+    <property name="brandDescriptionEn" column="brand_description_en" type="string" />   
+    <!--商品描述(日文)--> 
+    <property name="brandDescriptionJp" column="brand_description_jp" type="string" />   
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <property name="updatedDatetime" column="UPDATED_DATETIME" type="timestamp" /> 
+    <!-- timestampとして定義 -->
+    <!--英文名称 -->
+    <property name="brandEnglishName" column="BRAND_ENGLISH_NAME" type="string" />
+    <!--日文名称 -->
+    <property name="brandJapaneseName" column="BRAND_JAPANESE_NAME" type="string" />
+    <!--淘宝品牌ID -->
+    <property name="tmallBrandCode" column="TMALL_BRAND_CODE" type="string" />
+    <!--淘宝品牌名称 -->
+    <property name="tmallBrandName" column="TMALL_BRAND_NAME" type="string" />
+    <!--品牌区分 -->
+    <property name="brandType" column="BRAND_TYPE" type="long" />
+    <!-- 20130527 zhangzhengtao add start -->
+    <property name="keywordCn1" column="KEYWORD_CN1" type="string" />
+    <property name="keywordEn1" column="KEYWORD_EN1" type="string" />
+    <property name="keywordJp1" column="KEYWORD_JP1" type="string" />
+    <property name="keywordCn2" column="KEYWORD_CN2" type="string" />
+    <property name="keywordEn2" column="KEYWORD_EN2" type="string" />
+    <property name="keywordJp2" column="KEYWORD_JP2" type="string" />
+    <!-- 20130527 zhangzhengtao add end -->
+    <!-- TITLE -->
+    <property name="title" column="TITLE" type="string" />
+    <!-- TITLE(英文) -->
+    <property name="titleEn" column="TITLE_EN" type="string" />
+    <!-- TITLE(日文) -->
+    <property name="titleJp" column="TITLE_JP" type="string" />
+    <!-- DESCRIPTION -->
+    <property name="description" column="DESCRIPTION" type="string" />
+    <!-- DESCRIPTION(英文) -->
+    <property name="descriptionEn" column="DESCRIPTION_EN" type="string" />
+    <!-- DESCRIPTION(日文) -->
+    <property name="descriptionJp" column="DESCRIPTION_JP" type="string" />
+    <!-- KEYWORD -->
+    <property name="keyword" column="KEYWORD" type="string" />
+    <!-- KEYWORD(英文) -->
+    <property name="keywordEn" column="KEYWORD_EN" type="string" />
+    <!-- KEYWORD(日文) -->
+    <property name="keywordJp" column="KEYWORD_JP" type="string" />
+  </class>
+</hibernate-mapping>

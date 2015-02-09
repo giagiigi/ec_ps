@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="jp.co.sint.webshop.data.dto.OriginalPlace" table="ORIGINAL_PLACE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">ORIGINAL_PLACE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    
+    <!-- 更新日時 -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 产地编号 -->
+    <property name="originalCode" column="ORIGINAL_CODE" type="long" />
+    <!-- 产地中文名称 -->
+    <property name="originalPlaceNameCn" column="ORIGINAL_PLACE_NAME_CN" type="string" />
+    <!-- 产地英文名称 -->
+    <property name="originalPlaceNameEn" column="ORIGINAL_PLACE_NAME_EN" type="string" />
+    <!-- 产地日文名称 -->
+    <property name="originalPlaceNameJp" column="ORIGINAL_PLACE_NAME_JP" type="string" />
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

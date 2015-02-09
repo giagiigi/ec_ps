@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- タグ -->
+  <class name="jp.co.sint.webshop.data.dto.JdArea" table="JD_AREA" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">JD_AREA_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />      
+    <!-- 省份编号 -->
+    <property name="prefectureCode" column="PREFECTURE_CODE" type="string" />
+    <!-- 城市编号 -->
+    <property name="cityCode" column="CITY_CODE" type="string" />
+    <!-- 区县编号 -->
+    <property name="areaCode" column="AREA_CODE" type="string" />
+    <!-- 区县名 -->
+    <property name="areaName" column="AREA_NAME" type="string" />
+    <!-- 允许货到付款标志 -->
+    <property name="allowCodFlg" column="ALLOW_COD_FLG" type="long" />
+    <!-- 允许配送时间段标志 -->
+    <property name="allowDeliveryTimeFlg" column="ALLOW_DELIVERY_TIME_FLG" type="long" />
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- timestampとして定義 --> 
+  </class>
+</hibernate-mapping>

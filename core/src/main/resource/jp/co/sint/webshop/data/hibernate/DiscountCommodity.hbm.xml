@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 限时限量折扣关联商品 -->
+  <class name="jp.co.sint.webshop.data.dto.DiscountCommodity" table="DISCOUNT_COMMODITY" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">DISCOUNT_COMMODITY_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 折扣编号 -->
+    <property name="discountCode" column="DISCOUNT_CODE" type="string" />
+    <!-- 商品编号 -->
+    <property name="commodityCode" column="COMMODITY_CODE" type="string" />
+    <!-- 折扣价格 -->
+    <property name="discountPrice" column="DISCOUNT_PRICE" type="big_decimal" />
+    <!-- 每个顾客最多购买数 -->
+    <property name="customerMaxTotalNum" column="CUSTOMER_MAX_TOTAL_NUM" type="long" />
+    <!-- 网站最多购买数 -->
+    <property name="siteMaxTotalNum" column="SITE_MAX_TOTAL_NUM" type="long" />
+    <!-- 使用标志 -->
+    <property name="useFlg" column="USE_FLG" type="long" />
+    <!-- 折扣说明(中文) -->
+    <property name="discountDirectionsCn" column="DISCOUNT_DIRECTIONS_CN" type="string" />
+    <!-- 折扣说明(日文) -->
+    <property name="discountDirectionsJp" column="DISCOUNT_DIRECTIONS_JP" type="string" />
+    <!-- 折扣说明(英文) -->
+    <property name="discountDirectionsEn" column="DISCOUNT_DIRECTIONS_EN" type="string" />
+    <!-- 中文排序 -->
+    <property name="rankCn" column="RANK_CN" type="long" />
+    <!-- 日文排序 -->
+    <property name="rankJp" column="RANK_JP" type="long" />
+    <!-- 英文排序 -->
+    <property name="rankEn" column="RANK_EN" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

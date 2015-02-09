@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- 支払方法 -->
+  <class name="jp.co.sint.webshop.data.dto.PaymentMethod" table="PAYMENT_METHOD" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">PAYMENT_METHOD_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 支払方法番号 -->
+    <property name="paymentMethodNo" column="PAYMENT_METHOD_NO" type="long" />
+    <!-- 支払方法名称 -->
+    <property name="paymentMethodName" column="PAYMENT_METHOD_NAME" type="string" />
+    <!-- 支払方法表示区分 -->
+    <property name="paymentMethodDisplayType" column="PAYMENT_METHOD_DISPLAY_TYPE" type="long" />
+    <!-- マーチャントID -->
+    <property name="merchantId" column="MERCHANT_ID" type="string" />
+    <!-- サービスID -->
+   <property name="serviceId" column="SERVICE_ID" type="string" />
+    <!-- 秘密鍵 -->
+    <property name="secretKey" column="SECRET_KEY" type="string" />
+    <!-- 支払期限日数 -->
+    <property name="paymentLimitDays" column="PAYMENT_LIMIT_DAYS" type="long" />
+    <!-- 支払方法区分 -->
+    <property name="paymentMethodType" column="PAYMENT_METHOD_TYPE" type="string" />
+    <!-- 先後払フラグ -->
+    <property name="advanceLaterFlg" column="ADVANCE_LATER_FLG" type="long" />
+    <!-- 支払手数料消費税区分 -->
+    <property name="paymentCommissionTaxType" column="PAYMENT_COMMISSION_TAX_TYPE" type="long" />
+    <!-- 支払手数料消費税率 -->
+    <property name="paymentCommissionTaxRate" column="PAYMENT_COMMISSION_TAX_RATE" type="long" />
+    <!-- コンビニ使用区分 -->
+    <property name="cvsEnableType" column="CVS_ENABLE_TYPE" type="long" />
+    <!-- 電子マネー使用区分 -->
+    <property name="digitalCashEnableType" column="DIGITAL_CASH_ENABLE_TYPE" type="long" />
+    <!-- 削除フラグ -->
+    <property name="deleteFlg" column="DELETE_FLG" type="long" />
+    <!-- 订单金额临界值 -->
+    <property name="orderPriceThreshold" column="ORDER_PRICE_THRESHOLD" type="big_decimal" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

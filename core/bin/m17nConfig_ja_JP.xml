@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<!-- add by cs_yuli 20120528 start -->
+<!-- stock -->
+    <entry key="stockMessage">0:在庫あり</entry>
+<!-- invoiceCommodityName -->
+
+    <entry key="invoiceCommodityNameList0">酒</entry>
+    <entry key="invoiceCommodityNameList1">飲料</entry>     
+    <entry key="invoiceCommodityNameList2">食品</entry>     
+    <entry key="invoiceCommodityNameList3">おもちゃ</entry>     
+    <entry key="invoiceCommodityNameList4">日用品</entry>     
+    <entry key="invoiceCommodityNameList5">化粧品</entry>     
+    <entry key="invoiceCommodityNameList6">図書</entry>     
+    <entry key="invoiceCommodityNameList7">事務用品</entry>     
+    <entry key="invoiceCommodityNameList8">映像製品</entry>     
+    <entry key="invoiceCommodityNameList9">学生用品</entry>     
+    <entry key="invoiceCommodityNameList10">家庭用品</entry>     
+    <entry key="invoiceCommodityNameList11">アクセサリー</entry>     
+    <entry key="invoiceCommodityNameList12">服装</entry>     
+    <entry key="invoiceCommodityNameList13">スーツケース</entry>     
+    <entry key="invoiceCommodityNameList14">高級品</entry>     
+    <entry key="invoiceCommodityNameList15">家電製品</entry>     
+    <entry key="invoiceCommodityNameList16">労災用品</entry>
+    <entry key="invoiceCommodityNameList17">ベビー用品</entry>
+    <entry key="invoiceCommodityNameList18">文具</entry>  
+      
+<!-- add by cs_yuli 20120528 end -->  
+<!--inquiry-->
+    <entry key="inquirySubjects.0">選択してください</entry>
+    <entry key="inquirySubjects.1">会員登録について</entry>
+    <entry key="inquirySubjects.2">購入方法について</entry>
+    <entry key="inquirySubjects.3">その他のお問合せ</entry>
+    <entry key="commodityInquirySubject">商品について</entry>
+    <entry key="orderInquirySubject">注文・予約について</entry>
+
+<!--password-->
+    <entry key="frontMessage">パスワードは6桁以上の半角英文数字でなければならない、キャラクター“-”、“_”、“.”を含む。</entry>
+    <entry key="backMessage">パスワードは6桁以上の半角英文数字でなければならない、キャラクター“-”、“_”、“.”を含む。</entry>
+
+<!--example-->
+    <entry key="addressAlias">親戚の家</entry>
+    <entry key="lastName">山田</entry>
+    <entry key="lastNameKana">ヤマダ</entry>
+    <entry key="firstName"></entry>
+    <entry key="firstNameKana">タロウ</entry>
+    <entry key="postalCode">200065</entry>
+    <entry key="countryName">中国</entry>
+    <entry key="address1">上海</entry>
+    <entry key="address2">上海市</entry>
+    <entry key="address3">普陀区</entry>
+    <entry key="address4"></entry>
+    <entry key="phoneNumber">021-00000000</entry>
+    <entry key="birthDate">1980/1/1</entry>
+    <entry key="sex">男</entry>
+    <entry key="email">test@example.com</entry>
+
+
+<!--mailmagazine-->
+    <entry key="registerMailMagazineTitle">メール雑誌送信登録用のURL案内</entry>
+    <entry key="cancelMailMagazineTitle">メール雑誌送信停止用のURL案内</entry>
+    <entry key="confirmMailMagazineTitle">送信中のメール雑誌の案内</entry>
+    <entry key="registerMailMagazineText">
+<![CDATA[{0}様
+
+{1}ご利用いただき、ありがとうございます。
+申請されたメール雑誌の送信登録は完成されていない。
+2時間以内に以下のURLをクリックし、送信登録を完成してください。
+
+【登録完了URL】
+{2}
+
+引き続き、快適なショッピングを楽しんでください。]]>
+          </entry>
+
+    <entry key="cancelMailMagazineText">
+<![CDATA[{0}様
+
+{1}ご利用いただき、ありがとうございます。
+申請されたメール雑誌の送信登録は完成されていない。
+2時間以内に以下のURLをクリックし、送信登録を完成してください。
+
+【送信停止完了URL】
+{2}
+
+引き続き、快適なショッピングを楽しんでください。]]>
+          </entry>
+
+    <entry key="confirmMailMagazineText">
+<![CDATA[{0}様
+
+{1}ご利用いただき、ありがとうございます。
+現在、お客様の送信登録中のメール雑誌は以下の通りである。
+
+{2}
+
+引き続き、快適なショッピングを楽しんでください。]]>
+          </entry>
+
+    <entry key="noExistMailMagazineText">
+<![CDATA[{0}様
+
+{1}ご利用いただき、ありがとうございます。
+
+現在、顧客は送信登録中のメール雑誌がない。
+
+引き続き、快適なショッピングを楽しんでください。]]>
+          </entry>
+
+    <entry key="sign">
+<![CDATA[----------------------------------------
+{0}
+郵便番号{1}
+{2}
+TEL: {3}
+MAIL: {4}
+不明の点がありましたら、お問合せください。
+
+----------------------------------------
+]]>
+          </entry>
+
+
+<!--messages-->
+    <entry key="frontCustomerRegisterMembersRule">
+        <![CDATA[個人情報の利用目的について、以下の通りである。
+
+・お客様が登録された顧客個人情報（会社名、名前、アドレス、メールアドレス、電話番号など）は商品の発送、アフターサービスおよび本社の新商品サービスなどの関連案内に利用させていただく。
+
+・個人情報の登録を希望しない場合、お客様は自分の判断で登録しなくても良いである。但し、そうすると、本社が提供するサービスを受けないことがある。
+
+・登録された個人情報は、サービスの内容に応じ、業務委託対象に提供される。我々は業務委託対象が上記以外の目的でその個人情報を使用することを禁じる。業務委託対象のサービスはサーバー、データ管理、商品の発送などを含む。
+
+上記の内容を同意し、顧客情報を登録したい場合、“同意と引続き登録”ボタンを押してください。]]>
+      </entry>
+
+    <entry key="frontGuestPurchaseMembersRule">
+        <![CDATA[個人情報の利用目的について、以下の通りである。
+
+・お客様が登録された顧客個人情報（会社名、名前、アドレス、メールアドレス、電話番号など）は商品の発送、アフターサービスおよび本社の新商品サービスなどの関連案内に利用させていただく。
+
+・個人情報の登録を希望しない場合、お客様は自分の判断で登録しなくても良いである。但し、そうすると、本社が提供するサービスを受けないことがある。
+
+・登録された個人情報は、サービスの内容に応じ、業務委託対象に提供される。我々は業務委託対象が上記以外の目的でその個人情報を使用することを禁じる。業務委託対象のサービスはサーバー、データ管理、商品の発送などを含む。
+
+上記の内容を同意し、顧客情報を登録したい場合、“同意と引続き登録”ボタンを押してください。]]>
+      </entry>
+
+    <entry key="mobileCustomerRegisterMembersRule">
+         <![CDATA[個人情報の利用目的について、以下の通りである。
+
+・お客様が登録された顧客個人情報（会社名、名前、アドレス、メールアドレス、電話番号など）は商品の発送、アフターサービスおよび本社の新商品サービスなどの関連案内に利用させていただく。
+
+・個人情報の登録を希望しない場合、お客様は自分の判断で登録しなくても良いである。但し、そうすると、本社が提供するサービスを受けないことがある。
+
+・登録された個人情報は、サービスの内容に応じ、業務委託対象に提供される。我々は業務委託対象が上記以外の目的でその個人情報を使用することを禁じる。業務委託対象のサービスはサーバー、データ管理、商品の発送などを含む。
+
+上記の内容を同意し、顧客情報を登録したい場合、“同意と引続き登録”ボタンを押してください。]]>
+      </entry>
+
+    <entry key="mobileGuestPurchaseMembersRule">
+         <![CDATA[個人情報の利用目的について、以下の通りである。
+
+・お客様が登録された顧客個人情報（会社名、名前、アドレス、メールアドレス、電話番号など）は商品の発送、アフターサービスおよび本社の新商品サービスなどの関連案内に利用させていただく。
+
+・個人情報の登録を希望しない場合、お客様は自分の判断で登録しなくても良いである。但し、そうすると、本社が提供するサービスを受けないことがある。
+
+・登録された個人情報は、サービスの内容に応じ、業務委託対象に提供される。我々は業務委託対象が上記以外の目的でその個人情報を使用することを禁じる。業務委託対象のサービスはサーバー、データ管理、商品の発送などを含む。
+
+上記の内容を同意し、顧客情報を登録したい場合、“同意と引続き登録”ボタンを押してください。]]>
+      </entry>
+
+    <entry key="backContactInformation">
+       <![CDATA[<div class="normal">
+<p>请对系统管理者咨询上述错误内容。</p>
+【咨询处】<br/>
+管理者内线号码：XXXXXXX<br/>
+</div>]]>
+      </entry>
+
+    <entry key="frontContactInformation">
+        <![CDATA[<div class="normal">
+<p>本システムに関することまたは不明な点がありましたら、電話またはメールでお問合せください。</p>
+【お問合せ】<br/>
+システムサポートセンター<br/>
+メールアドレス：service@pinstore.cn
+</div>]]>
+      </entry>
+
+    <entry key="mobileContactInformation">
+        <![CDATA[<div class="normal">
+<p>本システムに関することでご不明な点がございましたら、電話もしくはメールにてお問い合わせください。</p>
+【お問い合わせ先】<br/>
+システムサポートセンター<br/>
+メールアドレス：service@pinstore.cn
+</div>]]>
+      </entry>
+
+<!-- help -->
+        <entry key="helpMessages.U1020220_00">
+<![CDATA[
+        ●受注管理明細
+「入金日の設定/取消」「受注情報/出荷情報の更新」「受注のキャンセル」「返品」ができます。
+ここでは、受注データの金額が変わらない範囲の変更だけをすることができます。
+
+【設定/クリア】
+入金日欄にある[設定]ボタン/[クリア]ボタンで、入金日の設定と取り消しができます。
+入金日を設定する場合は、登録したい日付を入力して、[設定]ボタンを押してください。
+なお、入金日以外の受注情報・出荷情報は更新しません。
+
+
+【更新する】
+[更新する]ボタンを押すと、連絡事項欄、お客様情報欄、各出荷に関する情報を更新できます。
+なお、この操作では、入金日情報を更新しません。
+
+
+【受注キャンセル】
+[受注キャンセル]ボタンを押すと、受注をキャンセルできます。
+キャンセル対象の受注に含まれている出荷データのうち、
+出荷手配されていたり、出荷済みになっている出荷データが1つでもある場合、その受注はキャンセルできません。
+キャンセルできない受注の場合は、受注をキャンセルするためのボタンが表示されません。
+
+
+【受注修正】
+受注した内容を修正できます。
+修正対象の受注に含まれている出荷データのうち、
+出荷手配されていたり、出荷済みになっている出荷データが1つでもある場合、その受注は修正できません。
+修正できない受注の場合は、受注を修正するためのボタンが表示されません。
+
+
+【返品】
+出荷した商品は、返品できます。
+返品には、「商品の返品」と「金額調整」の2種類があります。
+返品情報の入力は、[返品]ボタンを押した後の返品情報入力用画面で登録します。 
+]]></entry>
+        <entry key="helpMessages.U1020230_00">
+<![CDATA[
+●受注修正
+受注修正では、請求者情報・配送先情報・商品の追加/削除・支払方法の変更ができます。
+ここでは、受注データの金額が変わるような変更ができます。
+配送先/商品の変更画面、支払方法の変更画面、注文内容の確認画面の3つの画面を経由して、受注情報を修正します。
+]]>
+        </entry>
+        <entry key="helpMessages.U1020260_00">
+<![CDATA[
+●受注返品
+返品には、「商品の返品」と「金額調整」の2種類があります。
+
+【商品の返品】
+「商品の返品」とは、商品をショップに返却することです。
+「どの『配送』」の「どの商品」を「何個」返品するかを指定して返品することができます。
+返品の対象となるのは、販売価格・ギフト料金・送料の3つです。
+販売価格・ギフト料金・送料は、「(販売価格 + ギフト料)×数量」と「送料」の2つにわかれます。
+「送料」は、返品損金額として扱います。
+
+「商品の返品」は、出荷済みの商品と個数を指定して返品登録します。
+注文した数量以上の返品や、まだ出荷していない商品を返品することはできません。
+未出荷商品の数量を変更するには、返品登録ではなく受注修正を使用します。
+
+返品数量の合計は実際に出荷した数量が上限になりますが、金額については販売価格以外の値を設定することも可能です。
+(そのため、返品した受注データの売上を集計した結果、返品金額が売上金額を上回ることがあります)
+
+
+【金額調整】
+「金額調整」は、業務上必要となる金額調整のために使用し、返品対象の受注データの金額が、
+マイナスとなるような金額も入力することができます。
+「金額調整」をした場合は、すべて返品損金額として扱います。
+]]>
+        </entry>
+        <entry key="helpMessages.U1020420_00">
+<![CDATA[
+●出荷管理明細
+出荷管理の明細画面では、連絡事項・注意事項（管理側のみ参照）の更新と出荷実績の登録ができます。
+
+【連絡事項・注意事項（管理側のみ参照）の更新】
+連絡事項・注意事項（管理側のみ参照）を更新する場合は、これら2つの項目だけが更新されます。
+その他の受注情報や出荷情報は更新されません。
+
+【出荷実績の登録】
+出荷実績登録は、商品を出荷した実績を登録します。
+出荷実績を登録する場合は、出荷実績登録欄の中にある項目だけを登録します。
+その他の受注情報や出荷情報は更新されません。
+]]>
+        </entry>
+        <entry key="helpMessages.U1030510_00">
+<![CDATA[
+●顧客属性
+会員に限定したアンケートを作成するための機能です。
+アンケートは、択一選択と複数選択の2種類で、会員に回答を求めることができます。
+このアンケートは、会員情報の登録/更新時に回答できます。
+]]>
+        </entry>
+        <entry key="helpMessages.U1040160_00">
+<![CDATA[
+●関連付け
+【ギフトと商品の関連付け】
+ギフトと商品を関連付けると、お客様が商品を購入する時に、商品に関連付けたギフトを選択することができます。
+
+【キャンペーンと商品の関連付け】
+キャンペーンと商品を関連付けると、その商品をキャンペーンの対象商品にすることができます。キャンペーンの対象商品は、関連付けたキャンペーンに設定されている値引率が適用されます。
+1つの商品を複数のキャンペーンに関連付けた場合は、値引率が最も高いキャンペーンが適用され、複数のキャンペーンが同時に適用されることはありません。
+もし、値引率が等しい場合には、キャンペーンの開始日が最も早いものが適用されます。また、値引率も開始日も等しい場合は、キャンペーンコードの最も若いものが適用されます。
+ただし、特価期間中または予約期間中の商品には、キャンペーン値引率が適用されません。
+
+【タグと商品の関連付け】
+タグと商品を関連付けると、フロントの商品詳細ページで、タグ名がキーワードとして表示されます。
+
+【商品と商品の関連付け】（手動関連付け）
+商品と商品を手動で関連付けると、関連付けた商品は、フロントの商品詳細ページで「関連商品」として表示されます。
+関連付けた商品の表示件数には上限があります。関連付けた商品の数が上限値を超えた場合は、上限値を超えない範囲で優先順位の高い商品から表示されます。
+
+【商品と商品の関連付け】（自動関連付け）
+商品と商品を自動で関連付けると、関連付けた商品は、フロントの商品詳細ページで「この商品を買った人はこんな商品も買っています」として表示されます。
+関連付けた商品の表示件数には上限があります。関連付けた商品の数が上限値を超えた場合は、上限値を超えない範囲で優先順位の高い商品から表示されます。
+]]>
+        </entry>
+        <entry key="helpMessages.U1040220_00">
+<![CDATA[
+●カテゴリ－商品関連付け
+カテゴリ-商品関連付けは、登録済みのカテゴリと商品を関連付けて、特色ごとに商品を分類してフロントに表示させるための機能です。
+関連付けたい商品の商品コードを登録するだけで、カテゴリと商品を関連付けられます。
+
+各カテゴリには、検索キーワードを3つまで設定することができます。
+例えば、「本」カテゴリには「ISBN」「著者」「発行年月日」という3つの検索キーワードを登録します。
+この検索キーワードのことをカテゴリ属性名と呼びます。
+
+各カテゴリに関連付いている商品は、商品ごとにこのカテゴリ属性名と対応するキーワードを設定できます。
+例えば、「本」カテゴリのカテゴリ属性名「ISBN」があり、その「本」カテゴリには商品Aが関連付いています。
+「本」カテゴリに関連付いている商品Aのカテゴリ属性名「ISBN」には、「ISBN999-9-999-999999-9」といった値を設定します。
+同様に、カテゴリ属性名「著者」には「SI 太郎」、カテゴリ属性名「発行年月日」には「1999年12月31日」を設定します。
+このようなカテゴリ属性名に対して商品ごとに設定できるキーワードを、カテゴリ属性値と呼びます。
+
+例）本カテゴリにカテゴリ属性を3つ作成し、カテゴリ属性値を設定する
+・カテゴリ：本
+・カテゴリ属性：①ISBN、②著者、③発行年月日
+・商品A：①ISBN999-9-999-999999-9、②SI太郎、③1999年12月31日
+・商品B：①ISBN888-8-888-888888-8、②SI花子、③1901年12月31日
+
+カテゴリにカテゴリ属性名を登録すると、フロントの検索条件で使用できるようになります。
+PCフロントの場合は、「詳細検索ページ」で検索対象のカテゴリを選択した時に表示されます。
+]]>
+携帯フロントの場合は、カテゴリトップページに表示されます。
+
+●商品との関連付けの解除をするには
+カテゴリに商品を関連付けると、関連付けたカテゴリよりも上位に位置するカテゴリにも自動的に関連付きます。
+そのため、関連付けを解除する場合は、関連付けを解除したい商品が関連付いているカテゴリのうち、より深い階層の関連付けから順に解除してください。
+なお、カテゴリツリー関連付け画面からであれば、商品に関連付いているカテゴリを一括で解除することができます。
+        </entry>
+        <entry key="helpMessages.U1040410_00">
+<![CDATA[
+●タグマスタ
+タグとは、ショップ独自の切り口で商品をグルーピングするための機能です。
+「テントと寝袋に『キャンプ』というタグをつける」といったような形で使用します。
+タグの対象商品にするには、タグの関連付け画面で、タグと商品を関連付けておきます。
+タグに関連付けられた商品は、フロントの商品詳細ページで、タグ名がキーワードとして表示されます。
+]]>
+        </entry>
+        <entry key="helpMessages.U1040510_00">
+<![CDATA[
+●入出庫管理
+入出庫管理では、過去に在庫数が変更された履歴を参照することができます。
+在庫数が変更されるタイミングは、当画面で入庫登録または出庫登録をした時と
+商品が出荷された時、出荷を取り消したときの4つです。
+なお、引当数と予約数の増減については、履歴の参照はできません。
+
+在庫の数量を増減させる場合は、「現在の数量を3個増やす」や
+「現在の数量から2個減らす」といったように、
+現在の数量に対して何個増減させるかを登録します。
+]]>
+        </entry>
+        <entry key="helpMessages.U1040610_00">
+<![CDATA[
+●在庫状況設定
+在庫状況設定は、有効在庫としきい値の関係から表示するメッセージを自動で変更する機能です。
+在庫が多い時には「たくさんあります」、在庫が少ない時には「あとわずかです」、在庫がなくなった時には「在庫切れです」といったようなメッセージを表示したい場合に使用します。
+ここで登録した在庫状況設定の内容は、商品登録時の在庫管理区分で「在庫管理する(状況表示)」を選択した場合に使用できます。
+]]>
+        </entry>
+        <entry key="helpMessages.U1040810_00">
+<![CDATA[
+●商品詳細レイアウト
+商品詳細レイアウトは、PCフロントの商品詳細ページのレイアウトを自由に変更するための機能です。
+「メイン」「自動おすすめ」「手動おすすめ」「レビュー」のブロックをパーツと呼び、それぞれのパーツの表示/非表示を指定することができます。
+なお、「メイン」パーツは、必ず表示エリアの最上部に設定します。
+
+【メイン】
+商品名や価格、カートに商品を入れるためのボタンなど、商品を購入するために必ず必要なパーツです。
+
+【手動おすすめ】
+メインに表示される商品と関連のある商品を表示するためのパーツです。
+商品同士の関連付けは、商品関連付け画面で設定します。
+
+【自動おすすめ】
+メインに表示される商品と関連のある商品を表示するためのパーツです。
+商品同士の関連付けは、受注データから自動で作成します。
+
+【レビュー】
+お客様が投稿したレビューを表示するためのパーツです。
+]]>
+        </entry>
+        <entry key="helpMessages.U1050610_00">
+<![CDATA[
+●配送種別設定
+配送種別とは、例えば『冷凍食品』を購入した場合には『クール便』、その他の商品の場合には『通常便』のような、配送方法の種類です。この配送種別は、商品ごとにどの配送種別を使うかを選択できます。
+配送種別を登録する場合は、事前に地域ブロックが登録し終わっていることを必ず確認してください。
+地域ブロックの登録は、画面右上の[地域ブロック]ボタンを押すことで確認できます。
+]]>
+        </entry>
+        <entry key="helpMessages.U1050620_00">
+<![CDATA[
+●配送種別設定明細
+配送種別とは、例えば『冷凍食品』を購入した場合には『クール便』、その他の商品の場合には『通常便』のような、
+配送方法の種類のことです。この配送種別は、商品ごとにどの配送種別を使うかを選択できます。
+配送種別は、地域ブロックを登録し終えてから登録してください。
+
+
+【表示区分】
+登録した配送種別は、それを使用するかどうかを表示/非表示で設定できます。
+商品に設定した配送種別が非表示に設定されている場合、その商品はフロントに表示されなくなります。
+
+
+【リードタイム】
+リードタイムとは、商品の注文を受けてからその商品を出荷するまでにかかる時間です。
+休日マスタに登録された休日情報とリードタイムの設定日数によって、最短の配送可能日が決定されます。
+配送可能日の指定は、配送種別の日時指定が「日のみ」「日時両方」を選択した場合に適用されます。
+
+
+【複数商品購入時の送料計算】
+複数の商品を購入した際、どのようなルールで送料を課金するかを決めることができます。
+＜商品1点ずつに送料がかかる＞
+　送料設定にもとづく地域別送料を商品1つずつに課金します。
+
+　［送料設定］
+　　関東　500円
+　［注文内容］
+　　商品Aを3つと商品Bを2つ、計5個を注文。お届け先の都道府県は関東ブロック。
+
+　　送料 = 500円×注文数5個 = 2,500円
+
+＜商品1点分の送料＋その他の商品は一律○○円＞※本例では100円とします。
+　送料設定にもとづく地域別送料を商品1つに課金し、その他の商品は固定の送料を課金します。
+
+　［送料設定］
+　　関東　500円、固定送料　100円
+　［注文内容］
+　　商品Aを3つと商品Bを2つ、計5個を注文。お届け先の都道府県は関東ブロック。
+
+　　送料 = (500円×商品1個) + (100円×商品4個) = 900円
+
+なお、この送料ルールは、出荷単位で適用されます。
+]]>
+        </entry>
+        <entry key="helpMessages.U1050810_00">
+<![CDATA[
+●地域ブロック設定
+地域ブロックとは、例えば、茨城県・栃木県・群馬県・埼玉県・千葉県・東京都・神奈川県を『関東』に、
+新潟県・富山県・石川県・福井県・山梨県・長野県・岐阜県・静岡県・愛知県を『中部』のように、
+複数の都道府県をひとつの地域にまとめるための機能です。
+送料は地域ブロック単位で設定するため、送料設定に必要な地域ブロックを登録してください。
+]]>
+        </entry>
+        <entry key="helpMessages.U1051110_00">
+<![CDATA[
+●メールテンプレート
+メールテンプレート画面では、ユーザに送信するメールの内容を、事前に定型文（テンプレート）として登録しておくことができます。
+メールテンプレートは、メールの件名などを登録する「メールヘッダー」、「本文」、「署名」から構成されます。
+「本文」は、メール種類に応じて「配送先情報」、「支払先情報」など、より細かいブロックに分かれます。
+
+「本文」および「署名」の各構成ブロックでは、「タグ」を使用することができます。
+送信内容にタグを使用することで、氏名や住所など、送信先に合わせたメール内容を作成できます。
+使用できるタグは、構成ブロックごとに異なります。
+
+＜タグの使用例＞
+・メールテンプレート本文
+お客様名：[@NAME@]  様
+
+・送信時のメール本文
+お客様名：山田 太郎 様
+]]>
+        </entry>
+          <!-- Add bY V10-CH start -->
+          <entry key="helpMessages.U1051120_00">
+<![CDATA[
+●smsテンプレート
+画面には、あらかじめ主事smsを登录ユーザー送って顶いたsmsに関する内容をお知らせします。
+smsは、「sms本文の枠板の体系」で構成されている。
+「本文」は、sms种类のモジュールごとに。
+「本文」の各构成・モジュール、使える「マーク」。
+sms内容などで使われるラベルで、名前も住所などが行われたり、複数の送付先住所を送り出すsms内容となっている。
+使えるのタグを构成したモジュールは异なっています。
+＜目印の使用しました＞
+・SMS板にする
+取引先の名：[@NAME@]  さん
+・信用のsms本文を
+取引先の名：山田太郎さん
+]]>
+        </entry>
+        <!-- Add by V10-CH end -->
+        <entry key="helpMessages.U1040210_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">論理名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長さ</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>カテゴリコード</td><td>CATEGORY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>PC用カテゴリ名称</td><td>CATEGORY_NAME_PC</td><td>文字</td><td>20</td><td>○</td></tr>
+<tr><td>携帯用カテゴリ名称</td><td>CATEGORY_NAME_MOBILE</td><td>文字</td><td>10</td><td>○</td></tr>
+<tr><td>親カテゴリコード</td><td>PARENT_CATEGORY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>パス</td><td>PATH</td><td>文字</td><td>256</td><td>-</td></tr>
+<tr><td>階層</td><td>DEPTH</td><td>数値</td><td>2</td><td>-</td></tr>
+<tr><td>表示順</td><td>DISPLAY_ORDER</td><td>数値</td><td>8</td><td>-</td></tr>
+<tr><td>PC商品件数</td><td>COMMODITY_COUNT_PC</td><td>数値</td><td>12</td><td>-</td></tr>
+<tr><td>携帯商品件数</td><td>COMMODITY_COUNT_MOBILE</td><td>数値</td><td>12</td><td>-</td></tr>
+<tr><td>データ行ID</td><td>ORM_ROWID</td><td>数値</td><td>38</td><td>-</td></tr>
+<tr><td>作成ユーザ</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成日時</td><td>CREATED_DATETIME</td><td>日付・時刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新ユーザ</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新日時</td><td>UPDATED_DATETIME</td><td>日付・時刻</td><td><br/></td><td>-</td></tr>
+</table>
+]]>
+        </entry>
+        <entry key="helpMessages.U1020410_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">論理名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長さ</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>出荷番号</td><td>SHIPPING_NO</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>出荷指示日</td><td>SHIPPING_DIRECT_DATE</td><td>日付</td><td><br/></td><td>-</td></tr>
+<tr><td>出荷日</td><td>SHIPPING_DATE</td><td>日付</td><td><br/></td><td>○</td></tr>
+<tr><td>到着予定日</td><td>ARRIVAL_DATE</td><td>日付</td><td><br/></td><td>-</td></tr>
+<tr><td>到着時間開始</td><td>ARRIVAL_TIME_START</td><td>数値</td><td>2</td><td>-</td></tr>
+<tr><td>到着時間終了</td><td>ARRIVAL_TIME_END</td><td>数値</td><td>2</td><td>-</td></tr>
+<tr><td>宅配便伝票番号</td><td>DELIVERY_SLIP_NO</td><td>文字</td><td>30</td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040510_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">論理名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長さ</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>ショップコード</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>SKUコード</td><td>SKU_CODE</td><td>文字</td><td>24</td><td>○</td></tr>
+<tr><td>入出庫数量</td><td>STOCK_IO_QUANTITY</td><td>数値</td><td>8</td><td>○</td></tr>
+<tr><td>入出庫区分</td><td>STOCK_IO_TYPE</td><td>数値</td><td>8</td><td>○</td></tr>
+<tr><td>メモ</td><td>MEMO</td><td>文字</td><td>200</td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">論理名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長さ</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>ショップコード</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品コード</td><td>COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>リンク商品コード</td><td>LINK_COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>表示順</td><td>DISPLAY_ORDER</td><td>数値</td><td>8</td><td>-</td></tr>
+<tr><td>データ行ID</td><td>ORM_ROWID</td><td>数値</td><td>38</td><td>-</td></tr>
+<tr><td>作成ユーザ</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成日時</td><td>CREATED_DATETIME</td><td>日付・時刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新ユーザ</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新日時</td><td>UPDATED_DATETIME</td><td>日付・時刻</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_11">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">論理名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長さ</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>ショップコード</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>タグコード</td><td>TAG_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品コード</td><td>COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>データ行ID</td><td>ORM_ROWID</td><td>数値</td><td>38</td><td>-</td></tr>
+<tr><td>作成ユーザ</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成日時</td><td>CREATED_DATETIME</td><td>日付・時刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新ユーザ</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新日時</td><td>UPDATED_DATETIME</td><td>日付・時刻</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_12">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">論理名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長さ</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>ショップコード</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>ギフトコード</td><td>GIFT_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品コード</td><td>COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>データ行ID</td><td>ORM_ROWID</td><td>数値</td><td>38</td><td>-</td></tr>
+<tr><td>作成ユーザ</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成日時</td><td>CREATED_DATETIME</td><td>日付・時刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新ユーザ</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新日時</td><td>UPDATED_DATETIME</td><td>日付・時刻</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_13">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">論理名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">長さ</td>
+<td width="100">必須</td>
+</tr>
+<tr><td>ショップコード</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>キャンペーンコード</td><td>CAMPAIGN_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品コード</td><td>COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>データ行ID</td><td>ORM_ROWID</td><td>数値</td><td>38</td><td>-</td></tr>
+<tr><td>作成ユーザ</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成日時</td><td>CREATED_DATETIME</td><td>日付・時刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新ユーザ</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新日時</td><td>UPDATED_DATETIME</td><td>日付・時刻</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+
+</properties>

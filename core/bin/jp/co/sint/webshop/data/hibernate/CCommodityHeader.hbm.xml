@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping> 
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 商品ヘッダ -->
+  <class name="jp.co.sint.webshop.data.dto.CCommodityHeader" table="C_COMMODITY_HEADER" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">C_COMMODITY_HEADER_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 商品コード -->
+    <property name="commodityCode" column="COMMODITY_CODE" type="string" />
+    <!-- 商品名称 -->
+    <property name="commodityName" column="COMMODITY_NAME" type="string" />
+    <!-- 商品名称英字 -->
+    <property name="commodityNameEn" column="COMMODITY_NAME_EN" type="string" />
+    <!-- 商品名称日字 -->
+    <property name="commodityNameJp" column="COMMODITY_NAME_JP" type="string" />
+    <!-- 代表SKUコード -->
+    <property name="representSkuCode" column="REPRESENT_SKU_CODE" type="string" />
+    <!-- 代表SKU単価 -->
+    <property name="representSkuUnitPrice" column="REPRESENT_SKU_UNIT_PRICE" type="big_decimal" />
+    <!-- 商品説明1 -->
+    <property name="commodityDescription1" column="COMMODITY_DESCRIPTION1" type="string" />
+    <!-- 商品説明1 英字 -->
+    <property name="commodityDescription1En" column="COMMODITY_DESCRIPTION1_EN" type="string" />
+    <!-- 商品説明1 日字 -->
+    <property name="commodityDescription1Jp" column="COMMODITY_DESCRIPTION1_JP" type="string" />
+    <!-- 商品説明2 -->
+    <property name="commodityDescription2" column="COMMODITY_DESCRIPTION2" type="string" />
+    <!-- 商品説明2 英字 -->
+    <property name="commodityDescription2En" column="COMMODITY_DESCRIPTION2_EN" type="string" />
+    <!-- 商品説明2 日字 -->
+    <property name="commodityDescription2Jp" column="COMMODITY_DESCRIPTION2_JP" type="string" />
+    <!-- 商品説明3 -->
+    <property name="commodityDescription3" column="COMMODITY_DESCRIPTION3" type="string" />
+    <!-- 商品説明3 英字 -->
+    <property name="commodityDescription3En" column="COMMODITY_DESCRIPTION3_EN" type="string" />
+    <!-- 商品説明3 日字 -->
+    <property name="commodityDescription3Jp" column="COMMODITY_DESCRIPTION3_JP" type="string" />
+    <!-- 商品説明(一覧用） -->
+    <property name="commodityDescriptionShort" column="COMMODITY_DESCRIPTION_SHORT" type="string" />
+    <!-- 商品説明(一覧用） 英字 -->
+    <property name="commodityDescriptionShortEn" column="COMMODITY_DESCRIPTION_SHORT_EN" type="string" />
+    <!-- 商品説明(一覧用） 日字 -->
+    <property name="commodityDescriptionShortJp" column="COMMODITY_DESCRIPTION_SHORT_JP" type="string" />
+    <!-- 商品検索ワード -->
+    <property name="commoditySearchWords" column="COMMODITY_SEARCH_WORDS" type="string" />
+    <!-- 販売開始日時 -->
+    <property name="saleStartDatetime" column="SALE_START_DATETIME" type="timestamp" />
+    <!-- 販売終了日時 -->
+    <property name="saleEndDatetime" column="SALE_END_DATETIME" type="timestamp" />
+    <!-- 特別価格開始日時 -->
+    <property name="discountPriceStartDatetime" column="DISCOUNT_PRICE_START_DATETIME" type="timestamp" />
+    <!-- 特別価格終了日時 -->
+    <property name="discountPriceEndDatetime" column="DISCOUNT_PRICE_END_DATETIME" type="timestamp" />
+    <!-- 規格1名称ID(TMALLの属性ID） -->
+    <property name="standard1Id" column="STANDARD1_ID" type="string" />
+    <!-- 規格名称1 -->
+    <property name="standard1Name" column="STANDARD1_NAME" type="string" />
+    <!-- 規格2名称ID(TMALLの属性ID） -->
+    <property name="standard2Id" column="STANDARD2_ID" type="string" />
+    <!-- 規格名称2 -->
+    <property name="standard2Name" column="STANDARD2_NAME" type="string" />
+    <!-- 返品不可フラグ -->
+    <property name="returnFlg" column="RETURN_FLG" type="long" /> 
+    <!-- ワーニング区分 -->
+    <property name="warningFlag" column="WARNING_FLAG" type="string" />
+    <!-- リードタイム -->
+    <property name="leadTime" column="LEAD_TIME" type="long" />
+    <!-- セール区分 -->
+    <property name="saleFlag" column="SALE_FLAG" type="string" />
+    <!-- 特集区分 -->
+    <property name="specFlag" column="SPEC_FLAG" type="string" />
+    <!-- ブランドコード -->
+    <property name="brandCode" column="BRAND_CODE" type="string" />    
+    <!-- TMALL商品ID -->
+    <property name="tmallCommodityId" column="TMALL_commodity_id" type="long"/>
+    <!-- TMALL代表SKU単価 -->
+    <property name="tmallRepresentSkuPrice" column="TMALL_REPRESENT_SKU_PRICE" type="big_decimal" />
+    <!-- TMALLのカテゴリID -->
+    <property name="tmallCategoryId" column="TMALL_CATEGORY_ID" type="long" />
+    <!-- 仕入担当者コード -->
+    <property name="buyerCode" column="BUYER_CODE" type="string" />
+    <!-- 取引先コード -->
+    <property name="supplierCode" column="SUPPLIER_CODE" type="string" />
+    <!-- 産地 -->
+    <property name="originalPlace" column="ORIGINAL_PLACE" type="string" />
+    <!-- 成分1 -->
+    <property name="ingredientName1" column="INGREDIENT_NAME1" type="string" />
+    <!-- 成分2 -->
+    <property name="ingredientName2" column="INGREDIENT_NAME2" type="string" />
+    <!-- 成分3 -->
+    <property name="ingredientName3" column="INGREDIENT_NAME3" type="string" />
+    <!-- 成分4 -->
+    <property name="ingredientName4" column="INGREDIENT_NAME4" type="string" />
+    <!-- 成分5 -->
+    <property name="ingredientName5" column="INGREDIENT_NAME5" type="string" />
+    <!-- 成分6 -->
+    <property name="ingredientName6" column="INGREDIENT_NAME6" type="string" />
+    <!-- 成分7 -->
+    <property name="ingredientName7" column="INGREDIENT_NAME7" type="string" />
+    <!-- 成分8 -->
+    <property name="ingredientName8" column="INGREDIENT_NAME8" type="string" />
+    <!-- 成分9 -->
+    <property name="ingredientName9" column="INGREDIENT_NAME9" type="string" />
+    <!-- 成分10 -->
+    <property name="ingredientName10" column="INGREDIENT_NAME10" type="string" />
+    <!-- 成分11 -->
+    <property name="ingredientName11" column="INGREDIENT_NAME11" type="string" />
+    <!-- 成分12 -->
+    <property name="ingredientName12" column="INGREDIENT_NAME12" type="string" />
+    <!-- 成分13 -->
+    <property name="ingredientName13" column="INGREDIENT_NAME13" type="string" />
+    <!-- 成分14 -->
+    <property name="ingredientName14" column="INGREDIENT_NAME14" type="string" />
+    <!-- 成分15 -->
+    <property name="ingredientName15" column="INGREDIENT_NAME15" type="string" />
+    <!-- 成分量1 -->
+    <property name="ingredientVal1" column="INGREDIENT_VAL1" type="string" />
+    <!-- 成分量2 -->
+    <property name="ingredientVal2" column="INGREDIENT_VAL2" type="string" />
+    <!-- 成分量3 -->
+    <property name="ingredientVal3" column="INGREDIENT_VAL3" type="string" />
+    <!-- 成分量4 -->
+    <property name="ingredientVal4" column="INGREDIENT_VAL4" type="string" />
+    <!-- 成分量5 -->
+    <property name="ingredientVal5" column="INGREDIENT_VAL5" type="string" />
+    <!-- 成分量6 -->
+    <property name="ingredientVal6" column="INGREDIENT_VAL6" type="string" />
+    <!-- 成分量7 -->
+    <property name="ingredientVal7" column="INGREDIENT_VAL7" type="string" />
+    <!-- 成分量8 -->
+    <property name="ingredientVal8" column="INGREDIENT_VAL8" type="string" />
+    <!-- 成分量9 -->
+    <property name="ingredientVal9" column="INGREDIENT_VAL9" type="string" />
+    <!-- 成分量10 -->
+    <property name="ingredientVal10" column="INGREDIENT_VAL10" type="string" />
+    <!-- 成分量11 -->
+    <property name="ingredientVal11" column="INGREDIENT_VAL11" type="string" />
+    <!-- 成分量12 -->
+    <property name="ingredientVal12" column="INGREDIENT_VAL12" type="string" />
+    <!-- 成分量13 -->
+    <property name="ingredientVal13" column="INGREDIENT_VAL13" type="string" />
+    <!-- 成分量14 -->
+    <property name="ingredientVal14" column="INGREDIENT_VAL14" type="string" />
+    <!-- 成分量15 -->
+    <property name="ingredientVal15" column="INGREDIENT_VAL15" type="string" />
+     
+     <!-- 以下为原材料字段 总十五个 -->
+     <property name="material1" column="material1" type="string" />
+     <property name="material2" column="material2" type="string" />
+     <property name="material3" column="material3" type="string" />
+     <property name="material4" column="material4" type="string" />
+     <property name="material5" column="material5" type="string" />
+     <property name="material6" column="material6" type="string" />
+     <property name="material7" column="material7" type="string" />
+     <property name="material8" column="material8" type="string" />
+     <property name="material9" column="material9" type="string" />
+     <property name="material10" column="material10" type="string" />
+     <property name="material11" column="material11" type="string" />
+     <property name="material12" column="material12" type="string" />
+     <property name="material13" column="material13" type="string" />
+     <property name="material14" column="material14" type="string" />
+     <property name="material15" column="material15" type="string" />
+     
+     
+    <!-- EC販売フラグ -->
+    <property name="saleFlgEc" column="SALE_FLG_EC" type="long" />
+    <!-- 大物フラグ -->
+    <property name="bigFlag" column="BIG_FLAG" type="long" />
+    <!-- ECへの同期時間 -->
+    <property name="syncTimeEc" column="SYNC_TIME_EC" type="timestamp" />
+    <!-- TMALLへの同期時間 -->
+    <property name="syncTimeTmall" column="SYNC_TIME_TMALL" type="timestamp" />
+    <!-- ECへの同期フラグ -->
+    <property name="syncFlagEc" column="SYNC_FLAG_EC" type="long" />
+    <!-- TMALLへの同期フラグ -->
+    <property name="syncFlagTmall" column="SYNC_FLAG_TMALL" type="long" />
+    <!-- ECへの同期ユーザー -->
+    <property name="syncUserEc" column="SYNC_USER_EC" type="string" />
+    <!-- TMALLへの同期ユーザー -->
+    <property name="syncUserTmall" column="SYNC_USER_TMALL" type="string" />
+    <!-- ERP取込用データ対象フラグ -->
+    <property name="exportFlagErp" column="EXPORT_FLAG_ERP" type="long" />
+    <!-- WMS取込用データ対象フラグ -->
+    <property name="exportFlagWms" column="EXPORT_FLAG_WMS" type="long" /> 
+    <!-- add by os014 2012-02-06 begin -->
+    <!-- 検索用カテゴリパス -->
+    <property name="categorySearchPath" column="CATEGORY_SEARCH_PATH" type="string" />
+    <!-- 商品の分類属性値 -->
+    <property name="categoryAttributeValue" column="CATEGORY_ATTRIBUTE_VALUE" type="string" />
+    <!-- add by os014 2012-02-06 end -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!--商品期限管理フラグ  -->
+    <property name="shelfLifeFlag" column="SHELF_LIFE_FLAG" type="long" />
+    <!--保管日数-->
+    <property name="shelfLifeDays" column="SHELF_LIFE_DAYS" type="long" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+    <!-- 規格名称1英文 -->
+    <property name="standard1NameEn" column="STANDARD1_NAME_EN" type="string" />
+    <!-- 規格名称1日文 -->
+    <property name="standard1NameJp" column="STANDARD1_NAME_JP" type="string" />
+    <!-- 規格名称2英文 -->
+    <property name="standard2NameEn" column="STANDARD2_NAME_EN" type="string" />
+    <!-- 規格名称2日文 -->
+    <property name="standard2NameJp" column="STANDARD2_NAME_JP" type="string" />
+    <!--入库生命天数  -->
+    <property name="inBoundLifeDays" column="IN_BOUND_LIFE_DAYS" type="long" />
+    <!-- 出库生命天数 -->
+    <property name="outBoundLifeDays" column="OUT_BOUND_LIFE_DAYS" type="long" />
+    <!--失效期预警-->
+    <property name="shelfLifeAlertDays" column="SHELF_LIFE_ALERT_DAYS" type="long" /> 
+    <!--食品安全字段-->
+    <!--生产许可证号-->
+    <property name="foodSecurityPrdLicenseNo" column="FOOD_SECURITY_PRD_LICENSE_NO" type="string" /> 
+    <!--产品标准号-->
+    <property name="foodSecurityDesignCode" column="FOOD_SECURITY_DESIGN_CODE" type="string" /> 
+    <!--厂名-->
+    <property name="foodSecurityFactory" column="FOOD_SECURITY_FACTORY" type="string" /> 
+    <!--厂址-->
+    <property name="foodSecurityFactorySite" column="FOOD_SECURITY_FACTORY_SITE" type="string" />  
+    <!--厂家联系方式-->
+    <property name="foodSecurityContact" column="FOOD_SECURITY_CONTACT" type="string" />  
+    <!--配料表-->
+    <property name="foodSecurityMix" column="FOOD_SECURITY_MIX" type="string" />  
+    <!--储藏方法-->
+    <property name="foodSecurityPlanStorage" column="FOOD_SECURITY_PLAN_STORAGE" type="string" /> 
+    <!--保质期-->
+    <property name="foodSecurityPeriod" column="FOOD_SECURITY_PERIOD" type="string" />  
+    <!--食品添加剂-->
+    <property name="foodSecurityFoodAdditive" column="FOOD_SECURITY_FOOD_ADDITIVE" type="string" /> 
+    <!--供货商-->
+    <property name="foodSecuritySupplier" column="FOOD_SECURITY_SUPPLIER" type="string" /> 
+    <!--生产开始日期-->
+    <property name="foodSecurityProductDateStart" column="FOOD_SECURITY_PRODUCT_DATE_START" type="timestamp" /> 
+    <!--生产结束日期-->
+    <property name="foodSecurityProductDateEnd" column="FOOD_SECURITY_PRODUCT_DATE_END" type="timestamp" /> 
+    <!--进货开始日期-->
+    <property name="foodSecurityStockDateStart" column="FOOD_SECURITY_STOCK_DATE_START" type="timestamp" /> 
+    <!--进货结束日期-->
+    <property name="foodSecurityStockDateEnd" column="FOOD_SECURITY_STOCK_DATE_END" type="timestamp" /> 
+    <!-- 産地英文 -->
+    <property name="originalPlaceEn" column="ORIGINAL_PLACE_EN" type="string" />
+    <!-- 産地日文 -->
+    <property name="originalPlaceJp" column="ORIGINAL_PLACE_JP" type="string" />
+    <!-- 商品区分 -->
+    <property name="commodityType" column="COMMODITY_TYPE" type="long" />
+    <!-- Tmall满就送赠品区分 -->
+    <property name="tmallMjsFlg" column="TMALL_MJS_FLG" type="long" />
+    <!-- 进口商品区分 -->
+    <property name="importCommodityType" column="IMPORT_COMMODITY_TYPE" type="long" />
+    <!-- 清仓商品区分 -->
+    <property name="clearCommodityType" column="CLEAR_COMMODITY_TYPE" type="long" />
+    <!-- 预留商品区分1 -->
+    <property name="reserveCommodityType1" column="RESERVE_COMMODITY_TYPE1" type="long" />
+    <!-- 预留商品区分2 -->
+    <property name="reserveCommodityType2" column="RESERVE_COMMODITY_TYPE2" type="long" />
+    <!-- 预留商品区分3 -->
+    <property name="reserveCommodityType3" column="RESERVE_COMMODITY_TYPE3" type="long" />
+    <!-- 预留商品区分1* -->
+    <property name="newReserveCommodityType1" column="NEW_RESERVE_COMMODITY_TYPE1" type="long" />
+    <!-- 预留商品区分2* -->
+    <property name="newReserveCommodityType2" column="NEW_RESERVE_COMMODITY_TYPE2" type="long" />
+    <!-- 预留商品区分3* -->
+    <property name="newReserveCommodityType3" column="NEW_RESERVE_COMMODITY_TYPE3" type="long" />
+    <!-- 预留商品区分4* -->
+    <property name="newReserveCommodityType4" column="NEW_RESERVE_COMMODITY_TYPE4" type="long" />
+    <!-- 预留商品区分5* -->
+    <property name="newReserveCommodityType5" column="NEW_RESERVE_COMMODITY_TYPE5" type="long" />
+    <!-- 産地编号 -->
+    <property name="originalCode" column="ORIGINAL_CODE" type="string" />
+    <!-- 20130527 zhangzhengtao add start -->
+    <property name="keywordCn1" column="KEYWORD_CN1" type="string" />
+    <property name="keywordEn1" column="KEYWORD_EN1" type="string" />
+    <property name="keywordJp1" column="KEYWORD_JP1" type="string" />
+    <property name="keywordCn2" column="KEYWORD_CN2" type="string" />
+    <property name="keywordEn2" column="KEYWORD_EN2" type="string" />
+    <property name="keywordJp2" column="KEYWORD_JP2" type="string" />
+    <!-- 20130527 zhangzhengtao add end -->
+    <!-- 20130607 zhangzhengtao add start -->
+    <property name="originalCommodityCode" column="ORIGINAL_COMMODITY_CODE" type="string" />
+    <property name="combinationAmount" column="COMBINATION_AMOUNT" type="long" />
+   	<property name="tmallCommoditySearchWords" column="TMALL_COMMODITY_SEARCH_WORDS" type="string" />
+    <!-- 20130607 zhangzhengtao add end -->
+    <property name="hotFlgEn" column="hot_flg_en" type="long" />
+    <property name="hotFlgJp" column="hot_flg_jp" type="long" />
+    <!-- TITLE -->
+    <property name="title" column="TITLE" type="string" />
+    <!-- TITLE(英文) -->
+    <property name="titleEn" column="TITLE_EN" type="string" />
+    <!-- TITLE(日文) -->
+    <property name="titleJp" column="TITLE_JP" type="string" />
+    <!-- DESCRIPTION -->
+    <property name="description" column="DESCRIPTION" type="string" />
+    <!-- DESCRIPTION(英文) -->
+    <property name="descriptionEn" column="DESCRIPTION_EN" type="string" />
+    <!-- DESCRIPTION(日文) -->
+    <property name="descriptionJp" column="DESCRIPTION_JP" type="string" />
+    <!-- KEYWORD -->
+    <property name="keyword" column="KEYWORD" type="string" />
+    <!-- KEYWORD(英文) -->
+    <property name="keywordEn" column="KEYWORD_EN" type="string" />
+    <!-- KEYWORD(日文) -->
+    <property name="keywordJp" column="KEYWORD_JP" type="string" />
+    <!-- 套装品区分 -->
+    <property name="setCommodityFlg" column="SET_COMMODITY_FLG" type="long" /> 
+    <!-- 2014/4/28 京东WBS对应 ob_李 add start -->
+    <!-- 京东类目ID -->
+    <property name="jdCategoryId" column="JD_CATEGORY_ID" type="string" />
+    <!-- 京东商品ID（API返回值） -->
+    <property name="jdCommodityId" column="JD_COMMODITY_ID" type="long" />
+    <!-- 京东同期FLG -->
+    <property name="syncFlagJd" column="SYNC_FLAG_JD" type="long" />
+    <!-- EC同期时间 -->
+    <property name="syncTimeJd" column="SYNC_TIME_JD" type="timestamp" />
+    <!-- EC同期用户 -->
+    <property name="syncUserJd" column="SYNC_USER_JD" type="string" />
+    <!-- 广告词 -->
+    <property name="advertContent" column="ADVERT_CONTENT" type="string" />
+    <!-- 2014/4/28 京东WBS对应 ob_李 add end -->
+  </class>
+</hibernate-mapping>

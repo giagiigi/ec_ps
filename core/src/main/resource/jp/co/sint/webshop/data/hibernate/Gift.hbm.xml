@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- ギフト -->
+  <class name="jp.co.sint.webshop.data.dto.Gift" table="GIFT" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">GIFT_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- ギフトコード -->
+    <property name="giftCode" column="GIFT_CODE" type="string" />
+    <!-- ギフト名称 -->
+    <property name="giftName" column="GIFT_NAME" type="string" />
+    <!-- ギフト説明 -->
+    <property name="giftDescription" column="GIFT_DESCRIPTION" type="string" />
+    <!-- ギフト価格 -->
+    <property name="giftPrice" column="GIFT_PRICE" type="big_decimal" />
+    <!-- 表示順 -->
+    <property name="displayOrder" column="DISPLAY_ORDER" type="long" />
+    <!-- ギフト消費税区分 -->
+    <property name="giftTaxType" column="GIFT_TAX_TYPE" type="long" />
+    <!-- 表示フラグ -->
+    <property name="displayFlg" column="DISPLAY_FLG" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

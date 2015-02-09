@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 個別配信メールキュー -->
+  <class name="jp.co.sint.webshop.data.dto.RespectiveMailqueue" table="RESPECTIVE_MAILQUEUE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">RESPECTIVE_MAILQUEUE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- メールキューID -->
+    <property name="mailQueueId" column="MAIL_QUEUE_ID" type="long" />
+    <!-- メールタイプ -->
+    <property name="mailType" column="MAIL_TYPE" type="string" />
+    <!-- メールコンテントタイプ -->
+    <property name="mailContentType" column="MAIL_CONTENT_TYPE" type="long" />
+    <!-- メール件名 -->
+    <property name="mailSubject" column="MAIL_SUBJECT" type="string" />
+    <!-- 差出人名 -->
+    <property name="mailSenderName" column="MAIL_SENDER_NAME" type="string" />
+    <!-- FROMアドレス -->
+    <property name="fromAddress" column="FROM_ADDRESS" type="string" />
+    <!-- TOアドレス -->
+    <property name="toAddress" column="TO_ADDRESS" type="string" />
+    <!-- BCCアドレス -->
+    <property name="bccAddress" column="BCC_ADDRESS" type="string" />
+    <!-- メール本文 -->
+    <property name="mailText" column="MAIL_TEXT" type="string" />
+    <!-- メール送信ステータス -->
+    <property name="mailSendStatus" column="MAIL_SEND_STATUS" type="long" />
+    <!-- メール送信日時 -->
+    <property name="mailSentDatetime" column="MAIL_SENT_DATETIME" type="timestamp" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

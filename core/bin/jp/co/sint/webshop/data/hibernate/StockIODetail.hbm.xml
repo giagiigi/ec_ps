@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 入出庫明細 -->
+  <class name="jp.co.sint.webshop.data.dto.StockIODetail" table="STOCK_IO_DETAIL" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">STOCK_IO_DETAIL_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 入出庫行ID -->
+    <property name="stockIOId" column="STOCK_IO_ID" type="long" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 入出庫日 -->
+    <property name="stockIODate" column="STOCK_IO_DATE" type="timestamp" />
+    <!-- SKUコード -->
+    <property name="skuCode" column="SKU_CODE" type="string" />
+    <!-- 入出庫数量 -->
+    <property name="stockIOQuantity" column="STOCK_IO_QUANTITY" type="long" />
+    <!-- 入出庫区分 -->
+    <property name="stockIOType" column="STOCK_IO_TYPE" type="long" />
+    <!-- メモ -->
+    <property name="memo" column="MEMO" type="string" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

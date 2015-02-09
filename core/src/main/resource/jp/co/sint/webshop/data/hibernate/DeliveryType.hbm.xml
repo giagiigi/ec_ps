@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 配送種別 -->
+  <class name="jp.co.sint.webshop.data.dto.DeliveryType" table="DELIVERY_TYPE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">DELIVERY_TYPE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 配送種別番号 -->
+    <property name="deliveryTypeNo" column="DELIVERY_TYPE_NO" type="long" />
+    <!-- 配送種別名称 -->
+    <property name="deliveryTypeName" column="DELIVERY_TYPE_NAME" type="string" />
+    <!-- 配送詳細区分 -->
+    <property name="deliverySpecificationType" column="DELIVERY_SPECIFICATION_TYPE" type="long" />
+    <!-- 送料消費税区分 -->
+    <property name="shippingChargeTaxType" column="SHIPPING_CHARGE_TAX_TYPE" type="long" />
+    <!-- 宅配業者URL -->
+    <property name="parcelUrl" column="PARCEL_URL" type="string" />
+    <!-- 送料無料フラグ -->
+    <property name="shippingChargeFreeFlg" column="SHIPPING_CHARGE_FREE_FLG" type="long" />
+    <!-- 送料無料閾値 -->
+    <property name="shippingChargeFreeThreshold" column="SHIPPING_CHARGE_FREE_THRESHOLD" type="big_decimal" />
+    <!-- 送料課金フラグ -->
+    <property name="shippingChargeFlg" column="SHIPPING_CHARGE_FLG" type="long" />
+    <!-- 送料課金閾値 -->
+    <property name="shippingChargeThreshold" column="SHIPPING_CHARGE_THRESHOLD" type="big_decimal" />
+    <!-- 表示フラグ -->
+    <property name="displayFlg" column="DISPLAY_FLG" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

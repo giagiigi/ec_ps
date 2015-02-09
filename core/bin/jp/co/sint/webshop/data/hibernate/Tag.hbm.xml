@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- タグ -->
+  <class name="jp.co.sint.webshop.data.dto.Tag" table="TAG" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">TAG_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- タグコード -->
+    <property name="tagCode" column="TAG_CODE" type="string" />
+    <!-- タグ名称 -->
+    <property name="tagName" column="TAG_NAME" type="string" />
+    <!-- 20120514 tuxinwei add start -->
+    <property name="tagNameEn" column="TAG_NAME_EN" type="string" />
+    <property name="tagNameJp" column="TAG_NAME_JP" type="string" />
+    <!-- 20120514 tuxinwei add end -->
+    <!-- タグコード -->
+    <!-- 表示順 -->
+    <property name="displayOrder" column="DISPLAY_ORDER" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

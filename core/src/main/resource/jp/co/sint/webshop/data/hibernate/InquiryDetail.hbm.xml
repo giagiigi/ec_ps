@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 咨询详细 -->
+  <class name="jp.co.sint.webshop.data.dto.InquiryDetail" table="INQUIRY_DETAIL" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">INQUIRY_DETAIL_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 咨询编号 -->
+    <property name="inquiryHeaderNo" column="INQUIRY_HEADER_NO" type="long" />
+    <!-- 咨询明细编号 -->
+    <property name="inquiryDetailNo" column="INQUIRY_DETAIL_NO" type="long" />
+    <!-- 受理更新日期 -->
+    <property name="acceptDatetime" column="ACCEPT_DATETIME" type="timestamp" />
+    <!-- 担当编号 -->
+    <property name="personInChargeNo" column="PERSON_IN_CHARGE_NO" type="string" />
+    <!-- 担当名称 -->
+    <property name="personInChargeName" column="PERSON_IN_CHARGE_NAME" type="string" />
+    <!-- 咨询内容 -->
+    <property name="inquiryContents" column="INQUIRY_CONTENTS" type="string" />
+    <!-- 咨询状态 -->
+    <property name="inquiryStatus" column="INQUIRY_STATUS" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

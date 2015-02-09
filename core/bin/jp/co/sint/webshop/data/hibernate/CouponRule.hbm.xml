@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- クーポントルール -->
+  <class name="jp.co.sint.webshop.data.dto.CouponRule" table="COUPON_RULE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">COUPON_RULE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- クーポンルール番号 -->
+    <property name="couponRuleNo" column="COUPON_RULE_NO" type="long" />
+    <!-- クーポン機能使用フラグ -->
+    <property name="couponFunctionEnabledFlg" column="COUPON_FUNCTION_ENABLED_FLG" type="long" />
+    <!-- クーポン使用最低金額 -->
+    <property name="couponInvestPurchasePrice" column="COUPON_INVEST_PURCHASE_PRICE" type="big_decimal" />
+    <!-- クーポン使用最大数 -->
+    <property name="couponAmount" column="COUPON_AMOUNT" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

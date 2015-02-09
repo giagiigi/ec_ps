@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- JD类目 -->
+  <class name="jp.co.sint.webshop.data.dto.JdCategory" table="Jd_Category" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">JD_CATEGORY_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 类目编号 -->
+    <property name="categoryId" column="CATEGORY_ID" type="string" />
+    <!-- 类目名称 -->
+    <property name="categoryName" column="CATEGORY_NAME" type="string" />
+    <!-- 父类目编号 -->
+    <property name="parentId" column="parent_id" type="string" />
+    <!-- 是否是父类目ID -->
+    <property name="isParent" column="is_Parent" type="long" />
+    <!-- 等级 -->
+    <property name="level" column="level" type="long" />
+    <!-- 表示顺序 -->
+    <property name="displayOrder" column="display_order" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->          
+  </class>
+</hibernate-mapping>

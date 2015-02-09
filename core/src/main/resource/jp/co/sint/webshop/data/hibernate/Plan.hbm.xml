@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 企画 -->
+  <class name="jp.co.sint.webshop.data.dto.Plan" table="PLAN" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">PLAN_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 企划编号 -->
+    <property name="planCode" column="PLAN_CODE" type="string" />
+    <!-- 企划名称 -->
+    <property name="planName" column="PLAN_NAME" type="string" />
+    <!-- 企划日文名称 -->
+    <property name="planNameEn" column="PLAN_NAME_EN" type="string" />
+    <!-- 企划英文名称 -->
+    <property name="planNameJp" column="PLAN_NAME_JP" type="string" />
+    <!-- 企划类别 -->
+    <property name="planType" column="PLAN_TYPE" type="long" />
+    <!-- 企划说明 -->
+    <property name="planDescription" column="PLAN_DESCRIPTION" type="string" />
+    <!-- 企划英文说明 -->
+    <property name="planDescriptionEn" column="PLAN_DESCRIPTION_EN" type="string" />
+    <!-- 企划日文说明 -->
+    <property name="planDescriptionJp" column="PLAN_DESCRIPTION_JP" type="string" />
+    <!-- 企划开始日时 -->
+    <property name="planStartDatetime" column="PLAN_START_DATETIME" type="timestamp" />
+    <!-- 企划结束日时 -->
+    <property name="planEndDatetime" column="PLAN_END_DATETIME" type="timestamp" />
+    <!-- 企划明细类别 -->
+    <property name="planDetailType" column="PLAN_DETAIL_TYPE" type="string" />
+    <!-- 备注 -->
+    <property name="memo" column="MEMO" type="string" />
+    <!-- TITLE -->
+    <property name="title" column="TITLE" type="string" />
+    <!-- TITLE(英文) -->
+    <property name="titleEn" column="TITLE_EN" type="string" />
+    <!-- TITLE(日文) -->
+    <property name="titleJp" column="TITLE_JP" type="string" />
+    <!-- DESCRIPTION -->
+    <property name="description" column="DESCRIPTION" type="string" />
+    <!-- DESCRIPTION(英文) -->
+    <property name="descriptionEn" column="DESCRIPTION_EN" type="string" />
+    <!-- DESCRIPTION(日文) -->
+    <property name="descriptionJp" column="DESCRIPTION_JP" type="string" />
+    <!-- KEYWORD -->
+    <property name="keyword" column="KEYWORD" type="string" />
+    <!-- KEYWORD(英文) -->
+    <property name="keywordEn" column="KEYWORD_EN" type="string" />
+    <!-- KEYWORD(日文) -->
+    <property name="keywordJp" column="KEYWORD_JP" type="string" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

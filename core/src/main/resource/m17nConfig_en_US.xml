@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<!-- add by cs_yuli 20120528 start -->
+<!-- stock -->
+    <entry key="stockMessage">0:in stock</entry>
+<!-- invoiceCommodityName -->
+
+    <entry key="invoiceCommodityNameList0">alcohol</entry>
+    <entry key="invoiceCommodityNameList1">beverage</entry>     
+    <entry key="invoiceCommodityNameList2">food</entry>     
+    <entry key="invoiceCommodityNameList3">toys</entry>     
+    <entry key="invoiceCommodityNameList4">daily necessities</entry>     
+    <entry key="invoiceCommodityNameList5">cosmetics</entry>     
+    <entry key="invoiceCommodityNameList6">books</entry>     
+    <entry key="invoiceCommodityNameList7">office supplies</entry>     
+    <entry key="invoiceCommodityNameList8">audio and video products</entry>     
+    <entry key="invoiceCommodityNameList9">school supplies</entry>     
+    <entry key="invoiceCommodityNameList10">household products</entry>     
+    <entry key="invoiceCommodityNameList11">accessories</entry>     
+    <entry key="invoiceCommodityNameList12">clothing</entry>     
+    <entry key="invoiceCommodityNameList13">bags</entry>     
+    <entry key="invoiceCommodityNameList14">the choicest goods</entry>     
+    <entry key="invoiceCommodityNameList15">household applicances</entry>     
+    <entry key="invoiceCommodityNameList16">personal protective equipments</entry>    
+    <entry key="invoiceCommodityNameList17">baby goods</entry>
+    <entry key="invoiceCommodityNameList18">stationery</entry> 
+<!-- add by cs_yuli 20120528 end -->
+<!--inquiry-->
+    <entry key="inquirySubjects.0">Please select.</entry>
+    <entry key="inquirySubjects.1">about member login</entry>
+    <entry key="inquirySubjects.2">about purchasing method</entry>
+    <entry key="inquirySubjects.3">other consultation</entry>
+    <entry key="commodityInquirySubject">about commodities</entry>
+    <entry key="orderInquirySubject">about order and reservation</entry>
+
+<!--password-->
+    <entry key="frontMessage">The password must be a DBC English number with more than 6 digits containing character "-", "_", ".".</entry>
+    <entry key="backMessage">The password must be a DBC English number with more than 6 digits containing character "-", "_", ".".</entry>
+
+<!--example-->
+    <entry key="addressAlias">Relative's house</entry>
+    <entry key="lastName">YAMADA</entry>
+    <entry key="lastNameKana">ヤマダ</entry>
+    <entry key="firstName"></entry>
+    <entry key="firstNameKana">タロウ</entry>
+    <entry key="postalCode">100001</entry>
+    <entry key="countryName">China</entry>
+    <entry key="address1">Shanghai</entry>
+    <entry key="address2">Shanghai</entry>
+    <entry key="address3">Putuo</entry>
+    <entry key="address4"></entry>
+    <entry key="phoneNumber">021-00000000</entry>
+    <entry key="birthDate">1980/1/1</entry>
+    <entry key="sex">Male</entry>
+    <entry key="email">test@example.com</entry>
+
+
+<!--mailmagazine-->
+    <entry key="registerMailMagazineTitle">URL notification for login for the purpose of sending mail magazines.</entry>
+    <entry key="cancelMailMagazineTitle">URL notification of termination of mail magazine sending service.</entry>
+    <entry key="confirmMailMagazineTitle">notification of mail magazines being sent</entry>
+    <entry key="registerMailMagazineText">
+     <![CDATA[{0} Dear Mr.
+Thank you for visiting {1}.
+The registration procedure for mail magazine application is not completed yet.
+Please single click the following URL within 2 hours and complete sending registration.
+
+【URL after login】
+{2}
+
+Please continue to enjoy the comfortable shopping paradise. ]]>
+          </entry>
+
+    <entry key="cancelMailMagazineText">
+     <![CDATA[{0} Dear Mr.
+Thank you for visiting {1}.
+The application for terminating mail magazine sending service is not completed yet.
+Please single click the following URL within 2 hours and complete the termination of sending service.
+
+【URL after sending service being terminated】
+{2}
+
+Please continue to enjoy the comfortable shopping paradise. ]]>
+          </entry>
+
+    <entry key="confirmMailMagazineText">
+     <![CDATA[{0} Dear Mr.
+Thank you for visiting {1}.
+Please note that mail magazines in the customer sending service registration are as follows.
+
+{2}
+
+Please continue to enjoy the comfortable shopping paradise. ]]>
+          </entry>
+
+    <entry key="noExistMailMagazineText">
+     <![CDATA[{0} Dear Mr.
+
+Thank you for visiting {1}.
+
+Please be note that the customer doesnot have the mail magazine in the sending service registration.
+
+Please continue to enjoy the comfortable shopping paradise. ]]>
+          </entry>
+
+    <entry key="sign">
+      <![CDATA[----------------------------------------
+{0}
+postal code {1}
+{2}
+TEL: {3}
+MAIL: {4}
+If there's anything you don't understand ,please contact us.
+
+----------------------------------------
+]]>
+          </entry>
+
+
+<!--messages-->
+    <entry key="frontCustomerRegisterMembersRule">
+      <![CDATA[ Please refer to the following explaination on the intention to get personal information.
+
+・The customer personal information you have entered (the company name, name, address, mailing address, telephone number, etc.) will be used for commodity delivery, aftersale service and relevant new commodity service notifications we will send you. 
+
+・If you do not want to enter your personal information, you can choose not to do so in your own discreet. However, this may prevent us from providing you the updated services.
+
+・The personal information you entered will be provided to our entrusted partners according to the nature of the service. We prohibit any entrusted partner from using the information for purposes other than the abovementioned ones. The service our entrusted partners proivde include management of server and data as well as commodity shipment.
+
+If you consent and agree on the abovementioned content, please click on "I agree and will continue with my registration" button. ]]>
+      </entry>
+
+    <entry key="frontGuestPurchaseMembersRule">
+      <![CDATA[ Please refer to the following explaination on the intention to get personal information.
+
+・The customer personal information you have entered (the company name, name, address, mailing address, telephone number, etc.) will be used for commodity delivery, aftersale service and relevant new commodity service notifications we will send you. 
+
+・If you do not want to enter your personal information, you can choose not to do so in your own discreet. However, this may prevent us from providing you the updated services.
+
+・The personal information you entered will be provided to our entrusted partners according to the nature of the service. We prohibit any entrusted partner from using the information for purposes other than the abovementioned ones. The service our entrusted partners proivde include management of server and data as well as commodity shipment.
+
+If you consent and agree on the abovementioned content, please click on "I agree and will continue with my registration" button. ]]>
+      </entry>
+
+    <entry key="mobileCustomerRegisterMembersRule">
+      <![CDATA[ Please refer to the following explaination on the intention to get personal information.
+
+・The customer personal information you have entered (the company name, name, address, mailing address, telephone number, etc.) will be used for commodity delivery, aftersale service and relevant new commodity service notifications we will send you. 
+
+・If you do not want to enter your personal information, you can choose not to do so in your own discreet. However, this may prevent us from providing you the updated services.
+
+・The personal information you entered will be provided to our entrusted partners according to the nature of the service. We prohibit any entrusted partner from using the information for purposes other than the abovementioned ones. The service our entrusted partners proivde include management of server and data as well as commodity shipment.
+
+If you consent and agree on the abovementioned content, please click on "I agree and will continue with my registration" button. ]]>
+      </entry>
+
+    <entry key="mobileGuestPurchaseMembersRule">
+      <![CDATA[ Please refer to the following explaination on the intention to get personal information.
+
+・The customer personal information you have entered (the company name, name, address, mailing address, telephone number, etc.) will be used for commodity delivery, aftersale service and relevant new commodity service notifications we will send you. 
+
+・If you do not want to enter your personal information, you can choose not to do so in your own discreet. However, this may prevent us from providing you the updated services.
+
+・The personal information you entered will be provided to our entrusted partners according to the nature of the service. We prohibit any entrusted partner from using the information for purposes other than the abovementioned ones. The service our entrusted partners proivde include management of server and data as well as commodity shipment.
+
+If you consent and agree on the abovementioned content, please click on "I agree and will continue with my registration" button. ]]> 
+      </entry>
+
+    <entry key="backContactInformation">
+       <![CDATA[<div class="normal">
+<p>If there's anything you don't understand on this system or other issues, please contact us via telephone or email. </p>
+【Information Desk】<br/>
+E-mail address: service@pinstore.cn
+</div>]]>
+      </entry>
+
+    <entry key="frontContactInformation">
+       <![CDATA[<div class="normal">
+<p>If there's anything you don't understand on this system or other issues, please contact us via telephone or email. </p>
+【Information Desk】<br/>
+E-mail address: service@pinstore.cn
+</div>]]>
+      </entry>
+
+    <entry key="mobileContactInformation">
+       <![CDATA[<div class="normal">
+<p>If there's anything you don't understand on this system or other issues, please contact us via telephone or email. </p>
+【Information Desk】<br/>
+E-mail address: service@pinstore.cn
+</div>]]>
+      </entry>
+
+<!-- help -->
+        <entry key="helpMessages.U1020220_00">
+<![CDATA[
+        *Order Control Detail
+[Set/Cancel order date][Update order info/shipping info][Cancel order][Return goods] are available.
+You can change only the range that not changed the price of the order data here.
+
+[Setting/Clear]
+
+You can set/change the payment date by clicking [Setting]/[Clear] button in the payment date area.
+Please input date and click [Setting] button for the payment date setting.
+No order info/shipping info are updated, except the payment date.
+
+
+[Update]
+
+You can update message area, customer info area and the information concerning the shippng, by clicking [Update] button.
+The payment date info is not updated.
+
+
+[Order Cancel]
+
+You can cancel the order by clicking [Order cancel] button.
+You can not cancel the order, if there is any shipping data which has already been shipping arranged or shipped.
+In that case, the cancel button will not be displayed.
+
+
+[Order modification]
+
+You can modify the order contents.
+You can not modify the order, if there is any shipping data which has already been shipping arranged or shipped.
+In that case, the modification button will not be displayed.
+
+
+[Return goods]
+
+You can return the shipped item.
+There are two return type, [return item] and [price adjustment].
+The return info can be registered on the return info input page, displayed after clicking the [Return goods] button.
+]]></entry>
+        <entry key="helpMessages.U1020230_00">
+<![CDATA[
+*Order modification
+You can modify payer info/delivery address/add, delete item/payment method.
+you can modify the changable order data here.
+Modify the order info via 3 pages (Delivery/Item modification page, payment method modification page, order confirmation page)
+]]>
+        </entry>
+        <entry key="helpMessages.U1020260_00">
+<![CDATA[
+*Order returns
+There are two return type, [return item] and [price adjustment].
+
+[Return item]
+
+[return item] means return goods to the shop.
+You can deside the returns of [which item], [How many] and [which delivery].
+There are 3 type can be returned. sales price, gift price and delivery charge.
+Sales price/Gift price/Delivery charge are devided into 2 ways, [(sales price + gift price) * quantity] and [delivery charge].
+[Delivery charge] is dealt as return loss.
+
+[return item] can be registered by setting shipped item and quantity.
+You can not return more item quantity than you actually ordered, or item which has not been shipped.
+You can use not return registration but order modification for modifying quantity of the unshipped item.
+
+Though the total retuns quantity limit is equivalent to the shipped quantity, You can set the price that is not the same as sales price.
+(Therefore, the return price can possibly exceed the sales price after the sales summary of returned order data )
+
+
+[Price adjustment]
+
+[Price adjustment] can be used as adjusting the price which is necessary for business operation,
+And can be input the price that returned order data price can be deficit.
+[Price adjustment] is dealt as return loss.
+]]>
+        </entry>
+        <entry key="helpMessages.U1020420_00">
+<![CDATA[
+*Shipping management detail
+You can update messsage/caution(reffered only by admin side) and register shipping result.
+
+[Update messsage/caution(reffered only by admin side)]
+
+If yo update messsage/caution(reffered only by admin side), Only this two can be updated.
+The other order info or shipping info is not updated.
+
+[Register shipping record]
+
+Shipping record Registration can be registered the result of shipped item.
+If you register shipping record, The data which is in the shipping record registration area.
+The other order info or shipping info is not updated.
+]]>
+        </entry>
+        <entry key="helpMessages.U1030510_00">
+<![CDATA[
+*Customer attribution 
+This is the enquete creation function only for the members.
+There are 2 answer type, single and multi selection.
+This enquete can be replyed when register/update the membership info.
+]]>
+        </entry>
+        <entry key="helpMessages.U1040160_00">
+<![CDATA[
+*Relation
+[Gift and Item Relation]
+
+If you set the relation of gift and item, the customer can select the gift related to item when they purchase item.
+
+[Campaign and Item Relation]
+
+If you set the relation of campaign and item, The item can be campaign item. 
+The campaign item are applied the discount rate related to the campaign.
+If one item is related to many campaign, the most highest rate will be applied.
+If the discount rate is equivalent to the other campaigns, the rate of the earliest start date campaign will be applied.
+If the discount rate and start date are equivalent to the other campaigns, the rate of the smallest campaign code will be applied.
+The campaign discount rate will not be applied for the special price period item and reservation period item.
+
+[Tag and Item Relation]
+
+If you set the relation of Tag and Item, The Tag name will be displayed as a keyword on the item detail page(front).
+
+[Item and Item Relation](manual relation)
+
+If you set the relation of Item and Item manually, The item will be displayed as a [related item] on the item detail page(front).
+There is the upper limit for the related item display. If the quantity of related items exceed the limit, The high priority item will be displayed.
+
+[Item and Item Relation](automatic relation)
+
+If you set the relation of Item and Item automatically, The item will be displayed as [Customers who bought this item also bought:] on the item detail page(front).
+There is the upper limit for the related item display. If the quantity of related items exceed the limit, The high priority item will be displayed.
+]]>
+        </entry>
+        <entry key="helpMessages.U1040220_00">
+<![CDATA[
+*Category item relation
+The category item relation is the function for displaying the items classified by each characteristics on the front page.
+You can classify the item wieh category by registering item code to which you want to set the relation.
+
+You can set 3 keywords on each category.
+For example, Register [ISBN][Author][Issued Y/M/D] on [main] category.
+This search keyword is called category attribute name.
+
+The item related to each category can be set category attribute name and keywords on each item.
+For example, There is category attrubute name[ISBN] of [main]category,
+and the [main] category is related to item A.
+Set the value of [ISBN999-9-999-999999-9] for the category attribute name[ISBN] of item A related to [main]category.
+In the same way, Set [SI Taro] for [Author], [1999/12/31] for [Issued Y/M/D].
+The keywords can be set to category attrubute name on each item is called category attribute value.
+
+e.g. Create 3 category attribute on main category, then set category attribute value.
+*Category:  Book
+*Category Attribute:  1. ISBN, 2. Author, 3. Issued Y/M/D
+*Item A: 1. ISBN999-9-999-999999-9, 2. SI Taro, 3. 1999/12/31
+*Item B: 1. ISBN888-8-888-888888-8, 2. SI Hanako, 3. 1901/12/31
+
+If the category attribute name is registered to category, You can use it in the search condition of front page. 
+For PC front, it is displayed when select the search category on [detail search page].
+]]>
+For Mobile front, displayed on the category top page.
+
+*How to cancel the relation to item.
+If the item is related to the cateogry, It is automatically related to the upper category as well.
+Therefore, If you want to cancel the relation, You have to cancel the relation of the lower depth in order.
+You can cancel all the relations at once form the category tree relation page.
+        </entry>
+        <entry key="helpMessages.U1040410_00">
+<![CDATA[
+*Tag Master
+Tag is the function for grouping item by the shop's own way.
+Using like [put [camp]tag for tent and sleeping bag].
+If you want to put tag for item, Set the relation of the tag and the item on the tag relation page.
+The tag name is displayed as keyword on the item detail page of front side.
+]]>
+        </entry>
+        <entry key="helpMessages.U1040510_00">
+<![CDATA[
+*Stock I/O control
+You can refer the history of the past stock quantity modification on the stock I/O control.
+There are 4 timing that the stock quantity can be modified,
+When register inbound and shipping on this page, shipped items, and cancel shipping.
+You can not refer the history of quantity shifts of allocation and reservation.
+
+If you want to enlarge/lessen the stock quantity,
+Register the quantity shift against the current quantity,
+like [add 3 to the current quantity] or [lessen 2 from the current quantity].
+]]>
+        </entry>
+        <entry key="helpMessages.U1040610_00">
+<![CDATA[
+*Stock status setting
+The storck status setting is the function for automatic message modification related with valid stock and threshold.
+It displays the messages like [many stock] [few stock] [out of stock], depending on the stock status.
+You can use the contents of stock status setting registerd here, 
+if you selected [control stock(display status)] on the stock control type of item registration page.
+]]>
+        </entry>
+        <entry key="helpMessages.U1040810_00">
+<![CDATA[
+*Item detail layout
+Item detail layout is the function for layoout modification of PC front item detail page freely.
+The blocks [main][automatic recommend][manual recommend][review] are called as part,
+and you can set visible/hidden of the each part.
+the [main] part is always displayed on the top of the display area.
+
+[main]
+
+This is necessary part for item purchase, like item name, price, the button of adding to cart.
+
+[manual recommend]
+
+This is the part for display the items related to the item displayed on the main.
+You can set the item relation on the item relation page.
+
+[automatic recommend]
+
+This is the part for display the items related to the item displayed on the main.
+The items are automatically related to one another, by using order data.
+
+[review]
+
+this is the part for display the customer review.
+]]>
+        </entry>
+        <entry key="helpMessages.U1050610_00">
+<![CDATA[
+*Delivery type setting
+The delivery type is the type for delivery method, like [Cool delivery] when purchased [frozen food] or [nomal delivery] for the other item.
+You can choose which delivery type you want to use on each item.
+you have to confirm the completion of region block registration, If you register the delivery type.
+You can confirm the region block registration by clicking [region block]button on the top-right of the page.
+]]>
+        </entry>
+        <entry key="helpMessages.U1050620_00">
+<![CDATA[
+*Delivery type setting
+The delivery type is the type for delivery method, like [Cool delivery] when purchased [frozen food] or [nomal delivery] for the other item.
+You can choose which delivery type you want to use on each item.
+Please confirm the completion of region block registration, If you register the delivery type.
+
+
+[Display type]
+
+The registered delivery type can be set [use]/[not use] by setting visible/hidden.
+The item will not be displayed on the front, If the delivery type is set as hidden.
+
+
+[Lead time]
+
+Lead time means the time taking from received the order until it shipped.
+By the holiday info registered in the holiay master and days set for lead time,
+the earliest possible delivery date will be decided.
+The possible delivery date will be applied if the appointed date/time of delivery type is selected [date only][date and time].
+
+
+[Calcuration of delivery charge for multi item purchase]
+
+If the customer purchased many items, You can decide which charging rule is applied for the delivery charge.
+
+[Charged for each item]
+
+  Charge the regional delivery charge for each item, based on the delivery charge setting.
+
+  [Delivery charge setting]
+
+    Kanto JPY 500
+  [Order contents]
+
+  Ordered Total 5 items(itemA: 3, itemB: 2). The prefecture of the delivery address is Kanto block.
+
+    Delivery charge = (JPY 500) * (Order QTY: 5) = JPY 2,500
+
+[Delivery charge for one item + JPY xx across the board for the other items] * set JPY 100 in this case.
+ Charge the regional delivery charge for one item, and charge fix price for the other items.
+
+ [Delivery charge setting]
+
+    Kanto JPY 500, Fixed charge JPY 100
+  [Order contents]
+    Ordered Total 5 items(itemA: 3, itemB: 2). The prefecture of the delivery address is Kanto block.
+
+    Delivery charge = (JPY 500 * 1 item) + (JPY 100 * 4 items) = JPY 900
+
+This delivery charge rule will be applied for each shipping.
+]]>
+        </entry>
+        <entry key="helpMessages.U1050810_00">
+<![CDATA[
+*Regional block setting
+Regional block is the function for managing many prefectures into one specific block.
+For example, Ibaraki, Tochigi, Gunma, Saitama, Chiba, Tokyo and Kanagawa as [KANTO],
+and Niigata, Toyama, Ishikawa, Fukui, Yamanashi, Nagano, Gifu, Shizuoka and Aichi as [CHUBU].
+Delivery charge is set for each regional block.
+Please register the regional block necessary for the delivery charge setting.
+]]>
+        </entry>
+        <entry key="helpMessages.U1051110_00">
+<![CDATA[
+*Mail template
+On Mail template page, You can register the fixed sentence(template) that you would send to the users in advance.
+The mail template is consist of [mail header] [body] [signature].
+[body] can be devided into more small blocks, like [delivery address] [payment info].
+
+You can use [tag] in the composition block of [body] and [signature].
+You can create the suitable mail contents for the receiver by using tags in the sending contents.
+The usable tags differ from each composition block.
+
+[Sample tag usage]
+
+*Mail template body
+Customer name: [@NAME@] 
+
+*Mail body
+Customer name:  Mr. Taro Yamada
+]]>
+        </entry>
+        <!-- Add bY V10-CH start -->
+          <entry key="helpMessages.U1051120_00">
+<![CDATA[
+*SMS template
+On SMS template page, You can register the fixed sentence(template) that you would send to the users in advance.
+The sms template is consist of [sms header] [body] [signature].
+[body] can be devided into more small blocks, like [delivery address] [payment info].
+
+You can use [tag] in the composition block of [body] and [signature].
+You can create the suitable sms contents for the receiver by using tags in the sending contents.
+The usable tags differ from each composition block.
+
+[Sample tag usage]
+
+*SMS template body
+Customer name: [@NAME@] 
+
+*SMS body
+Customer name:  Mr. Taro Yamada
+
+]]>
+        </entry>
+        <!-- Add by V10-CH end -->
+        <entry key="helpMessages.U1040210_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">Logical name</td>
+<td width="100">Physical name</td>
+<td width="100">type</td>
+<td width="100">Length</td>
+<td width="100">Necessary</td>
+</tr>
+<tr><td>Category code</td><td>CATEGORY_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Category name for PC</td><td>CATEGORY_NAME_PC</td><td>character</td><td>20</td><td>yes</td></tr>
+<tr><td>Category name for Mobile</td><td>CATEGORY_NAME_MOBILE</td><td>character</td><td>10</td><td>yes</td></tr>
+<tr><td>Parent Category code</td><td>PARENT_CATEGORY_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Path</td><td>PATH</td><td>character</td><td>256</td><td>-</td></tr>
+<tr><td>Depth</td><td>DEPTH</td><td>numeric</td><td>2</td><td>-</td></tr>
+<tr><td>Display order</td><td>DISPLAY_ORDER</td><td>numeric</td><td>8</td><td>-</td></tr>
+<tr><td>Item count for PC</td><td>COMMODITY_COUNT_PC</td><td>numeric</td><td>12</td><td>-</td></tr>
+<tr><td>Item count for Mobile</td><td>COMMODITY_COUNT_MOBILE</td><td>numeric</td><td>12</td><td>-</td></tr>
+<tr><td>Data row ID</td><td>ORM_ROWID</td><td>numeric</td><td>38</td><td>-</td></tr>
+<tr><td>Created user</td><td>CREATED_USER</td><td>character</td><td>100</td><td>-</td></tr>
+<tr><td>Created DateTime</td><td>CREATED_DATETIME</td><td>DateTime</td><td><br/></td><td>-</td></tr>
+<tr><td>Updated user</td><td>UPDATED_USER</td><td>character</td><td>100</td><td>-</td></tr>
+<tr><td>Updated DateTime</td><td>UPDATED_DATETIME</td><td>DateTime</td><td><br/></td><td>-</td></tr>
+</table>
+]]>
+        </entry>
+        <entry key="helpMessages.U1020410_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">Logical name</td>
+<td width="100">Physical name</td>
+<td width="100">Type</td>
+<td width="100">Length</td>
+<td width="100">Required</td>
+</tr>
+<tr><td>Shipping no</td><td>SHIPPING_NO</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Shipping order date</td><td>SHIPPING_DIRECT_DATE</td><td>Date</td><td><br/></td><td>-</td></tr>
+<tr><td>Shipping date</td><td>SHIPPING_DATE</td><td>Date</td><td><br/></td><td>yes</td></tr>
+<tr><td>Arrival date</td><td>ARRIVAL_DATE</td><td>Date</td><td><br/></td><td>-</td></tr>
+<tr><td>Arrival time start</td><td>ARRIVAL_TIME_START</td><td>numeric</td><td>2</td><td>-</td></tr>
+<tr><td>Arrival time end</td><td>ARRIVAL_TIME_END</td><td>numeric</td><td>2</td><td>-</td></tr>
+<tr><td>Delivery slip no</td><td>DELIVERY_SLIP_NO</td><td>character</td><td>30</td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040510_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">Logical name</td>
+<td width="100">Physical name</td>
+<td width="100">Type</td>
+<td width="100">Length</td>
+<td width="100">Required</td>
+</tr>
+<tr><td>Shop code</td><td>SHOP_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>SKU code</td><td>SKU_CODE</td><td>character</td><td>24</td><td>yes</td></tr>
+<tr><td>Stock IO quantity</td><td>STOCK_IO_QUANTITY</td><td>numeric</td><td>8</td><td>yes</td></tr>
+<tr><td>Stock IO type</td><td>STOCK_IO_TYPE</td><td>numeric</td><td>8</td><td>yes</td></tr>
+<tr><td>memo</td><td>MEMO</td><td>character</td><td>200</td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">Logical name</td>
+<td width="100">Physical name</td>
+<td width="100">Type</td>
+<td width="100">Length</td>
+<td width="100">Required</td>
+</tr>
+<tr><td>Shop code</td><td>SHOP_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Item code</td><td>COMMODITY_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Link item code</td><td>LINK_COMMODITY_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Display order</td><td>DISPLAY_ORDER</td><td>numeric</td><td>8</td><td>-</td></tr>
+<tr><td>Data Row ID</td><td>ORM_ROWID</td><td>numeric</td><td>38</td><td>-</td></tr>
+<tr><td>Created user</td><td>CREATED_USER</td><td>character</td><td>100</td><td>-</td></tr>
+<tr><td>Created DateTime</td><td>CREATED_DATETIME</td><td>DateTime</td><td><br/></td><td>-</td></tr>
+<tr><td>Updated user</td><td>UPDATED_USER</td><td>character</td><td>100</td><td>-</td></tr>
+<tr><td>Updated DateTime</td><td>UPDATED_DATETIME</td><td>DateTime</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_11">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">Logical name</td>
+<td width="100">Physical name</td>
+<td width="100">Type</td>
+<td width="100">Length</td>
+<td width="100">Required</td>
+</tr>
+<tr><td>Shop code</td><td>SHOP_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Tag code</td><td>TAG_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Item code</td><td>COMMODITY_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Data Row ID</td><td>ORM_ROWID</td><td>numeric</td><td>38</td><td>-</td></tr>
+<tr><td>Created user</td><td>CREATED_USER</td><td>character</td><td>100</td><td>-</td></tr>
+<tr><td>Created DateTime</td><td>CREATED_DATETIME</td><td>DateTime</td><td><br/></td><td>-</td></tr>
+<tr><td>Updated user</td><td>UPDATED_USER</td><td>character</td><td>100</td><td>-</td></tr>
+<tr><td>Updated DateTime</td><td>UPDATED_DATETIME</td><td>DateTime</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_12">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">Logical name</td>
+<td width="100">Physical name</td>
+<td width="100">Type</td>
+<td width="100">Length</td>
+<td width="100">Required</td>
+</tr>
+<tr><td>Shop code</td><td>SHOP_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Gift code</td><td>GIFT_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Item code</td><td>COMMODITY_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Data Row ID</td><td>ORM_ROWID</td><td>numeric</td><td>38</td><td>-</td></tr>
+<tr><td>Created user</td><td>CREATED_USER</td><td>character</td><td>100</td><td>-</td></tr>
+<tr><td>Created DateTime</td><td>CREATED_DATETIME</td><td>DateTime</td><td><br/></td><td>-</td></tr>
+<tr><td>Updated user</td><td>UPDATED_USER</td><td>character</td><td>100</td><td>-</td></tr>
+<tr><td>Updated DateTime</td><td>UPDATED_DATETIME</td><td>DateTime</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_13">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">Logical name</td>
+<td width="100">Physical name</td>
+<td width="100">Type</td>
+<td width="100">Length</td>
+<td width="100">Required</td>
+</tr>
+<tr><td>Shop code</td><td>SHOP_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Campaign code</td><td>CAMPAIGN_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Item code</td><td>COMMODITY_CODE</td><td>character</td><td>16</td><td>yes</td></tr>
+<tr><td>Data Row ID</td><td>ORM_ROWID</td><td>numeric</td><td>38</td><td>-</td></tr>
+<tr><td>Created user</td><td>CREATED_USER</td><td>character</td><td>100</td><td>-</td></tr>
+<tr><td>Created DateTime</td><td>CREATED_DATETIME</td><td>DateTime</td><td><br/></td><td>-</td></tr>
+<tr><td>Updated user</td><td>UPDATED_USER</td><td>character</td><td>100</td><td>-</td></tr>
+<tr><td>Updated DateTime</td><td>UPDATED_DATETIME</td><td>DateTime</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+
+</properties>

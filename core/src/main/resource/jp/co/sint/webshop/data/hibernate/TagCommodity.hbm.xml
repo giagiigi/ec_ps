@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- タグ商品 -->
+  <class name="jp.co.sint.webshop.data.dto.TagCommodity" table="TAG_COMMODITY" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">TAG_COMMODITY_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- タグコード -->
+    <property name="tagCode" column="TAG_CODE" type="string" />
+    <!-- 商品コード -->
+    <property name="commodityCode" column="COMMODITY_CODE" type="string" />
+    <!-- 显示顺序 -->
+    <property name="sortNum" column="SORT_NUM" type="long" />
+    <!-- 显示顺序 -->
+    <property name="sortNumJp" column="SORT_NUM_JP" type="long" />
+    <!-- 显示顺序 -->
+    <property name="sortNumEn" column="SORT_NUM_EN" type="long" />
+    <!-- 关联语种 -->
+    <property name="lang" column="LANG" type="string" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

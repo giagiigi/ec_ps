@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- タグ -->
+  <class name="jp.co.sint.webshop.data.dto.JdOrderDetail" table="JD_ORDER_DETAIL" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">JD_ORDER_DETAIL_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />      
+    <!-- 订单编号 -->
+    <property name="orderNo" column="ORDER_NO" type="string" />
+    <!-- 店铺编号 -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 商品编号 -->
+    <property name="skuCode" column="SKU_CODE" type="string" />
+    <!-- 商品编号 -->
+    <property name="commodityCode" column="COMMODITY_CODE" type="string" />
+    <!-- 商品名称 -->
+    <property name="commodityName" column="COMMODITY_NAME" type="string" /> 
+    <!-- 規格詳細1名称 -->
+    <property name="standardDetail1Name" column="STANDARD_DETAIL1_NAME" type="string" />
+    <!-- 規格詳細1名称 -->
+    <property name="standardDetail2Name" column="STANDARD_DETAIL2_NAME" type="string" /> 
+    <!-- 购买商品数 -->
+    <property name="purchasingAmount" column="PURCHASING_AMOUNT" type="long" /> 
+    <!-- 商品单价 -->
+    <property name="unitPrice" column="UNIT_PRICE" type="big_decimal" /> 
+    <!-- 实际销售价格 -->
+    <property name="retailPrice" column="RETAIL_PRICE" type="big_decimal" /> 
+    <!-- 販売時消費税額 -->
+    <property name="retailTax" column="RETAIL_TAX" type="big_decimal" /> 
+    <!-- commodity_tax_rate -->
+    <property name="commodityTaxRate" column="COMMODITY_TAX_RATE" type="long" /> 
+    <!-- commodity_tax -->
+    <property name="commodityTax" column="COMMODITY_TAX" type="big_decimal" /> 
+    <!-- commodity_tax_type -->
+    <property name="commodityTaxType" column="COMMODITY_TAX_TYPE" type="long" /> 
+    <!-- campaign_code -->
+    <property name="campaignCode" column="CAMPAIGN_CODE" type="string" />
+    <!-- campaign_name -->
+    <property name="campaignName" column="CAMPAIGN_NAME" type="string" /> 
+    <!-- campaign_discount_rate -->
+    <property name="campaignDiscountRate" column="CAMPAIGN_DISCOUNT_RATE" type="long" /> 
+    <!-- applied_point_rate -->
+    <property name="appliedPointRate" column="APPLIED_POINT_RATE" type="long" /> 
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- sale_plan_code -->
+    <property name="salePlanCode" column="SALE_PLAN_CODE" type="string" /> 
+    <!-- sale_plan_name -->
+    <property name="salePlanName" column="SALE_PLAN_NAME" type="string" /> 
+    <!-- featured_plan_code -->
+    <property name="featuredPlanCode" column="FEATURED_PLAN_CODE" type="string" /> 
+    <!-- featured_plan_name -->
+    <property name="featuredPlanName" column="FEATURED_PLAN_NAME" type="string" /> 
+    <!-- 品牌编号 -->
+    <property name="brandCode" column="BRAND_CODE" type="string" /> 
+    <!-- 品牌名称 -->
+    <property name="brandName" column="BRAND_NAME" type="string" /> 
+    <!-- jd_sku_code -->
+    <property name="jdSkuCode" column="JD_SKU_CODE" type="string" /> 
+    <!-- 京东上商品的标识编号 -->
+    <property name="jdCommodityCode" column="JD_COMMODITY_CODE" type="string" /> 
+    <!-- timestampとして定義 --> 
+  </class>
+</hibernate-mapping>

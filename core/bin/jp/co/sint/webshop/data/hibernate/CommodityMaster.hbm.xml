@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- キャンペーン対象商品 -->
+  <class name="jp.co.sint.webshop.data.dto.CommodityMaster" table="COMMODITY_MASTER" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">COMMODITY_MASTER_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 主商品编号 -->
+    <property name="commodityCode" column="commodity_code" type="string" />
+    <!-- 主商品名称-->
+    <property name="commodityName" column="COMMODITY_NAME" type="string" />
+    <!-- 京东商品编号    -->
+    <property name="jdCommodityCode" column="JD_COMMODITY_CODE" type="string" />
+    <!-- 天猫商品编号   -->
+    <property name="tmallCommodityCode" column="TMALL_COMMODITY_CODE" type="string" />
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+  </class>
+</hibernate-mapping>

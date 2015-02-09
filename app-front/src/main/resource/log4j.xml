@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <!-- SI Web Shopping Logging Configuration -->
+
+    <!-- Appenders -->
+
+    <!-- 標準出力 -->
+    <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="FRONT :%-d{yyyy/MM/dd HH:mm:ss,SSS} [%-5p] [%-32c{1}] - %m%n" />
+        </layout>
+    </appender>
+
+    <!-- 標準エラー出力 -->
+    <appender name="stderr" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.err" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="FRONT :%-d{yyyy/MM/dd HH:mm:ss,SSS} [%-5p] [%-32c{1}] - %m%n" />
+        </layout>
+    </appender>
+
+    <!-- ファイル出力 -->
+    <appender name="file" class="org.apache.log4j.FileAppender">
+        <param name="File" value="mylog.log" />
+        <param name="Append" value="true" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="%d [%-5p] %-40c{1} - %m%n" />
+        </layout>
+    </appender>
+    <!-- 非同期出力 -->
+    <appender name="async" class="org.apache.log4j.AsyncAppender">
+        <appender-ref ref="stdout" />
+    </appender>
+
+    <!-- 非同期出力先(ファイル) -->
+    <appender name="asyncFile" class="org.apache.log4j.FileAppender">
+        <param name="File" value="mylog.log" />
+        <param name="Append" value="true" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="%d [%-5p] %-40c{1} - %m%n" />
+        </layout>
+    </appender>
+
+
+    <!-- ダミー出力 -->
+    <appender name="null" class="org.apache.log4j.varia.NullAppender" />
+
+
+    <!-- Hibernate SQL出力設定 -->
+    <logger name="org.hibernate.SQL">
+        <level value="info" />
+        <appender-ref ref="stdout" />
+    </logger>
+
+    <!-- Hibernateログ出力設定 -->
+    <logger name="org.hibernate">
+        <level value="info" />
+        <appender-ref ref="stderr" />
+    </logger>
+
+    <!-- Spring Frameworkログ出力設定 -->
+    <logger name="org.springframework">
+        <level value="info" />
+        <appender-ref ref="stderr" />
+    </logger>
+
+    <!-- Web Shopping アプリケーションログ出力設定 -->
+    <logger name="jp.co.sint.webshop">
+        <level value="info" />
+        <appender-ref ref="stdout" />
+    </logger>
+    
+    <!-- トレースログ出力設定 -->
+    <logger name="tracelog">
+        <level value="info" />
+        <appender-ref ref="stdout" />
+    </logger>
+
+    <!-- JPGWLib(ベリトランスカード)ログ出力設定 -->
+    <logger name="Jp.BuySmart.JPGWLib">
+     <level value="info" />
+     <appender-ref ref="stdout" />
+    </logger>
+
+    <!-- CVSGWLib(ベリトランスコンビニ)ログ出力設定 -->
+    <logger name="Jp.BuySmart.CVS.GWLib">
+     <level value="info" />
+     <appender-ref ref="stdout" />
+    </logger>
+
+    <!-- EMGWLib(ベリトランス電子マネー決済)ログ出力設定 -->
+    <logger name="jp.co.veritrans.em.gwlib">
+     <level value="info" />
+     <appender-ref ref="stdout" />
+    </logger>
+
+    <!-- Root Loggerには何も設定しない -->
+    <root />
+
+</log4j:configuration>

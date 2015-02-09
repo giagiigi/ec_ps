@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+ "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+  <bean id="CvsErrorReasonMapper" class="jp.co.sint.webshop.ext.veritrans.VeritransErrorReasonMapper">
+    <property name="reasonMap">
+      <map>
+        <entry key="V09" value="INVALID_CUSTOMER_NAME_ERROR" />
+        <entry key="V10" value="INVALID_CUSTOMER_NAME_ERROR" />
+        <entry key="V13" value="INVALID_PAYMENT_LIMIT_DATE_ERROR" />
+      </map>
+    </property>
+  </bean>
+</beans>

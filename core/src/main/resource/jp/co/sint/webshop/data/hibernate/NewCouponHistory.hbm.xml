@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- ポイントルール -->
+  <class name="jp.co.sint.webshop.data.dto.NewCouponHistory" table="NEW_COUPON_HISTORY" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">NEW_COUPON_HISTORY_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 优惠券编号 -->
+    <property name="couponIssueNo" column="COUPON_ISSUE_NO" type="string" />
+    <!-- 优惠券规则编号 -->
+    <property name="couponCode" column="COUPON_CODE" type="string" />
+    <!-- 优惠券明细编号 -->
+    <property name="couponIssueDetailNo" column="COUPON_ISSUE_DETAIL_NO" type="string" />
+    <!-- 20120522 tuxinwei add start -->
+    <!-- 优惠券名称 -->
+    <property name="couponName" column="COUPON_NAME" type="string" />
+    <!-- 优惠券名称(英文) -->
+    <property name="couponNameEn" column="COUPON_NAME_EN" type="string" />
+    <!-- 优惠券名称(日文)-->
+    <property name="couponNameJp" column="COUPON_NAME_JP" type="string" />
+    <!-- 20120522 tuxinwei add end -->
+    <!-- 优惠券明细编号 -->
+    <!-- 优惠券发行类别 -->
+    <property name="couponIssueType" column="COUPON_ISSUE_TYPE" type="long" />
+    <!-- 优惠券发行日时-->
+    <property name="couponIssueDatetime" column="COUPON_ISSUE_DATETIME" type="timestamp" />
+    <!-- 优惠金额 -->
+    <property name="couponAmount" column="COUPON_AMOUNT" type="big_decimal" />
+    <!-- 优惠券比例 -->
+    <property name="couponProportion" column="COUPON_PROPORTION" type="long" />
+    <!-- 优惠券利用最小购买金额 -->
+    <property name="minUseOrderAmount" column="MIN_USE_ORDER_AMOUNT" type="big_decimal" />
+    <!-- 优惠券利用开始日时-->
+    <property name="useStartDatetime" column="USE_START_DATETIME" type="timestamp" />
+    <!-- 优惠券利用结束日时 -->
+    <property name="useEndDatetime" column="USE_END_DATETIME" type="timestamp" />
+    <!-- 发行理由 -->
+    <property name="issueReason" column="ISSUE_REASON" type="string" />
+    <!-- 顾客编号 -->
+    <property name="customerCode" column="CUSTOMER_CODE" type="string" />
+    <!-- 发行原订单编号 -->
+    <property name="issueOrderNo" column="ISSUE_ORDER_NO" type="string" />
+    <!-- 使用订单编号 -->
+    <property name="useOrderNo" column="USE_ORDER_NO" type="string" />
+    <!-- 使用状态 -->
+    <property name="useStatus" column="USE_STATUS" type="long" />
+    <!-- 优惠券状态 -->
+    <property name="couponStatus" column="COUPON_STATUS" type="long" />
+    <!-- 优惠券最大金额优惠值 -->
+    <property name="maxUseOrderAmount" column="MAX_USE_ORDER_AMOUNT" type="big_decimal" />
+    <!-- 关联对象使用类型 -->
+    <property name="useType" column="USE_TYPE" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

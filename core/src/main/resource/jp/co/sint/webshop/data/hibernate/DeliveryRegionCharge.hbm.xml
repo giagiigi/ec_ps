@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 配送種別 -->
+  <class name="jp.co.sint.webshop.data.dto.DeliveryRegionCharge" table="DELIVERY_REGION_CHARGE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">DELIVERY_REGION_CHARGE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 配送地域编号 -->
+    <property name="prefectureCode" column="PREFECTURE_CODE" type="string" />
+    <!--  交货日 -->
+    <property name="leadTime" column="LEAD_TIME" type="long" />
+    <!--指定金额以下时基本运费 -->
+    <property name="deliveryChargeSmall" column="DELIVERY_CHARGE_SMALL" type="big_decimal" />
+    <!-- 指定金额以上时基本运费 -->
+    <property name="deliveryChargeBig" column="DELIVERY_CHARGE_BIG" type="big_decimal" />
+    <!-- 重量上限 -->
+    <property name="deliveryWeight" column="DELIVERY_WEIGHT" type="big_decimal" />
+    <!-- 订单金额 -->
+    <property name="orderAmount" column="ORDER_AMOUNT" type="big_decimal" />
+    <!-- 续重 -->
+    <property name="addWeight" column="ADD_WEIGHT" type="big_decimal" />
+    <!-- 续费 -->
+    <property name="addCharge" column="ADD_CHARGE" type="big_decimal" />
+    <!-- 免运费订单金额 -->
+    <property name="freeOrderAmount" column="FREE_ORDER_AMOUNT" type="big_decimal" />
+    <!-- 免运费商品重量 -->
+    <property name="freeWeight" column="FREE_WEIGHT" type="big_decimal" />
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- 配送公司编号 -->
+    <property name="deliveryCompanyNo" column="DELIVERY_COMPANY_NO" type="string" />
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

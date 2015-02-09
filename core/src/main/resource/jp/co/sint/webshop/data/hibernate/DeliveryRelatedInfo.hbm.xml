@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 配送種別 -->
+  <class name="jp.co.sint.webshop.data.dto.DeliveryRelatedInfo" table="DELIVERY_RELATED_INFO" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">DELIVERY_RELATED_INFO_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+     <!-- ショップコード -->
+    <property name="deliveryRelatedInfoNo" column="DELIVERY_RELATED_INFO_NO" type="string" />
+    <!-- 配送公司编号 -->
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 配送公司编号 -->
+    <property name="deliveryCompanyNo" column="DELIVERY_COMPANY_NO" type="string" />
+    <!-- 省/直辖市/自治区编号 -->
+    <property name="prefectureCode" column="PREFECTURE_CODE" type="string" />
+    <!-- COD区分 -->
+    <property name="codType" column="COD_TYPE" type="long" />
+    <!-- 配送希望日区分 -->
+    <property name="deliveryDateType" column="DELIVERY_DATE_TYPE" type="long" />
+    <!-- 配送可能时间段区分-->
+    <property name="deliveryAppointedTimeType" column="DELIVERY_APPOINTED_TIME_TYPE" type="long" />
+    <!-- 配送开始时间-->
+    <property name="deliveryAppointedStartTime" column="DELIVERY_APPOINTED_START_TIME" type="long" />
+    <!-- 配送结束时间-->
+    <property name="deliveryAppointedEndTime" column="DELIVERY_APPOINTED_END_TIME" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- 重量最小值 -->
+    <property name="minWeight" column="MIN_WEIGHT" type="long" />
+    <!-- 重量最大值 -->
+    <property name="maxWeight" column="MAX_WEIGHT" type="long" />
+  </class>
+</hibernate-mapping>

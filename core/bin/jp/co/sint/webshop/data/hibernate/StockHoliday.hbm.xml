@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="jp.co.sint.webshop.data.dto.StockHoliday" table="STOCK_HOLIDAY" lazy="false">
+  
+   <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">stock_holiday_seq</param>
+      </generator>
+    </id>
+     <!-- 更新日期 -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+	<!-- 仓库休息日 -->
+   <property name="holidayDay" column="HOLIDAY_DAY" type="timestamp"/>
+   
+    <!-- 创建人 -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    
+    <!-- 创建日期 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    
+    <!-- 更新人 -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+  </class>
+</hibernate-mapping>

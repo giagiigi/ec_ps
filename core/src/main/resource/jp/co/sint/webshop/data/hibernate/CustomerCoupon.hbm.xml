@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- クーポントルール -->
+  <class name="jp.co.sint.webshop.data.dto.CustomerCoupon" table="CUSTOMER_COUPON" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">CUSTOMER_COUPON_ID_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <property name="customerCouponId" column="CUSTOMER_COUPON_ID" type="long" />
+    <!-- 顧客コード -->
+    <property name="customerCode" column="CUSTOMER_CODE" type="string" />
+    <!-- クーポンルール番号 -->
+    <property name="couponIssueNo" column="COUPON_ISSUE_NO" type="long" />
+    <!-- クーポン機能使用フラグ -->
+    <property name="useFlg" column="USE_FLG" type="long" />
+    <!-- クーポンフラント金額 -->
+    <property name="couponPrice" column="COUPON_PRICE" type="big_decimal" />
+    <!-- ボーナスポイント期間開始日 -->
+    <property name="issueDate" column="ISSUE_DATE" type="timestamp" />
+    <property name="useDate" column="USE_DATE" type="timestamp" />
+    <!-- ボーナスポイント期間開始日 -->
+    <property name="useCouponStartDate" column="USE_COUPON_START_DATE" type="timestamp" />
+    <!-- ボーナスポイント期間終了日 -->
+    <property name="useCouponEndDate" column="USE_COUPON_END_DATE" type="timestamp" />
+    <!-- クーポンルール管理側名-->
+    <property name="couponName" column="COUPON_NAME" type="string" />
+    
+    <property name="orderNo" column="ORDER_NO" type="string" /> 
+    
+    <property name="description" column="DESCRIPTION" type="string" /> 
+    
+    <property name="getCouponOrderNo" column="GET_COUPON_ORDER_NO" type="string" /> 
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

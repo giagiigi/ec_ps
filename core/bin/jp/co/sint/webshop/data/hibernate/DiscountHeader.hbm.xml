@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 限时限量折扣 -->
+  <class name="jp.co.sint.webshop.data.dto.DiscountHeader" table="DISCOUNT_HEADER" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">DISCOUNT_HEADER_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 折扣编号 -->
+    <property name="discountCode" column="DISCOUNT_CODE" type="string" />
+    <!-- 折扣名称 -->
+    <property name="discountName" column="DISCOUNT_NAME" type="string" />
+    <!-- 折扣开始日 -->
+    <property name="discountStartDatetime" column="DISCOUNT_START_DATETIME" type="timestamp" />
+    <!-- 折扣结束日 -->
+    <property name="discountEndDatetime" column="DISCOUNT_END_DATETIME" type="timestamp" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+    <!-- 商品种类数量 -->
+    <property name="commodityTypeNum" column="COMMODITY_TYPE_NUM" type="long" />
+    
+    <!-- SO发送类型 -->
+    <property name="soCouponFlg" column="SO_COUPON_FLG" type="long"></property>
+    
+  </class>
+</hibernate-mapping>

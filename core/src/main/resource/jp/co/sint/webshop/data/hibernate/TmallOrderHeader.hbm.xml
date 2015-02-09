@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 受注ヘッダ -->
+  <class name="jp.co.sint.webshop.data.dto.TmallOrderHeader" table="TMALL_ORDER_HEADER" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">TMALL_ORDER_HEADER_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 受注番号 -->
+    <property name="orderNo" column="ORDER_NO" type="string" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 受注日時 -->
+    <property name="orderDatetime" column="ORDER_DATETIME" type="timestamp" />
+    <!-- 顧客コード -->
+    <property name="customerCode" column="CUSTOMER_CODE" type="string" />
+    <!-- ゲストフラグ -->
+    <property name="guestFlg" column="GUEST_FLG" type="long" />
+    <!-- 姓 -->
+    <property name="lastName" column="LAST_NAME" type="string" />
+    <!-- 名 -->
+    <property name="firstName" column="FIRST_NAME" type="string" />
+    <!-- 姓カナ -->
+    <property name="lastNameKana" column="LAST_NAME_KANA" type="string" />
+    <!-- 名カナ -->
+    <property name="firstNameKana" column="FIRST_NAME_KANA" type="string" />
+    <!-- メールアドレス -->
+    <property name="email" column="EMAIL" type="string" />
+    <!-- 郵便番号 -->
+    <property name="postalCode" column="POSTAL_CODE" type="string" />
+    <!-- 都道府県コード -->
+    <property name="prefectureCode" column="PREFECTURE_CODE" type="string" />
+    <!-- 住所1 -->
+    <property name="address1" column="ADDRESS1" type="string" />
+    <!-- 住所2 -->
+    <property name="address2" column="ADDRESS2" type="string" />
+    <!-- 住所3 -->
+    <property name="address3" column="ADDRESS3" type="string" />
+    <!-- 住所4 -->
+    <property name="address4" column="ADDRESS4" type="string" />
+    <!-- 電話番号 -->
+    <property name="phoneNumber" column="PHONE_NUMBER" type="string" />
+    <!-- 先後払フラグ -->
+    <property name="advanceLaterFlg" column="ADVANCE_LATER_FLG" type="long" />
+    <!-- 支払方法番号 -->
+    <property name="paymentMethodNo" column="PAYMENT_METHOD_NO" type="long" />
+    <!-- 支払方法区分 -->
+    <property name="paymentMethodType" column="PAYMENT_METHOD_TYPE" type="string" />
+    <!-- 支払方法名称 -->
+    <property name="paymentMethodName" column="PAYMENT_METHOD_NAME" type="string" />
+    <!-- 支払手数料 -->
+    <property name="paymentCommission" column="PAYMENT_COMMISSION" type="big_decimal" />
+    <!-- 支払手数料消費税率 -->
+    <property name="paymentCommissionTaxRate" column="PAYMENT_COMMISSION_TAX_RATE" type="long" />
+    <!-- 支払手数料消費税額 -->
+    <property name="paymentCommissionTax" column="PAYMENT_COMMISSION_TAX" type="big_decimal" />
+    <!-- 支払手数料消費税区分 -->
+    <property name="paymentCommissionTaxType" column="PAYMENT_COMMISSION_TAX_TYPE" type="long" />
+    <!-- 使用ポイント -->
+    <property name="usedPoint" column="USED_POINT" type="big_decimal" />
+    <!-- 入金日 -->
+    <property name="paymentDate" column="PAYMENT_DATE" type="timestamp" />
+    <!-- 支払期限日 -->
+    <property name="paymentLimitDate" column="PAYMENT_LIMIT_DATE" type="timestamp" />
+    <!-- 入金ステータス -->
+    <property name="paymentStatus" column="PAYMENT_STATUS" type="long" />
+    <!-- 顧客グループコード -->
+    <property name="customerGroupCode" column="CUSTOMER_GROUP_CODE" type="string" />
+    <!-- データ連携ステータス -->
+    <property name="dataTransportStatus" column="DATA_TRANSPORT_STATUS" type="long" />
+    <!-- 受注ステータス -->
+    <property name="orderStatus" column="ORDER_STATUS" type="long" />
+    <!-- クライアントグループ -->
+    <property name="clientGroup" column="CLIENT_GROUP" type="string" />
+    <!-- 注意事項（管理側のみ参照） -->
+    <property name="caution" column="CAUTION" type="string" />
+    <!-- 連絡事項 -->
+    <property name="message" column="MESSAGE" type="string" />
+    <!-- 決済サービス取引ID -->
+    <property name="paymentOrderId" column="PAYMENT_ORDER_ID" type="long" />
+    <!-- コンビニコード -->
+    <property name="cvsCode" column="CVS_CODE" type="string" />
+    <!-- 承認番号 -->
+    <property name="paymentReceiptNo" column="PAYMENT_RECEIPT_NO" type="string" />
+    <!-- 払込URL -->
+    <property name="paymentReceiptUrl" column="PAYMENT_RECEIPT_URL" type="string" />
+    <!-- 電子マネー区分 -->
+    <property name="digitalCashType" column="DIGITAL_CASH_TYPE" type="string" />
+    <!-- 警告メッセージ -->
+    <property name="warningMessage" column="WARNING_MESSAGE" type="string" />
+    <!-- 支払手数料 -->
+    <property name="couponPrice" column="COUPON_PRICE" type="big_decimal" />
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 省コード -->
+    <property name="cityCode" column="CITY_CODE" type="string" />
+    <property name="mobileNumber" column="MOBILE_NUMBER" type="string" /> 
+    <!-- 发票领取标志 -->
+    <property name="invoiceFlg" column="INVOICE_FLG" type="long" />
+    <!-- 折扣类型 -->
+    <property name="discountType" column="DISCOUNT_TYPE" type="long" />
+    <!-- 折扣方式 -->
+    <property name="discountMode" column="DISCOUNT_MODE" type="long" />
+    <!-- 折扣比率 -->
+    <property name="discountRate" column="DISCOUNT_RATE" type="long" />
+    <!-- 折扣金额 -->
+    <property name="discountPrice" column="DISCOUNT_PRICE" type="big_decimal" />
+    <!-- 折扣规则编号 -->
+    <property name="discountCode" column="DISCOUNT_CODE" type="string" />
+    <!-- 折扣编号 -->
+    <property name="discountDetailCode" column="DISCOUNT_DETAIL_CODE" type="string" />
+    <!-- 折扣规则名称 -->
+    <property name="discountName" column="DISCOUNT_NAME" type="string" /> 
+     <!-- 支払手数料
+    <property name="paidPrice" column="PAID_PRICE" type="big_decimal" />  -->
+     <!-- 订单检查 -->
+    <property name="orderFlg" column="ORDER_FLG" type="long" />
+     <!-- 交易结束时间 -->
+    <property name="tmallEndTime" column="TMALL_END_TIME" type="timestamp" />
+     <!-- 买家留言 -->
+    <property name="tmallBuyerMessage" column="TMALL_BUYER_MESSAGE" type="string" />
+     <!-- 交易状态 -->
+    <property name="tmallStatus" column="TMALL_STATUS" type="string" />
+     <!-- 交易修改时间 -->
+    <property name="tmallModifiedTime" column="TMALL_MODIFIED_TIME" type="timestamp" />
+     <!-- 货到付款物流状态 -->
+    <property name="tmallCodStatus" column="TMALL_COD_STATUS" type="string" />
+     <!-- 交易类型 -->
+    <property name="tmallType" column="TMALL_TYPE" type="string" />
+     <!-- 交易编号 -->
+    <property name="tmallTid" column="TMALL_TID" type="string" />
+     <!-- 买家实际使用积分 -->
+    <property name="tmallRealPointFee" column="TMALL_REAL_POINT_FEE" type="string" />
+    <!-- 发票抬头 -->
+    <property name="tmallInvoiceName" column="TMALL_INVOICE_NAME" type="string" />
+    <!-- 区县编号 -->
+    <property name="areaCode" column="AREA_CODE" type="string" />
+    <!-- 实付金额 -->
+    <property name="paidPrice" column="PAID_PRICE" type="big_decimal" />
+    <!-- 卖家手动修改金额 -->
+    <property name="adjustFee" column="ADJUST_FEE" type="big_decimal" />
+    <!-- 交易佣金 -->
+    <property name="commissionFee" column="COMMISSION_FEE" type="big_decimal" />
+     <!-- 淘宝积分兑换金额 -->
+    <property name="pointConvertPrice" column="POINT_CONVERT_PRICE" type="big_decimal" />
+    <!-- 商城优惠金额 -->
+    <property name="tmallDiscountPrice" column="TMALL_DISCOUNT_PRICE" type="big_decimal" />
+        <!-- 商城优惠金额 -->
+    <property name="mjsDiscount" column="MJS_DISCOUNT" type="big_decimal" />
+  </class>
+</hibernate-mapping>

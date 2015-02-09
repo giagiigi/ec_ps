@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping> 
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- タグ -->
+  <class name="jp.co.sint.webshop.data.dto.RelatedBrand" table="related_brand" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">RELATED_BRAND_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    
+    <property name="commodityCode" column="commodity_code" type="string" />
+    
+    <!-- ショップコード -->
+    <property name="brandCode" column="BRAND_CODE" type="string" />
+    <!-- プランド名称 -->
+    <property name="brandName" column="BRAND_NAME" type="string" />  
+    <!--プランドABBR名--> 
+    <!--商品描述(英文)--> 
+    <property name="brandNameEn" column="brand_name_en" type="string" />   
+    <!--商品描述(日文)--> 
+    <property name="brandNameJp" column="brand_name_jp" type="string" />   
+    
+    <property name="displayFlag" column="display_flag" type="long" />   
+    
+    <property name="displayOrder" column="display_order" type="long" />   
+    
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <property name="updatedDatetime" column="UPDATED_DATETIME" type="timestamp" /> 
+    <!-- timestampとして定義 -->
+   
+
+  </class>
+</hibernate-mapping>

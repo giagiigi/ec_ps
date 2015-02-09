@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 免邮促销 -->
+  <class name="jp.co.sint.webshop.data.dto.FreePostageRule" table="FREE_POSTAGE_RULE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">FREE_POSTAGE_RULE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <!-- 免邮促销编号 -->
+    <property name="freePostageCode" column="FREE_POSTAGE_CODE" type="string" />
+    <!-- 免邮促销名称 -->
+    <property name="freePostageName" column="FREE_POSTAGE_NAME" type="string" />
+    <!-- 免邮开始日期 -->
+    <property name="freeStartDate" column="FREE_START_DATE" type="timestamp" />
+    <!-- 免邮结束日期 -->
+    <property name="freeEndDate" column="FREE_END_DATE" type="timestamp" />
+    <!-- 关联对象使用类型 -->
+    <property name="useType" column="USE_TYPE" type="long" />
+    <!-- 适用对象 -->
+    <property name="applicableObject" column="APPLICABLE_OBJECT" type="long" />
+    <!-- 重量限定 -->
+    <property name="weightLimit" column="WEIGHT_LIMIT" type="big_decimal" />
+    <!-- 最小购买金额 -->
+    <property name="minUseOrderAmount" column="MIN_USE_ORDER_AMOUNT" type="big_decimal" />
+    <!-- 适用区域 -->
+    <property name="applicableArea" column="APPLICABLE_AREA" type="string" />
+    <!-- 促销商品  -->
+    <property name="objectCommodity" column="OBJECT_COMMODITY" type="string" />
+    <!-- 促销品牌  -->
+    <property name="objectBrand" column="OBJECT_BRAND" type="string" />
+    <!-- 促销分类  -->
+    <property name="objectCategory" column="OBJECT_CATEGORY" type="string" />
+    <!-- 免邮发行代码  -->
+    <property name="objectIssueCode" column="OBJECT_ISSUE_CODE" type="string" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <property name="updatedDatetime" column="UPDATED_DATETIME" type="timestamp" /> 
+    <!-- timestampとして定義 --> 
+    <!-- 目标Url -->
+    <property name="targetUrl" column="target_url" type="string" />
+  </class>
+</hibernate-mapping>

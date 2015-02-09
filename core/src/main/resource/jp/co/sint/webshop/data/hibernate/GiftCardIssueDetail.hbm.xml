@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- ポイントルール -->
+  <class name="jp.co.sint.webshop.data.dto.GiftCardIssueDetail" table="GIFT_CARD_ISSUE_DETAIL" lazy="false">
+    <!-- Row Unique Identifier -->
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">GIFT_CARD_ISSUE_DETAIL_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    
+    <!-- 礼品卡编号 -->
+    <property name="cardCode" column="CARD_CODE" type="string" />
+    <!-- 礼品卡编号 -->
+    <property name="cardName" column="CARD_NAME" type="string" />
+    <!-- 礼品卡批次 -->
+    <property name="cardHistoryNo" column="CARD_HISTORY_NO" type="long" />
+    <!-- 礼品卡批次 -->
+    <property name="cardId" column="card_id" type="string" />
+    <!-- 有效期-->
+    <property name="effectiveYears" column="effective_years" type="long" />
+    <!-- 密码 -->
+    <property name="passWord" column="pass_word" type="string" />
+    <!-- 发行日期 -->
+    <property name="issueDate" column="ISSUE_DATE" type="timestamp" />
+    <!-- 面值 -->
+    <property name="denomination" column="denomination" type="big_decimal" />
+    <!-- 卡状态 -->
+    <property name="cardStatus" column="card_status" type="long" />
+    <!-- 取消标志 -->
+    <property name="cancelFlg" column="CANCEL_FLG" type="long" />
+    
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 面值 -->
+    <property name="unitPrice" column="UNIT_PRICE" type="big_decimal" />
+    
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- ポイントルール -->
+  <class name="jp.co.sint.webshop.data.dto.CustomerCardUseInfo" table="CUSTOMER_CARD_USE_INFO" lazy="false">
+    <!-- Row Unique Identifier -->
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">CUSTOMER_CARD_USE_INFO_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 礼品卡编号 -->
+    <property name="customerCode" column="customer_code" type="string" />
+    <!-- 卡号 -->
+    <property name="cardId" column="card_id" type="string" />
+    <!-- 订单号 -->
+    <property name="orderNo" column="order_no" type="string" />
+    <!-- 使用金额 -->
+    <property name="useAmount" column="use_amount" type="big_decimal" />
+    <!-- 使用时间 -->
+    <property name="useDate" column="use_date" type="timestamp" />
+    <!-- 卡状态 -->
+    <property name="useStatus" column="use_status" type="long" />
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+
+    
+  </class>
+</hibernate-mapping>

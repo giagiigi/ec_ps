@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- アクセスログ -->
+  <class name="jp.co.sint.webshop.data.dto.CandidateWord" table="CANDIDATE_WORD" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">CANDIDATE_WORD_SEQ</param>
+      </generator>
+    </id>
+    <property name="updateDatetime" column="UPDATED_DATETIME" type="timestamp" />
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <property name="searchWord" column="SEARCH_WORD" type="string" />
+    <property name="lang" column="LANG" type="string" />
+    <property name="pinyin" column="PINYIN" type="string" />
+    <property name="searchCount" column="SEARCH_COUNT" type="long" />
+    <property name="hitCount" column="HIT_COUNT" type="long" />
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+  </class>
+</hibernate-mapping>

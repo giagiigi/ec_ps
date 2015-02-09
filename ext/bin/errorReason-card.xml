@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+ "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+  <bean id="CardErrorReasonMapper" class="jp.co.sint.webshop.ext.veritrans.VeritransErrorReasonMapper">
+    <property name="reasonMap">
+      <map>
+        <entry key="101" value="INVALID_CARD_INFORMATION_ERROR" />
+        <entry key="110" value="INVALID_CARD_INFORMATION_ERROR" />
+        <entry key="112" value="INVALID_CARD_INFORMATION_ERROR" />
+        <entry key="115" value="INVALID_CARD_INFORMATION_ERROR" />
+        <entry key="121" value="INVALID_CARD_INFORMATION_ERROR" />
+      </map>
+    </property>
+  </bean>
+</beans>

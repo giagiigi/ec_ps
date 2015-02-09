@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 商品詳細 -->
+  <class name="jp.co.sint.webshop.data.dto.CSynchistory" table="C_SYNCHISTORY" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">C_SYNCHISTORY_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="syncCode" column="SYNC_CODE" type="string" />
+    <!-- SKUコード -->
+    <property name="totalCount" column="TOTAL_COUNT" type="long" />
+    <!-- 商品コード -->
+    <property name="successCount" column="SUCCESS_COUNT" type="long" />
+    <!-- 商品単価 -->
+    <property name="failureCount" column="FAILURE_COUNT" type="long" />
+    <!-- 仕入価格 -->
+    <property name="syncUser" column="SYNC_USER" type="long" />
+    <!-- 特別価格 -->
+    <property name="syncStarttime" column="SYNC_STARTTIME" type="timestamp" />
+    <!-- 表示順 -->
+    <property name="syncEndtime" column="SYNC_ENDTIME" type="timestamp" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

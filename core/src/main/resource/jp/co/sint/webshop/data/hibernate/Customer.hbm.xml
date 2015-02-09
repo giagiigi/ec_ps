@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 顧客 -->
+  <class name="jp.co.sint.webshop.data.dto.Customer" table="CUSTOMER" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">CUSTOMER_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 顧客コード -->
+    <property name="customerCode" column="CUSTOMER_CODE" type="string" />
+    <!-- 顧客グループコード -->
+    <property name="customerGroupCode" column="CUSTOMER_GROUP_CODE" type="string" />
+    <!-- 姓 -->
+    <property name="lastName" column="LAST_NAME" type="string" />
+    <!-- 名 -->
+    <property name="firstName" column="FIRST_NAME" type="string" />
+    <!-- 姓カナ -->
+    <property name="lastNameKana" column="LAST_NAME_KANA" type="string" />
+    <!-- 名カナ -->
+    <property name="firstNameKana" column="FIRST_NAME_KANA" type="string" />
+    <!-- ログインID -->
+    <property name="loginId" column="LOGIN_ID" type="string" />
+    <!-- メールアドレス -->
+    <property name="email" column="EMAIL" type="string" />
+    <!-- パスワード -->
+    <property name="password" column="PASSWORD" type="string" />
+    <!-- 生年月日 -->
+    <property name="birthDate" column="BIRTH_DATE" type="timestamp" />
+    <!-- 性別 -->
+    <property name="sex" column="SEX" type="long" />
+    <!-- 希望メール区分 -->
+    <property name="requestMailType" column="REQUEST_MAIL_TYPE" type="long" />
+    <!-- クライアントメール区分 -->
+    <property name="clientMailType" column="CLIENT_MAIL_TYPE" type="long" />
+    <!-- 注意事項（管理側のみ参照） -->
+    <property name="caution" column="CAUTION" type="string" />
+    <!-- ログイン日時 -->
+    <property name="loginDatetime" column="LOGIN_DATETIME" type="timestamp" />
+    <!-- ログイン失敗回数 -->
+    <property name="loginErrorCount" column="LOGIN_ERROR_COUNT" type="long" />
+    <!-- ログインロックフラグ -->
+    <property name="loginLockedFlg" column="LOGIN_LOCKED_FLG" type="long" />
+    <!-- 顧客ステータス -->
+    <property name="customerStatus" column="CUSTOMER_STATUS" type="long" />
+    <!-- 顧客属性回答日 -->
+    <property name="customerAttributeReplyDate" column="CUSTOMER_ATTRIBUTE_REPLY_DATE" type="timestamp" />
+    <!-- ポイント最終獲得日 -->
+    <property name="latestPointAcquiredDate" column="LATEST_POINT_ACQUIRED_DATE" type="timestamp" />
+    <!-- ポイント残高 -->
+    <property name="restPoint" column="REST_POINT" type="big_decimal" />
+    <!-- 仮発行ポイント -->
+    <property name="temporaryPoint" column="TEMPORARY_POINT" type="big_decimal" />
+    <!-- 退会希望日 -->
+    <property name="withdrawalRequestDate" column="WITHDRAWAL_REQUEST_DATE" type="timestamp" />
+    <!-- 退会日 -->
+    <property name="withdrawalDate" column="WITHDRAWAL_DATE" type="timestamp" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 支付宝用户编号 -->
+    <property name="tmallUserId" column="TMALL_USER_ID" type="long" /> 
+    <!-- 会员区分 -->
+    <property name="customerKbn" column="CUSTOMER_KBN" type="long" />
+    <!-- 会员区分 -->
+    <property name="exportKbn" column="EXPORT_KBN" type="long" />
+    <!-- 20120510 tuxinwei add start -->
+    <!-- 言語コード -->
+    <property name="languageCode" column="LANGUAGE_CODE" type="string" />
+    <!-- 20120510 tuxinwei add end -->
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+     <!-- 2013/04/01 优惠券对应 add start -->
+    <!-- 手机号码 -->
+    <property name="mobileNumber" column="MOBILE_NUMBER" type="string" />
+    <!-- 验证码 -->
+    <property name="authCode" column="AUTH_CODE" type="string" />
+     <!-- 2013/04/01 优惠券对应 add end -->
+    <!-- 20131101 tuxinwei add start -->
+    <!-- 礼品卡支付密码输入错误次数 -->
+    <property name="errorTimes" column="ERROR_TIMES" type="long" />
+    <!-- 账户礼品卡使用锁定标志 -->
+    <property name="lockFlg" column="LOCK_FLG" type="long" />
+    <!-- 礼品卡支付密码 -->
+    <property name="paymentPassword" column="PAYMENT_PASSWORD" type="string" />
+    <!-- 20131101 tuxinwei add end -->
+  </class>
+</hibernate-mapping>

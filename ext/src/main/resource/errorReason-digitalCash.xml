@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+ "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+  <bean id="DigitalCashErrorReasonMapper" class="jp.co.sint.webshop.ext.veritrans.VeritransErrorReasonMapper">
+    <property name="reasonMap">
+      <map>
+        <entry key="V14" value="INVALID_EMAIL_ERROR" />
+      </map>
+    </property>
+  </bean>
+</beans>

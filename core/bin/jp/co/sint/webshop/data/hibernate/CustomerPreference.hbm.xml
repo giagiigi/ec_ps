@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 顧客嗜好 -->
+  <class name="jp.co.sint.webshop.data.dto.CustomerPreference" table="CUSTOMER_PREFERENCE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">CUSTOMER_PREFERENCE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 顧客嗜好ID -->
+    <property name="customerPreferenceId" column="CUSTOMER_PREFERENCE_ID" type="long" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 商品コード -->
+    <property name="commodityCode" column="COMMODITY_CODE" type="string" />
+    <!-- 顧客コード -->
+    <property name="customerCode" column="CUSTOMER_CODE" type="string" />
+    <!-- 購入年月 -->
+    <property name="yearMonthOfPurchase" column="YEAR_MONTH_OF_PURCHASE" type="timestamp" />
+    <!-- 顧客グループコード -->
+    <property name="customerGroupCode" column="CUSTOMER_GROUP_CODE" type="string" />
+    <!-- ショップ名称 -->
+    <property name="shopName" column="SHOP_NAME" type="string" />
+    <!-- 商品名称 -->
+    <property name="commodityName" column="COMMODITY_NAME" type="string" />
+    <!-- 年齢 -->
+    <property name="age" column="AGE" type="long" />
+    <!-- 性別 -->
+    <property name="sex" column="SEX" type="long" />
+    <!-- 注文件数累計 -->
+    <property name="totalOrderCount" column="TOTAL_ORDER_COUNT" type="long" />
+    <!-- 購入商品数 -->
+    <property name="purchasingAmount" column="PURCHASING_AMOUNT" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

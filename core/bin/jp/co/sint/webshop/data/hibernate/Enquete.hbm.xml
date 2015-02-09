@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- アンケート -->
+  <class name="jp.co.sint.webshop.data.dto.Enquete" table="ENQUETE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">ENQUETE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- アンケートコード -->
+    <property name="enqueteCode" column="ENQUETE_CODE" type="string" />
+    <!-- アンケート名称 -->
+    <property name="enqueteName" column="ENQUETE_NAME" type="string" />
+    <!--问卷调查名称(英文) -->
+    <property name="enqueteNameEn" column="ENQUETE_NAME_EN" type="string" />
+    <!-- 问卷调查名称(日文) -->
+    <property name="enqueteNameJp" column="ENQUETE_NAME_JP" type="string" />
+    <!-- アンケート開始日 -->
+    <property name="enqueteStartDate" column="ENQUETE_START_DATE" type="timestamp" />
+    <!-- アンケート終了日 -->
+    <property name="enqueteEndDate" column="ENQUETE_END_DATE" type="timestamp" />
+    <!-- アンケート付与ポイント数 -->
+    <property name="enqueteInvestPoint" column="ENQUETE_INVEST_POINT" type="big_decimal" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

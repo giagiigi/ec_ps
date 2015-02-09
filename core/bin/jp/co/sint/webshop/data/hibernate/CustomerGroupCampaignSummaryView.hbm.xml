@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 顾客组别优惠分析 -->
+  <class name="jp.co.sint.webshop.data.dto.CustomerGroupCampaign" table="CUSTOMER_GROUP_CAMPAIGN" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">CUSTOMER_GROUP_CAMPAIGN_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 优惠编号 -->
+    <property name="campaignCode" column="CAMPAIGN_CODE" type="string" />
+    <!-- 订单金额 -->
+    <property name="orderTotalPrice" column="ORDER_TOTAL_PRICE" type="big_decimal" />
+    <!-- 订单件数 -->
+    <property name="orderTotalCount" column="ORDER_TOTAL_COUNT" type="long" />
+    <!-- 订单单价-->
+    <property name="orderUnitPrice" column="ORDER_UNIT_PRICE" type="big_decimal" />
+    <!-- 优惠金额-->
+    <property name="campaignTotalPrice" column="CAMPAIGN_TOTAL_PRICE" type="big_decimal" />
+    <!-- 取消订单金额 -->
+    <property name="cancelTotalPrice" column="CANCEL_TOTAL_PRICE" type="big_decimal" />
+    <!-- 取消订单件数 -->
+    <property name="cancelTotalCount" column="CANCEL_TOTAL_COUNT" type="long" />
+    <!-- 取消订单单价 -->
+    <property name="cancelUnitPrice" column="CANCEL_UNIT_PRICE" type="big_decimal" />
+    <!-- 取消优惠金额 -->
+    <property name="cancelCampaignPrice" column="CANCEL_CAMPAIGN_PRICE" type="big_decimal" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

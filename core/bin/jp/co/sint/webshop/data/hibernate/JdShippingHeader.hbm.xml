@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- タグ -->
+  <class name="jp.co.sint.webshop.data.dto.JdShippingHeader" table="JD_SHIPPING_HEADER" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">JD_SHIPPING_HEADER_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->  
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />  
+    <!-- 发货编号D字母开头 -->
+    <property name="shippingNo" column="SHIPPING_NO" type="string" />  
+    <!-- 订单编号 -->
+    <property name="orderNo" column="ORDER_NO" type="string" />
+    <!-- 店铺编号 -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 京东订单号 -->
+    <property name="customerCode" column="CUSTOMER_CODE" type="string" />
+    <!-- address_no -->
+    <property name="addressNo" column="ADDRESS_NO" type="long" /> 
+    <!-- 收货人姓名 -->
+    <property name="addressLastName" column="ADDRESS_LAST_NAME" type="string" />
+    <!-- address_first_name -->
+    <property name="addressFirstName" column="ADDRESS_FIRST_NAME" type="string" />
+    <!-- address_last_name_kana -->
+    <property name="addressLastNameKana" column="ADDRESS_LAST_NAME_KANA" type="string" />
+    <!-- address_first_name_kana -->
+    <property name="addressFirstNameKana" column="ADDRESS_FIRST_NAME_KANA" type="string" />
+    <!-- 邮政编码 -->
+    <property name="postalCode" column="POSTAL_CODE" type="string" />
+    <!-- 省份编号 -->
+    <property name="prefectureCode" column="PREFECTURE_CODE" type="string" />
+    <!-- 收货人省份编号 -->
+    <property name="address1" column="ADDRESS1" type="string" />
+    <!-- 收货人城市名 -->
+    <property name="address2" column="ADDRESS2" type="string" />
+    <!-- 收货人区县名 -->
+    <property name="address3" column="ADDRESS3" type="string" />
+    <!-- 收货人街道地址 -->
+    <property name="address4" column="ADDRESS4" type="string" />
+    <!-- 固定电话 -->
+    <property name="phoneNumber" column="PHONE_NUMBER" type="string" />
+    <!-- 手机 -->
+    <property name="mobileNumber" column="MOBILE_NUMBER" type="string" />
+    <!-- delivery_remark -->
+    <property name="deliveryRemark" column="DELIVERY_REMARK" type="string" />
+    <!-- acquired_point -->
+    <property name="acquiredPoint" column="ACQUIRED_POINT" type="big_decimal" /> 
+    <!-- 快递单号（WMS提供） -->
+    <property name="deliverySlipNo" column="DELIVERY_SLIP_NO" type="string" />
+    <!-- 运费 -->
+    <property name="shippingCharge" column="SHIPPING_CHARGE" type="big_decimal" /> 
+    <!-- shipping_charge_tax_type -->
+    <property name="shippingChargeTaxType" column="SHIPPING_CHARGE_TAX_TYPE" type="long" /> 
+    <!-- shipping_charge_tax_rate -->
+    <property name="shippingChargeTaxRate" column="SHIPPING_CHARGE_TAX_RATE" type="long" /> 
+    <!-- shipping_charge_tax -->
+    <property name="shippingChargeTax" column="SHIPPING_CHARGE_TAX" type="big_decimal" /> 
+    <!-- delivery_type_no -->
+    <property name="deliveryTypeNo" column="DELIVERY_TYPE_NO" type="long" /> 
+    <!-- delivery_type_name -->
+    <property name="deliveryTypeName" column="DELIVERY_TYPE_NAME" type="string" /> 
+    <!-- delivery_appointed_date -->
+    <property name="deliveryAppointedDate" column="DELIVERY_APPOINTED_DATE" type="string" /> 
+    <!-- delivery_appointed_time_start -->
+    <property name="deliveryAppointedTimeStart" column="DELIVERY_APPOINTED_TIME_START" type="long" /> 
+    <!-- delivery_appointed_time_end -->
+    <property name="deliveryAppointedTimeEnd" column="DELIVERY_APPOINTED_TIME_END" type="long" /> 
+    <!-- arrival_date -->
+    <property name="arrivalDate" column="ARRIVAL_DATE" type="timestamp" />
+    <!-- arrival_time_start -->
+    <property name="arrivalTimeStart" column="ARRIVAL_TIME_START" type="long" /> 
+    <!-- arrival_time_end -->
+    <property name="arrivalTimeEnd" column="ARRIVAL_TIME_END" type="long" /> 
+    <!-- fixed_sales_status -->
+    <property name="fixedSalesStatus" column="FIXED_SALES_STATUS" type="long" /> 
+    <!-- 根据API返回值，判断发货状态WMS 0未发货 1可以发货 2发货中 3发货完毕 -->
+    <property name="shippingStatus" column="SHIPPING_STATUS" type="long" /> 
+    <!-- 发货指示日 -->
+    <property name="shippingDirectDate" column="SHIPPING_DIRECT_DATE" type="timestamp" />
+    <!-- 发货完毕日 -->
+    <property name="shippingDate" column="SHIPPING_DATE" type="timestamp" />
+    <!-- original_shipping_no -->
+    <property name="originalShippingNo" column="ORIGINAL_SHIPPING_NO" type="string" /> 
+    <!-- return_item_date -->
+    <property name="returnItemDate" column="RETURN_ITEM_DATE" type="timestamp" />
+    <!-- return_item_loss_money -->
+    <property name="returnItemLossMoney" column="RETURN_ITEM_LOSS_MONEY" type="big_decimal" />
+    <!-- return_item_type -->
+    <property name="returnItemType" column="RETURN_ITEM_TYPE" type="long" /> 
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 城市编号 -->
+    <property name="cityCode" column="CITY_CODE" type="string" /> 
+    <!-- 配送公司编号 -->
+    <property name="deliveryCompanyNo" column="DELIVERY_COMPANY_NO" type="string" /> 
+    <!-- 配送公司名称 -->
+    <property name="deliveryCompanyName" column="DELIVERY_COMPANY_NAME" type="string" /> 
+    <!-- 区县编号 -->
+    <property name="areaCode" column="AREA_CODE" type="string" /> 
+    <!-- 京东api发货成功标志 -->
+    <property name="jdShippingFlg" column="JD_SHIPPING_FLG" type="long" /> 
+    <!-- 根据API返回值，判断发货状态ERP 0未发货 1可以发货 2发货中 -->
+    <property name="shippingStatusWms" column="SHIPPING_STATUS_WMS" type="long" /> 
+    <!-- timestampとして定義 --> 
+    <!-- 分仓区分 -->
+    <property name="isPart" column="IS_PART" type="string" />
+    <!--折扣金额--> 
+    <property name="discountPrice" column="DISCOUNT_PRICE" type="big_decimal" />
+    <!--自订单订单号--> 
+    <property name="childOrderNo" column="CHILD_ORDER_NO" type="string" /> 
+    <!--子订单金额--> 
+    <property name="childPaidPrice" column="CHILD_PAID_PRICE" type="big_decimal" /> 
+    
+  </class>
+</hibernate-mapping>

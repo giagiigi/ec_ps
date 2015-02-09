@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- 宣传品活动规则 -->
+  <class name="jp.co.sint.webshop.data.dto.PropagandaActivityRule" table="PROPAGANDA_ACTIVITY_RULE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">PROPAGANDA_ACTIVITY_RULE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 活动编号 -->
+    <property name="activityCode" column="ACTIVITY_CODE" type="string" />
+    <!-- 活动名称 -->
+    <property name="activityName" column="ACTIVITY_NAME" type="string" />
+    <!-- 订单区分 -->
+    <property name="orderType" column="ORDER_TYPE" type="long" />
+    <!-- 语言区分 -->
+    <property name="languageCode" column="LANGUAGE_CODE" type="long" />
+    <!-- 活动开始时间 -->
+    <property name="activityStartDatetime" column="ACTIVITY_START_DATETIME" type="timestamp" />
+    <!-- 活动结束时间 -->
+    <property name="activityEndDatetime" column="ACTIVITY_END_DATETIME" type="timestamp" />
+    <!-- 配送区域 -->
+    <property name="deliveryArea" column="DELIVERY_AREA" type="string" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping> 
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- カテゴリ -->
+  <class name="jp.co.sint.webshop.data.dto.Category" table="CATEGORY" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">CATEGORY_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- カテゴリコード -->
+    <property name="categoryCode" column="CATEGORY_CODE" type="string" />
+    <!-- PC用カテゴリ名称 -->
+    <property name="categoryNamePc" column="CATEGORY_NAME_PC" type="string" />
+    <!-- 20120514 tuxinwei add start -->
+    <!-- PC用カテゴリ名称(英文) -->
+    <property name="categoryNamePcEn" column="CATEGORY_NAME_PC_EN" type="string" />
+    <!-- PC用カテゴリ名称(日本语) -->
+    <property name="categoryNamePcJp" column="CATEGORY_NAME_PC_JP" type="string" />
+    <!-- 20120514 tuxinwei add end -->
+    <!-- 携帯用カテゴリ名称 -->
+    <property name="categoryNameMobile" column="CATEGORY_NAME_MOBILE" type="string" />
+    <!-- 親カテゴリコード -->
+    <property name="parentCategoryCode" column="PARENT_CATEGORY_CODE" type="string" />
+    <!-- パス -->
+    <property name="path" column="PATH" type="string" />
+    <!-- 階層 -->
+    <property name="depth" column="DEPTH" type="long" />
+    <!-- 表示順 -->
+    <property name="displayOrder" column="DISPLAY_ORDER" type="long" />
+    <!-- PC商品件数 -->
+    <property name="commodityCountPc" column="COMMODITY_COUNT_PC" type="long" />
+    <!-- 携帯商品件数 -->
+    <property name="commodityCountMobile" column="COMMODITY_COUNT_MOBILE" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- 20111220 os012 add start --> 
+    <!-- 淘宝分类编号 -->
+    <property name="categoryIdTmall" column="CATEGORY_ID_TMALL" type="string" />
+    <!-- 2014/4/28 京东WBS对应 ob_李 add start -->
+    <!-- 京东分类编号 -->
+    <property name="categoryIdJd" column="CATEGORY_ID_JD" type="string" />
+    <!-- 2014/4/28 京东WBS对应 ob_李 add end -->
+    <!-- meta_keyword -->
+    <property name="metaKeyword" column="META_KEYWORD" type="string" />
+    <!-- meta_description -->
+    <property name="metaDescription" column="META_DESCRIPTION" type="string" />
+    <!-- 20111220 os012 add end -->
+    <!-- 20130527 zhangzhengtao add start -->
+    <property name="keywordCn1" column="KEYWORD_CN1" type="string" />
+    <property name="keywordEn1" column="KEYWORD_EN1" type="string" />
+    <property name="keywordJp1" column="KEYWORD_JP1" type="string" />
+    <property name="keywordCn2" column="KEYWORD_CN2" type="string" />
+    <property name="keywordEn2" column="KEYWORD_EN2" type="string" />
+    <property name="keywordJp2" column="KEYWORD_JP2" type="string" />
+    <!-- 20130527 zhangzhengtao add end -->
+    <!-- TITLE -->
+    <property name="title" column="TITLE" type="string" />
+    <!-- TITLE(英文) -->
+    <property name="titleEn" column="TITLE_EN" type="string" />
+    <!-- TITLE(日文) -->
+    <property name="titleJp" column="TITLE_JP" type="string" />
+    <!-- DESCRIPTION -->
+    <property name="description" column="DESCRIPTION" type="string" />
+    <!-- DESCRIPTION(英文) -->
+    <property name="descriptionEn" column="DESCRIPTION_EN" type="string" />
+    <!-- DESCRIPTION(日文) -->
+    <property name="descriptionJp" column="DESCRIPTION_JP" type="string" />
+    <!-- KEYWORD -->
+    <property name="keyword" column="KEYWORD" type="string" />
+    <!-- KEYWORD(英文) -->
+    <property name="keywordEn" column="KEYWORD_EN" type="string" />
+    <!-- KEYWORD(日文) -->
+    <property name="keywordJp" column="KEYWORD_JP" type="string" />
+    <!-- timestampとして定義 -->          
+  </class>
+</hibernate-mapping>

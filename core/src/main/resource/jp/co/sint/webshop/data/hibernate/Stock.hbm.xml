@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 在庫 -->
+  <class name="jp.co.sint.webshop.data.dto.Stock" table="STOCK" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">STOCK_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- SKUコード -->
+    <property name="skuCode" column="SKU_CODE" type="string" />
+    <!-- 商品コード -->
+    <property name="commodityCode" column="COMMODITY_CODE" type="string" />
+    <!-- 在庫数量 -->
+    <property name="stockQuantity" column="STOCK_QUANTITY" type="long" />
+    <!-- 引当数量 -->
+    <property name="allocatedQuantity" column="ALLOCATED_QUANTITY" type="long" />
+    <!-- 予約数量 -->
+    <property name="reservedQuantity" column="RESERVED_QUANTITY" type="long" />
+    <!-- 予約上限数 -->
+    <property name="reservationLimit" column="RESERVATION_LIMIT" type="long" />
+    <!-- 注文毎予約上限数 -->
+    <property name="oneshotReservationLimit" column="ONESHOT_RESERVATION_LIMIT" type="long" />
+    <!-- 在庫閾値 -->
+    <property name="stockThreshold" column="STOCK_THRESHOLD" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+   <!-- 20111224 os012 add start -->
+   <!-- TMALL引当数 -->
+   <property name="allocatedTmall" column="ALLOCATED_TMALL" type="long" />
+   <!-- EC在库割合(0-100) -->
+   <property name="shareRatio" column="SHARE_RATIO" type="long" />
+   <!-- 総在庫 -->
+   <property name="stockTotal" column="STOCK_TOTAL" type="long" />
+   <!-- TMALL在庫数-->
+   <property name="stockTmall" column="STOCK_TMALL" type="long" />
+   <!-- 在庫リーバランスフラグ -->
+   <property name="shareRecalcFlag" column="SHARE_RECALC_FLAG" type="long" />
+   <!--2014/06/13 库存更新对应 ob_李先超 add start-->
+   <!-- 同步Flag -->
+   <property name="apiSyncFlag" column="API_SYNC_FLAG" type="long" />
+   <!--2014/06/13 库存更新对应 ob_李先超 add end-->
+    <!-- 20111224 os012 add end -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

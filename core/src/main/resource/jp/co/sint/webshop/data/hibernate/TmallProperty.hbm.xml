@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- カテゴリ -->
+  <class name="jp.co.sint.webshop.data.dto.TmallProperty" table="Tmall_PROPERTY" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">CATEGORY_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- カテゴリコード -->
+    <property name="propertyId" column="property_Id" type="string" />
+    <!-- 属性id -->
+    <property name="categoryId" column="category_id" type="string" />
+    <!-- 所属类目ID -->
+    <property name="propertyName" column="property_Name" type="string" />
+    <!-- 属性名称 -->
+    <property name="parentPid" column="parent_Pid" type="string" />
+    <!-- 上级属性ID -->
+    <property name="parentVid" column="parent_Vid" type="string" />
+    <!-- 上级属性值ID -->
+    <property name="isMust" column="is_Must" type="long" />
+    <!-- 是否必须属性 -->
+    <property name="isSale" column="is_Sale" type="long" />
+    <!-- 是否销售属性 -->
+    <property name="isEnum" column="is_Enum" type="long" />
+    <!-- 是否关键属性 -->
+    <property name="isKey" column="is_key" type="long" />
+    <!-- 输入类型 0：自由输入  1：选择 -->
+    <property name="isMulti" column="is_Multi" type="long" />
+    <!-- 多属性值标志 0：不是  1：是 -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->          
+    <!-- 属性英文名 -->  
+    <property name="propertyNameEn" column="PROPERTY_NAME_EN" type="string" />
+    <!-- 属性日文名 -->  
+    <property name="propertyNameJp" column="PROPERTY_NAME_JP" type="string" />
+  </class>
+</hibernate-mapping>

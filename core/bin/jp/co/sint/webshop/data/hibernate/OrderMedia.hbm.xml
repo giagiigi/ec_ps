@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 订单媒体 -->
+  <class name="jp.co.sint.webshop.data.dto.OrderMedia" table="ORDER_MEDIA" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">ORDER_MEDIA_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <!-- 订单号 -->
+    <property name="orderNo" column="ORDER_NO" type="string" />
+    <!-- 免邮促销编号 -->
+    <property name="freePostageCode" column="FREE_POSTAGE_CODE" type="string" />
+    <!-- 免邮促销名称 -->
+    <property name="freePostageName" column="FREE_POSTAGE_NAME" type="string" />
+    <!-- 流入媒体编号 -->
+    <property name="mediaCode" column="MEDIA_CODE" type="string" />
+    <!-- 流入媒体类型 -->
+    <property name="mediaType" column="MEDIA_TYPE" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <property name="updatedDatetime" column="UPDATED_DATETIME" type="timestamp" /> 
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

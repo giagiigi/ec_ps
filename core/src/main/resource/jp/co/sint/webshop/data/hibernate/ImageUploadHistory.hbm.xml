@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 商品ヘッダ -->
+  <class name="jp.co.sint.webshop.data.dto.ImageUploadHistory" table="IMAGE_UPLOAD_HISTORY" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">IMAGE_UPLOAD_HISTORY_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- SKUコード -->
+    <property name="skuCode" column="SKU_CODE" type="string" />
+    <!-- 商品コード -->
+    <property name="commodityCode" column="COMMODITY_CODE" type="string" />
+    <!-- 淘宝商城图片url -->
+    <property name="tmallImgUrl" column="TMALL_IMG_URL" type="string" />
+    <!-- 淘宝商城图片id -->
+    <property name="tmallImgId" column="TMALL_IMG_ID" type="string" />
+    <!-- 本地图片处理状态 -->
+    <property name="localOperFlg" column="LOCAL_OPER_FLG" type="long" />
+    <!-- 淘宝上传状态 -->
+    <property name="tmallUploadFlg" column="TMALL_UPLOAD_FLG" type="long" />
+    <!-- 官网1上传状态 -->
+    <property name="Ec1UploadFlg" column="EC1_UPLOAD_FLG" type="long" />
+    <!-- 官网2上传状态 -->
+    <property name="Ec2UploadFlg" column="EC2_UPLOAD_FLG" type="long" />
+    <!-- 販売開始日時 -->
+    <property name="uploadDatetime" column="UPLOAD_DATETIME" type="timestamp" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- 上传图片名称 -->
+    <property name="uploadCommodityImg" column="UPLOAD_COMMODITY_IMG" type="string" />
+    <!-- 2014/04/30 京东WBS对应 ob_姚 add start -->
+    <!-- JD上传状态 -->
+    <property name="jdUploadFlg" column="JD_UPLOAD_FLG" type="long" />
+    <!-- JD用属性值ID（0-5；0：主图） -->
+    <property name="jdAttId" column="JD_ATT_ID" type="string" />
+    <!-- JD用图片URL -->
+    <property name="jdImgUrl" column="JD_IMG_URL" type="string" />
+    <!-- JD用图片ID -->
+    <property name="jdImageId" column="JD_IMAGE_ID" type="string" />
+    <!-- JD图片上传时间 -->
+    <property name="jdUploadTime" column="JD_UPLOAD_TIME" type="timestamp" />
+    <!-- 2014/04/30 京东WBS对应 ob_姚 add end -->
+  </class>
+</hibernate-mapping>

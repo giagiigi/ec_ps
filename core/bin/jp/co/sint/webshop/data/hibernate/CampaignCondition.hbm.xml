@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- キャンペーン -->
+  <class name="jp.co.sint.webshop.data.dto.CampaignCondition" table="CAMPAIGN_CONDITION" lazy="false">
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">CAMPAIGN_CONDITION_SEQ</param>
+      </generator>
+    </id>
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 促销编号 -->
+    <property name="campaignCode" column="CAMPAIGN_CODE" type="string" />
+    <!-- 条件类型 -->
+    <property name="campaignConditionType" column="CAMPAIGN_CONDITION_TYPE" type="long" />
+    <!-- 对象商品 -->
+    <property name="campaignConditionFlg" column="CAMPAIGN_CONDITION_FLG" type="long" />
+    <!-- 内容 -->
+    <property name="attributrValue" column="ATTRIBUTR_VALUE" type="string" />
+    <!-- 对象商品限定件数 -->
+    <property name="maxCommodityNum" column="MAX_COMMODITY_NUM" type="long" />
+    <!-- 注文金额 -->
+    <property name="orderAmount" column="ORDER_AMOUNT" type="big_decimal" />
+    <!-- 广告媒体编号 -->
+    <property name="advertCode" column="ADVERT_CODE" type="string" />
+    <!-- 折扣区分 -->
+    <property name="discountType" column="DISCOUNT_TYPE" type="long" />    
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+    <!-- 使用限制次数 -->
+    <property name="useLimit" column="USE_LIMIT" type="long" />   
+  </class>
+</hibernate-mapping>

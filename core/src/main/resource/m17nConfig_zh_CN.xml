@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+<!-- add by cs_yuli 20120528 start -->
+<!-- stock -->
+    <entry key="stockMessage">0:有库存</entry>
+<!-- invoiceCommodityName -->
+ 
+    <entry key="invoiceCommodityNameList0">酒</entry>
+    <entry key="invoiceCommodityNameList1">饮料</entry>     
+    <entry key="invoiceCommodityNameList2">食品</entry>     
+    <entry key="invoiceCommodityNameList3">玩具</entry>     
+    <entry key="invoiceCommodityNameList4">日用品</entry>     
+    <entry key="invoiceCommodityNameList5">化妆品</entry>     
+    <entry key="invoiceCommodityNameList6">图书</entry>     
+    <entry key="invoiceCommodityNameList7">办公用品</entry>     
+    <entry key="invoiceCommodityNameList8">音像制品</entry>     
+    <entry key="invoiceCommodityNameList9">学生用品</entry>     
+    <entry key="invoiceCommodityNameList10">家居用品</entry>     
+    <entry key="invoiceCommodityNameList11">饰品</entry>     
+    <entry key="invoiceCommodityNameList12">服装</entry>     
+    <entry key="invoiceCommodityNameList13">箱包</entry>     
+    <entry key="invoiceCommodityNameList14">精品</entry>     
+    <entry key="invoiceCommodityNameList15">家电</entry>     
+    <entry key="invoiceCommodityNameList16">劳防用品</entry>  
+    <entry key="invoiceCommodityNameList17">母婴用品</entry>
+    <entry key="invoiceCommodityNameList18">文具用品</entry>     
+<!-- add by cs_yuli 20120528 end -->
+<!--inquiry-->
+    <entry key="inquirySubjects.0">请选择</entry>
+    <entry key="inquirySubjects.1">关于会员登录</entry>
+    <entry key="inquirySubjects.2">关于购买方法</entry>
+    <entry key="inquirySubjects.3">其他的各种咨询</entry>
+    <entry key="commodityInquirySubject">关于商品</entry>
+    <entry key="orderInquirySubject">关于订购・预约</entry>
+
+<!--password-->
+    <entry key="frontMessage">密码必须是6位以上半角英数字，包含字符“-”、“_”、“.”。</entry>
+    <entry key="backMessage">密码必须是6位以上半角英数字，包含字符“-”、“_”、“.”。</entry>
+
+<!--example-->
+    <entry key="addressAlias">亲戚家</entry>
+    <entry key="lastName">姚小明</entry>
+    <entry key="lastNameKana">ヤマダ</entry>
+    <entry key="firstName"></entry>
+    <entry key="firstNameKana">タロウ</entry>
+    <entry key="postalCode">200065</entry>
+    <entry key="countryName">中国</entry>
+    <entry key="address1">上海</entry>
+    <entry key="address2">上海市</entry>
+    <entry key="address3">普陀区</entry>
+    <entry key="address4">金沙江路165号502室</entry>
+    <entry key="phoneNumber">021-00000000</entry>
+    <entry key="birthDate">1980/1/1</entry>
+    <entry key="sex">男</entry>
+    <entry key="email">test@example.com</entry>
+
+<!--mailmagazine-->
+    <entry key="registerMailMagazineTitle">邮件杂志送信登录用的URL通知</entry> 
+    <entry key="cancelMailMagazineTitle">邮件杂志停止送信用的URL通知</entry> 
+    <entry key="confirmMailMagazineTitle">正在送信中的邮件杂志的通知</entry> 
+    <entry key="registerMailMagazineText">
+<![CDATA[{0}先生
+
+承蒙{1}利用，实在谢谢。
+申请的邮件杂志的送信登记没完成。
+请在2小时以内单击以下的URL，完成送信登记。
+
+【登录完了URL】
+{2}
+
+继续，请享受舒适的购物。]]>
+          </entry>
+
+    <entry key="cancelMailMagazineText">
+<![CDATA[{0}先生
+
+承蒙{1}利用，实在谢谢。
+申请的邮件杂志的送信停止没完成。
+请在2小时以内单击以下的URL，完成送信停止。
+
+【送信停止完了URL】
+{2}
+
+继续，请享受舒适的购物。]]>
+          </entry>
+
+    <entry key="confirmMailMagazineText">
+<![CDATA[{0}先生
+
+承蒙{1}利用，实在谢谢。
+现在，顾客送信登记中的邮件杂志是下面这样。
+
+{2}
+
+继续，请享受舒适的购物。]]>
+          </entry>
+
+    <entry key="noExistMailMagazineText">
+<![CDATA[{0}先生
+
+承蒙{1}利用，实在谢谢。
+
+现在，顾客没有送信登记中的邮件杂志。
+
+继续，请享受舒适的购物。]]>
+          </entry>
+
+    <entry key="sign">
+<![CDATA[----------------------------------------
+{0}
+邮政编码{1}
+{2}
+TEL: {3}
+MAIL: {4}
+不明白的地方请咨询。
+
+----------------------------------------
+]]>
+          </entry>
+
+
+<!--messages-->
+    <entry key="frontCustomerRegisterMembersRule">
+        <![CDATA[关于个人信息取得的目的，请见下述。
+
+・您登录的顾客个人信息（公司名、姓名、住址、邮件地址、电话号码等）会被利用在和商品的发送、售后服务，以及本公司新商品服务相关的通知里面。
+
+・不希望登录个人信息的情况下，顾客也可以根据自己的判断不登录。但是，可能会无法提供本公司的服务。
+
+・登录的个人信息会根据服务的内容提供给业务委托对象。我们禁止业务委托对象上述目的以外的信息使用。业务委托对象的服务包括服务器、数据的管理、商品的发送等等。
+
+您如果同意上述内容，并想登录顾客信息，请按“同意并继续注册”按钮。]]>
+      </entry>
+
+    <entry key="frontGuestPurchaseMembersRule">
+        <![CDATA[关于个人信息取得的目的，请见下述。
+
+・您登录的顾客个人信息（公司名、姓名、住址、邮件地址、电话号码等）会被利用在和商品的发送、售后服务，以及本公司新商品服务相关的通知里面。
+
+・不希望登录个人信息的情况下，顾客也可以根据自己的判断不登录。但是，可能会无法提供本公司的服务。
+
+・登录的个人信息会根据服务的内容提供给业务委托对象。我们禁止业务委托对象上述目的以外的信息使用。业务委托对象的服务包括服务器、数据的管理、商品的发送等等。
+
+您如果同意上述内容，并想登录顾客信息，请按“同意并继续注册”按钮。]]>
+      </entry>
+
+    <entry key="mobileCustomerRegisterMembersRule">
+        <![CDATA[关于个人信息取得的目的，请见下述。<br>
+・您登录的顾客个人信息（公司名、姓名、住址、邮件地址、电话号码等）会被利用在和商品的发送、售后服务，以及本公司新商品服务相关的通知里面。<br>
+・不希望登录个人信息的情况下，顾客也可以根据自己的判断不登录。但是，可能会无法提供本公司的服务。<br>
+・登录的个人信息会根据服务的内容提供给业务委托对象。我们禁止业务委托对象上述目的以外的信息使用。业务委托对象的服务包括服务器、数据的管理、商品的发送等等。<br>
+您如果同意上述内容，并想登录顾客信息，请按“同意并继续注册”按钮。]]>
+      </entry>
+
+    <entry key="mobileGuestPurchaseMembersRule">
+        <![CDATA[关于个人信息取得的目的，请见下述。<br>
+・您登录的顾客个人信息（公司名、姓名、住址、邮件地址、电话号码等）会被利用在和商品的发送、售后服务，以及本公司新商品服务相关的通知里面。<br>
+・不希望登录个人信息的情况下，顾客也可以根据自己的判断不登录。但是，可能会无法提供本公司的服务。<br>
+・登录的个人信息会根据服务的内容提供给业务委托对象。我们禁止业务委托对象上述目的以外的信息使用。业务委托对象的服务包括服务器、数据的管理、商品的发送等等。<br>
+您如果同意上述内容，并想登录顾客信息，请按“同意并继续注册”按钮。]]>
+      </entry>
+
+    <entry key="backContactInformation">
+        <![CDATA[<div class="normal">
+<p>请对系统管理者咨询上述错误内容。</p>
+【咨询处】<br/>
+管理者内线号码：XXXXXXX<br/>
+</div>]]>
+      </entry>
+
+    <entry key="frontContactInformation">
+        <![CDATA[<div class="normal">
+<p>如果有由于有关本系统的事宜或不明点，请通过电话或邮件咨询。</p>
+【咨询处】<br/>
+系统支持中心<br/>
+邮件地址： service@pinstore.cn
+</div>]]>
+      </entry>
+
+    <entry key="mobileContactInformation">
+        <![CDATA[<div class="normal">
+<p>如果有由于有关本系统的事宜或不明点，请通过电话或邮件咨询。</p>
+【咨询处】<br/>
+系统支持中心<br/>
+邮件地址： service@pinstore.cn
+</div>]]>
+      </entry>
+
+<!-- help -->
+        <entry key="helpMessages.U1020220_00">
+<![CDATA[
+        ●定购管理明细
+
+可以「入款日的设定/取消」「订购信息/出货信息的更新」「取消的订购」「退货」。
+
+在这里只能做订购数据金额不能改变范围内的变更。
+
+
+【设定/清空】
+
+入款日栏有[设定]按钮/[清空]按钮，能设定和取消入款日。
+
+设定入款日时，输入想登记的日期，请按[设定]按钮。
+
+再者，不会更新入款日以外的订购信息·出货信息。
+
+
+
+【更新】
+
+按[更新]按钮的话，能更新有关联的事项栏，顾客信息栏，各出货的信息。
+
+再者，这个操作不会更新入款日信息。
+
+
+
+【取消定购】
+
+按[取消定购]按钮的话，订货会被取消。
+
+取消对象的订购中包含出货数据，
+
+被安排出货，如果有1个出货完毕的出货数据，那个订购就不能被取消。
+
+不能取消订购时，订购取消按钮不会被显示。
+
+
+
+【修正定购】
+
+订货后的内容可以修正。
+
+修正对象的定购中包含的出货数据，
+
+如果有1个被安排出货或出货完毕的出货数据，那个订购就不能修正。
+
+不能修正订购时，修正定购的按钮不会被显示。
+
+
+
+【退货】
+
+出货的商品，能退货。
+
+退货有「商品退货」和「金额调整」2种。
+
+退货信息的输入，在按了[退货]按钮之后的退货信息输入用画面中登记。 
+]]></entry>
+        <entry key="helpMessages.U1020230_00">
+<![CDATA[
+●修正定购
+修正定购是  能够做请求人信息·发送处信息·商品的追加/删掉·支付方法的变更。
+
+在这里可以改变订购数据的金额。
+
+经由以下3个画面修正接受订货信息，发送处/商品的变更画面，支付方法的变更画面，订购内容的确认画面。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1020260_00">
+<![CDATA[
+●订购后退货
+退货有「商品的退货」和「金额调整」2种。
+
+
+【商品的退货】
+
+「商品的退货」是商品归还给店铺。
+
+可以指定退货的「哪里『发送』」的「什么商品」的「几个」退货商品。
+
+成为退货对象的是销售价格·礼物费用·运费的3项。
+
+销售价格·礼物费用·运费是分为「(销售价格 + 礼物费用)×数量」和「运费」的2个。
+
+「运费」是作为退货损失金额。
+
+
+「商品的退货」是分为指定出货完毕商品和件数退货登记。
+
+不能退订购的数量以上和还没出货商品。
+
+要更改未出货商品的数量，不是使用退货登记要使用订购修正。
+
+
+退货数量共计的实际出货了数量成为上限,不过，关于金额也能设定销售价格以外数值。
+
+(为此，退货了的订购数据的销售额合计了的结果，退货金额可能会超过销售额)
+
+
+【金额调整】
+
+「金额调整」是因业务上必要金额的调整所使用项目，退货对象订货数据的金额
+
+中可以输入被减去的金额。
+
+做「金额调整」时，都以退货损失金额使用。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1020420_00">
+<![CDATA[
+●出货管理明细
+
+出货管理的详细画面是联络事项·注意事项(只限管理者参照)更新和出货实际成果的登录。
+
+
+【联络事项·注意事项(只限管理者参照)更新】
+
+联络事项·注意事项(只限管理者参照)更新时，只有这2个项目会被更新。
+
+其他的订购信息和出货信息不会被更新。
+
+
+【出货实际成绩的登录】
+
+出货实际成绩是已经出货商品的实际成绩的登录功能。
+
+出货实际成绩登录时，出货实际成绩登录栏中填入项目登录。
+
+其他的订购信息或出货信息不会被更新。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1030510_00">
+<![CDATA[
+●顾客属性
+面向限定会员的问卷调查制作功能。
+
+问卷调查是有单一选择题和多数选择题2种，会要求会员做出回答。
+
+这个问卷调查可以在会员信息登录/更新时作回答。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1040160_00">
+<![CDATA[
+●关联建立
+
+【礼品和商品的关联建立】
+
+礼品和商品关联建立后，顾客购买商品时和商品建立关联的礼品能够被选择。
+
+
+【宣传活动和商品的关联建立】
+
+宣传活动和商品的关联建立后，那个商品能够成为宣传活动的对象商品。宣传活动的对象商品是会被适用于被设定建立关系后的宣传活动的降价率。
+
+1个商品被建立多个关联时，降价率最高的宣传活动会被适用。多个宣传活动不会被适用。
+
+如果，降价率相等时，最早的宣传活动开始日会被适用。还有，降价率也是开始日相等时，最小的宣传活动编码会被适用。
+
+但是，特价期间中或是预约期间中的商品是不会被适用于宣传活动的。
+
+
+【标签和商品的关联建立】
+
+标签和商品的关系建立后，在服务端的商品详细页面中，标签名会显示为关键字。
+
+
+【商品和商品的关联建立】（手动关联建立）
+
+商品和商品间手动建立关联后，建立关联的商品在服务端的商品详细页面中会被显示。
+
+建立关联商品的表示个数有上限。建立关联商品的个数超过了上限值时，在不会超过上限值范围内会按照从优先位次高的商品开始显示。
+
+
+【商品和商品的关联建立】（自动关联建立）
+
+商品和商品的自动建立关联后，在建立关联的商品服务端的商品详细页面中会显示出「购买这个商品的人还买了那样的商品」。
+
+建立关系后的商品的显示个数有上限。超过建立关系的商品的上限数值时，在不会超过上限值范围内会按照从优先位次高的商品开始显示。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1040220_00">
+<![CDATA[
+●类别商品的关系建立
+
+类别商品的关系建立是登录过的类别和商品间建立关系，用各特色商品来分类后在服务端来显示的功能。
+
+希望建立关联的商品的商品编码登录后，类别和商品会被建立关联。
+
+
+各类别可以设置3个检索关键字。
+
+例如、「书」类别中是「ISBN」「作者」「发行年月日」的3个检索关键字能够被登录。
+
+这个检索关键字称呼为类别属性名。
+
+
+各类别里建立关联商品是，设定各商品对应的类别属性名作关键字的功能。
+
+例如、「书」类别的类别属性名有「ISBN」、这个「书」类别是和商品A建立关联。
+
+「书」类别建立关联商品A的类别属性名「ISBN」是设定「ISBN999-9-999-999999-9」的值。
+
+同样，类别属性名「作者」是「SI 太郎」、类别属性名「发行年月日」是设定「1999年12月31日」。
+
+对于这样的类别属性名，各商品可以设定的关键字称呼为类别属性值。
+
+
+例）书的类别里可以做3个类别属性，设定类别属性值
+
+・类别：书
+・类别属性：①ISBN、②作者、③发行年月日
+・商品A：①ISBN999-9-999-999999-9、②SI太郎、③1999年12月31日
+・商品B：①ISBN888-8-888-888888-8、②SI花子、③1901年12月31日
+
+类别里类别属性名登录后，服务端就可以使用搜索条件进行搜索。
+
+PC服务端时，「详细检索页面」里选择检索对象类别时会被显示。
+
+]]>
+手机服务端时，类别首页里会被显示。
+
+
+
+●解除和商品建立关联时是
+类别里商品建立关联后，比起关联建立后的项目会和更上位的类别自动作建立关联。
+
+
+因为这样，解除建立关联时,希望解除建立的关联类别，请按照逐步深层的顺序作解除处理。
+
+再者，从类别树相关联建立画面，附有商品关联的类别可以一起解除。
+
+        </entry>
+        <entry key="helpMessages.U1040410_00">
+<![CDATA[
+●主标签
+标记是在独自店铺中分组商品的功能。
+
+「帐篷和睡袋里把『露营』作为标签」用这种形式使用。
+
+标签的对象是在标签建立关联画面里标签和商品作关联操作。
+
+和标签有建立关联的商品，在服务端的商品详细页面中标签名作为关键字表示。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1040510_00">
+<![CDATA[
+●出入库管理
+
+出入库、参照过去的库存数变更履历。
+
+库存数被变更时在这个画面入库登录或做了发出登录
+
+和商品被送出或是取消了送货时的4项。
+
+再者，关于引正当数和预约数的增减，不能参照履历。
+
+
+库存的数量增加或减少时，比如「现在的数量增加3个」或
+「现在的数量减少2个」
+
+
+登录对现在的数量使之增减几个。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1040610_00">
+<![CDATA[
+●库存状况设定
+
+
+库存状况设定，是从有效库存和阈值的关系自动变更消息的功能。
+
+
+库存多的场合表示「有很多」，库存少的场合表示「还有一点点」，库存没有场合表示「库存没有了」。
+
+
+在这里登录过的库存状况设定的内容，在选择产品登录时的库存管理区分「库存管理(状況表示)」的时候可以使用。
+
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1040810_00">
+<![CDATA[
+●商品详细布局
+
+商品详细布局，自由变更PC服务端的商品详细页面的布局的功能。
+
+
+称呼「主要」「自动推荐」「手动推荐」「评论」的模块的插件，指定各自的插件为表示/非表示。
+
+
+再者，「主要」插件，必须设定在表示区域的最上部。
+
+
+
+【主要】
+
+商品名和价格，把商品放入购物车的按钮等，是购买商品的必定必要插件。
+
+
+【手动推荐】
+
+主要表示商品和有关联的商品的插件
+
+商品的关联，在商品关联画面设定。
+
+
+
+【自动推荐】
+
+主要表示商品和有关联的商品的插件
+
+商品的关联，由订单数据自动制作。
+
+
+
+【评论】
+
+
+是为了表示顾客发表了评语的插件。
+
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1050610_00">
+<![CDATA[
+●发送类别设定
+
+配送种类是例如购买了『冷冻食品』时可以使用『Cool便』其他商品可以使用『通常便』一样，发送方法种类可供选择。这个发送种类是可以按各种商品进行选择发送方式的。
+
+登录发送类别的场合，请必定确认事前登录地域模块。
+
+地域块的登录，按画面右面上的[地域模块]按钮确认。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1050620_00">
+<![CDATA[
+●发送类别设定详细
+
+配送种类是例如购买了『冷冻食品』时可以使用『Cool便』其他商品可以使用『通常便』一样，发送方法种类可供选择。
+
+
+这个发送种类是可以按各种商品进行选择发送方式的。
+
+发送类别，请地域模块登录结束之后登记。
+
+
+
+【表示区分】
+
+登记了的发送类别，使用那个设定表示/非表示。
+
+如果商品设定了的发送类别非表示设定，那个商品在服务端变得不被表示。
+
+
+
+【交货时间】
+
+交货时间、从接受商品的订购到出货那个商品需要的时间。
+
+休假日管理登录的休假日信息和根据交货时间的设定日数，决定最短的发送可能日。
+
+发送可能日的指定，发送类别的时间指定选择了「日」「日期和时间双方」的场合适用。
+
+
+
+【复数商品购买时的运费计算】
+
+复数的商品购买时可以决定使用怎样的规则进行收取送货费。
+
+＜每件商品都需要运费＞
+
+　每个商品收费基于地域的运费设定。
+
+
+　［运费设定］
+　　关东　500元
+
+　［订购内容］
+　　3个商品A和2个商品B，订购计5个。投送地点的都道府县是关东模块。
+
+
+
+　　运费 = 500元×订购数5个 = 2,500元
+
+
+＜每个商品的运费＋其他商品一律○○元＞※本例为100元。
+
+　基于送货费的设定各地域的送货费用收取1个商品的费用，其他也可以使用固定的商品送货费。
+
+
+　［运费设定］
+　　关东　500元、固定运费　100元
+
+　［订购内容］
+　　3个商品A和2个商品B，订购计5个。投送地点的都道府县是关东模块。
+
+
+
+　　运费 = (500元×商品1个) + (100元×商品4个) = 900元
+
+
+再者，这个运费规则，出货单位被适用。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1050810_00">
+<![CDATA[
+●地域模块设定
+
+地域模块、例、『关东』有茨城县・栃木县・群马县・埼玉县・千叶县・东京都・神奈川县、
+
+『中部』有新泻县·富山县·石川县·福井县·山梨县·长野县·岐阜县·静冈县·爱知县、
+
+复数的森省市县可以归纳到一个区域的功能。
+
+运费为了以地域模块单位设定，请登录对运费设定必要的地域模块。
+
+]]>
+        </entry>
+        <entry key="helpMessages.U1051110_00">
+<![CDATA[
+●邮件模板
+
+在邮件模板画面，能预先做好登录用户发送的邮件的内容。
+
+
+邮件模板，由「邮件页眉」，「本文」，「签名」等件名构成。
+
+
+「本文」，按照邮件种类分成「发送处信息」，「支付处信息」，等更细的模块。
+
+
+「本文」及「签名」的各构成模块，能使用「标记」。
+
+送信内容里使用标签，可以进行姓名和地址等，或向多个发送地址送出邮件内容。
+
+能使用的标记，构成的模块不同。
+
+
+＜标记的使用例＞
+
+・邮件模板本文
+
+客户名：[@NAME@]  先生
+
+
+・送信使的邮件本文
+
+客户名：山田 太郎 先生
+
+]]>
+        </entry>
+        <!-- Add bY V10-CH start -->
+          <entry key="helpMessages.U1051120_00">
+<![CDATA[
+●SMS模板
+
+在SMS模板画面，能预先做好登录用户发送的SMS的内容。
+
+
+SMS模板，由「SMS本文」构成。
+
+
+「本文」，按照SMS种类分成不同的模块。
+
+
+「本文」的各构成模块，能使用「标记」。
+
+SMS内容里使用标签，可以进行姓名和地址等，或向多个发送地址送出SMS内容。
+
+能使用的标记，构成的模块不同。
+
+
+＜标记的使用例＞
+
+・SMS模板本文
+
+客户名：[@NAME@]  先生
+
+
+・送信使的SMS本文
+
+客户名：山田 太郎 先生
+
+]]>
+        </entry>
+        <!-- Add by V10-CH end -->
+        <entry key="helpMessages.U1040210_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理论名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">长</td>
+<td width="100">必须</td>
+</tr>
+<tr><td>类别编号</td><td>CATEGORY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>PC用类别名称</td><td>CATEGORY_NAME_PC</td><td>文字</td><td>20</td><td>○</td></tr>
+<tr><td>手机用类别名称</td><td>CATEGORY_NAME_MOBILE</td><td>文字</td><td>10</td><td>○</td></tr>
+<tr><td>亲类别编号</td><td>PARENT_CATEGORY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>路径</td><td>PATH</td><td>文字</td><td>256</td><td>-</td></tr>
+<tr><td>阶层</td><td>DEPTH</td><td>数值</td><td>2</td><td>-</td></tr>
+<tr><td>表示顺序</td><td>DISPLAY_ORDER</td><td>数值</td><td>8</td><td>-</td></tr>
+<tr><td>PC商品件数</td><td>COMMODITY_COUNT_PC</td><td>数值</td><td>12</td><td>-</td></tr>
+<tr><td>手机商品件数</td><td>COMMODITY_COUNT_MOBILE</td><td>数值</td><td>12</td><td>-</td></tr>
+<tr><td>数据行ID</td><td>ORM_ROWID</td><td>数值</td><td>38</td><td>-</td></tr>
+<tr><td>作成用户</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成时间</td><td>CREATED_DATETIME</td><td>日期・时刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新用户</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新时间</td><td>UPDATED_DATETIME</td><td>日期・时刻</td><td><br/></td><td>-</td></tr>
+</table>
+]]>
+        </entry>
+        <entry key="helpMessages.U1020410_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理论名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">长</td>
+<td width="100">必须</td>
+</tr>
+<tr><td>出货编号</td><td>SHIPPING_NO</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>出货指示日</td><td>SHIPPING_DIRECT_DATE</td><td>日期</td><td><br/></td><td>-</td></tr>
+<tr><td>出货日</td><td>SHIPPING_DATE</td><td>日期</td><td><br/></td><td>○</td></tr>
+<tr><td>到达预定日</td><td>ARRIVAL_DATE</td><td>日期</td><td><br/></td><td>-</td></tr>
+<tr><td>到达时间开始</td><td>ARRIVAL_TIME_START</td><td>数值</td><td>2</td><td>-</td></tr>
+<tr><td>到达时间结束</td><td>ARRIVAL_TIME_END</td><td>数值</td><td>2</td><td>-</td></tr>
+<tr><td>送货公司单据编号</td><td>DELIVERY_SLIP_NO</td><td>文字</td><td>30</td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040510_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理论名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">长</td>
+<td width="100">必须</td>
+</tr>
+<tr><td>店铺编号</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>SKU编号</td><td>SKU_CODE</td><td>文字</td><td>24</td><td>○</td></tr>
+<tr><td>出入库数量</td><td>STOCK_IO_QUANTITY</td><td>数值</td><td>8</td><td>○</td></tr>
+<tr><td>出入库区分</td><td>STOCK_IO_TYPE</td><td>数值</td><td>8</td><td>○</td></tr>
+<tr><td>笔记</td><td>MEMO</td><td>文字</td><td>200</td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理论名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">长</td>
+<td width="100">必须</td>
+</tr>
+<tr><td>店铺编号</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品编号</td><td>COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品编号链接</td><td>LINK_COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>表示顺序</td><td>DISPLAY_ORDER</td><td>数值</td><td>8</td><td>-</td></tr>
+<tr><td>数据行ID</td><td>ORM_ROWID</td><td>数值</td><td>38</td><td>-</td></tr>
+<tr><td>作成用户</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成时间</td><td>CREATED_DATETIME</td><td>日期・时刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新用户</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新时间</td><td>UPDATED_DATETIME</td><td>日期・时刻</td><td><br/></td><td>-</td></tr>
+</table>]]>
+
+        </entry>
+        <entry key="helpMessages.U1040160_11">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理论名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">长</td>
+<td width="100">必须</td>
+</tr>
+<tr><td>店铺编号</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>标记编号</td><td>TAG_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品编号</td><td>COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>数据行ID</td><td>ORM_ROWID</td><td>数值</td><td>38</td><td>-</td></tr>
+<tr><td>作成用户</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成时间</td><td>CREATED_DATETIME</td><td>日期・时刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新用户</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新时间</td><td>UPDATED_DATETIME</td><td>日期・时刻</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_12">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理论名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">长</td>
+<td width="100">必须</td>
+</tr>
+<tr><td>店铺编号</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>礼物编号</td><td>GIFT_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品编号</td><td>COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>数据行ID</td><td>ORM_ROWID</td><td>数值</td><td>38</td><td>-</td></tr>
+<tr><td>作成用户</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成时间</td><td>CREATED_DATETIME</td><td>日期・时刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新用户</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新时间</td><td>UPDATED_DATETIME</td><td>日期・时刻</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+        <entry key="helpMessages.U1040160_13">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理论名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">长</td>
+<td width="100">必须</td>
+</tr>
+<tr><td>店铺编号</td><td>SHOP_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>活动编号</td><td>CAMPAIGN_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>商品编号</td><td>COMMODITY_CODE</td><td>文字</td><td>16</td><td>○</td></tr>
+<tr><td>数据行ID</td><td>ORM_ROWID</td><td>数值</td><td>38</td><td>-</td></tr>
+<tr><td>作成用户</td><td>CREATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>作成时间</td><td>CREATED_DATETIME</td><td>日期・时刻</td><td><br/></td><td>-</td></tr>
+<tr><td>更新用户</td><td>UPDATED_USER</td><td>文字</td><td>100</td><td>-</td></tr>
+<tr><td>更新时间</td><td>UPDATED_DATETIME</td><td>日期・时刻</td><td><br/></td><td>-</td></tr>
+</table>]]>
+        </entry>
+  <!-- soukai add ob 2011/12/20 start -->
+          <entry key="helpMessages.U1060620_10">
+<![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理论名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">长</td>
+<td width="100">必须</td>
+</tr>
+<tr><td>顾客编号</td><td>CUSTOMER_CODE</td><td>半角英数</td><td>16</td><td>○</td></tr>
+<tr><td>优惠券规则编号</td><td>COUPON_CODE</td><td>半角英数</td><td>6</td><td>○</td></tr>
+</table>
+]]>
+        </entry>
+   <!-- soukai add ob 2011/12/20 end -->
+      <!-- add by lc 2012-11-08 start -->
+          <entry key="helpMessages.U1060310_10">
+          <![CDATA[<table cellpadding="0" cellspacing="0" border="1">
+<tr>
+<td width="100">理论名</td>
+<td width="100">物理名</td>
+<td width="100">型</td>
+<td width="100">长</td>
+<td width="100">必须</td>
+</tr>
+<tr><td>优惠券规则编号</td><td>COUPON_CODE</td><td>半角英数</td><td>16</td><td>○</td></tr>
+<tr><td>优惠券规则名称</td><td>COUPON_NAME</td><td>文字</td><td>40</td><td>○</td></tr>
+<tr><td>优惠券规则名称(英文)</td><td>COUPON_NAME_EN</td><td>文字</td><td>40</td><td></td></tr>
+<tr><td>优惠券规则名称(日文)</td><td>COUPON_NAME_JP</td><td>文字</td><td>40</td><td></td></tr>
+<tr><td>优惠券发行种别</td><td>COUPON_TYPE</td><td>数値</td><td>1</td><td>○</td></tr>
+<tr><td>优惠券发行类别</td><td>COUPON_ISSUE_TYPE</td><td>数値</td><td>1</td><td>○</td></tr>
+<tr><td>发行最小购买金额</td><td>MIN_ISSUE_ORDER_AMOUNT</td><td>数値</td><td>10</td><td></td></tr>
+<tr><td>发行开始日时</td><td>MIN_ISSUE_START_DATETIME</td><td>日付・時刻</td><td>YYYY-MM-DD HH:mm:ss</td><td></td></tr>
+<tr><td>发行结束日时</td><td>MIN_ISSUE_END_DATETIME</td><td>日付・時刻</td><td>YYYY-MM-DD HH:mm:ss</td><td></td></tr>
+<tr><td>优惠比例</td><td>COUPON_PROPORTION</td><td>数値</td><td>3</td><td>○</td></tr>
+<tr><td>优惠金额</td><td>COUPON_AMOUNT</td><td>数値</td><td>10</td><td>○</td></tr>
+<tr><td>优惠券使用最小购买金额</td><td>MIN_USE_ORDER_AMOUNT</td><td>数値</td><td>10</td><td>○</td></tr>
+<tr><td>使用开始日时</td><td>MIN_USE_START_DATETIME</td><td>日付・時刻</td><td>YYYY-MM-DD HH:mm:ss</td><td>○</td></tr>
+<tr><td>使用结束日时</td><td>MIN_USE_END_DATETIME</td><td>日付・時刻</td><td>YYYY-MM-DD HH:mm:ss</td><td>○</td></tr>
+<tr><td>个人最大利用回数</td><td>PERSONAL_USE_LIMIT</td><td>数値</td><td>8</td><td>○</td></tr>
+<tr><td>SITE最大利用回数</td><td>SITE_USE_LIMIT</td><td>数値</td><td>8</td><td>○</td></tr>
+<tr><td>发行理由</td><td>ISSUE_REASON</td><td>文字</td><td>200</td><td></td></tr>
+<tr><td>备注</td><td>ISSUE_REASON</td><td>文字</td><td>200</td><td></td></tr>
+<tr><td>适用对象</td><td>APPLICABLE_OBJECTS</td><td>数値</td><td>1</td><td>○</td></tr>
+<tr><td>适用区域</td><td>APPLICABLE_AREA</td><td>文字(";"号分隔)</td><td>2000</td><td>○</td></tr>
+<tr><td>对象商品</td><td>OBJECT_COMMODITIES</td><td>文字(";"号分隔)</td><td>text</td><td></td></tr>
+<tr><td>优惠券使用最大购买金额</td><td>MAX_USE_ORDER_AMOUNT</td><td>数值</td><td>10</td><td></td></tr>
+</table>
+]]>
+        </entry>
+   <!-- add by lc 2012-11-08 end -->
+</properties>

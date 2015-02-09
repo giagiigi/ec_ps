@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- ポイントルール -->
+  <class name="jp.co.sint.webshop.data.dto.PointRule" table="POINT_RULE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">POINT_RULE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ポイントルール番号 -->
+    <property name="pointRuleNo" column="POINT_RULE_NO" type="long" />
+    <!-- ポイント機能使用フラグ -->
+    <property name="pointFunctionEnabledFlg" column="POINT_FUNCTION_ENABLED_FLG" type="long" />
+    <!-- ポイント使用期限(Xヶ月) -->
+    <property name="pointPeriod" column="POINT_PERIOD" type="long" />
+    <!-- ポイント付与率 -->
+    <property name="pointRate" column="POINT_RATE" type="long" />
+    <!-- ポイント付与最低購入金額 -->
+    <property name="pointInvestPurchasePrice" column="POINT_INVEST_PURCHASE_PRICE" type="big_decimal" />
+    <!-- ボーナスポイント期間付与率 -->
+    <property name="bonusPointTermRate" column="BONUS_POINT_TERM_RATE" type="long" />
+    <!-- ボーナスポイント期間開始日 -->
+    <property name="bonusPointStartDate" column="BONUS_POINT_START_DATE" type="timestamp" />
+    <!-- ボーナスポイント期間終了日 -->
+    <property name="bonusPointEndDate" column="BONUS_POINT_END_DATE" type="timestamp" />
+    <!-- ボーナスポイント日 -->
+    <property name="bonusPointDate" column="BONUS_POINT_DATE" type="long" />
+    <!-- 会員登録時ポイント -->
+    <property name="customerRegisterPoint" column="CUSTOMER_REGISTER_POINT" type="big_decimal" />
+    <!-- 初期購入時付与ポイント -->
+    <property name="firstPurchaseInvestPoint" column="FIRST_PURCHASE_INVEST_POINT" type="big_decimal" />
+    <!-- レビュー投稿時ポイント -->
+    <property name="reviewContributedPoint" column="REVIEW_CONTRIBUTED_POINT" type="big_decimal" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <entry key="TEST">catalog</entry>
+  <entry key="CATEGORY_SEARCH_SQL">
+    <![CDATA[
+     SELECT * FROM CATEGORY
+    ]]>
+  </entry>
+  <entry key="COMMODITY_SEARCH_SQL">
+    <![CDATA[SELECT *
+             FROM COMMODITY_HEADER CH
+             WHERE CH.COMMODITY_CODE IS NOT NULL
+             OR CH.COMMODITY_NAME = 'ああああ'
+    ]]>
+  </entry>
+  <entry key="CATEGORY_COMMODITY_SEARCH_SQL">
+    <![CDATA[SELECT * 
+             FROM CATEGORY_COMMODITY 
+             WHERE SHOP_CODE = ? AND 
+             COMMODITY_CODE = ?
+    ]]>
+  </entry>
+  <entry key="RELATED_GIFT_COUNT_SQL">
+    <![CDATA[SELECT A.SHOP_CODE, 
+                    A.GIFT_CODE, 
+                    A.GIFT_NAME, 
+                    A.GIFT_DESCRIPTION, 
+                    A.GIFT_PRICE, 
+                    A.DISPLAY_ORDER, 
+                    A.GIFT_TAX_TYPE, 
+                    A.DISPLAY_FLG, 
+                    CAST(COALESCE(CAST(B.RELATED_COUNT AS CHAR(10)),'0') AS NUMBER) RELATED_COUNT,
+                    A.ORM_ROWID, 
+                    A.CREATED_USER, 
+                    A.CREATED_DATETIME, 
+                    A.UPDATED_USER, 
+                    A.UPDATED_DATETIME
+                    FROM GIFT A LEFT OUTER JOIN 
+                         (SELECT SHOP_CODE, GIFT_CODE, COUNT(GIFT_CODE) AS RELATED_COUNT
+                          FROM   GIFT_COMMODITY
+                          WHERE  SHOP_CODE = ?
+                          GROUP BY SHOP_CODE, GIFT_CODE ) B
+                    ON  B.SHOP_CODE = A.SHOP_CODE
+                    AND B.GIFT_CODE = A.GIFT_CODE
+                    WHERE A.SHOP_CODE = ?
+                    ORDER BY A.GIFT_CODE 
+    ]]>
+  </entry>
+</properties>

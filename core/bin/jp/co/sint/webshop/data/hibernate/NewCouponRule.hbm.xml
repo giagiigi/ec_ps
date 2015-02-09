@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- ポイントルール -->
+  <class name="jp.co.sint.webshop.data.dto.NewCouponRule" table="NEW_COUPON_RULE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">NEW_COUPON_RULE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 优惠券规则编号 -->
+    <property name="couponCode" column="COUPON_CODE" type="string" />
+    <!-- 优惠券规则名称 -->
+    <property name="couponName" column="COUPON_NAME" type="string" />
+    <!-- 优惠券规则英文名称 -->
+    <property name="couponNameEn" column="COUPON_NAME_EN" type="string" />
+    <!-- 优惠券规则日文名称 -->
+    <property name="couponNameJp" column="COUPON_NAME_JP" type="string" />
+    <!-- 优惠券类别 -->
+    <property name="couponType" column="COUPON_TYPE" type="long" />
+    <!-- 优惠券发行类别 -->
+    <property name="couponIssueType" column="COUPON_ISSUE_TYPE" type="long" />
+    <!-- 优惠券发行方式适用对象类别 -->
+    <property name="applicableObjects" column="APPLICABLE_OBJECTS" type="long" />
+    <!-- 优惠券发行最小购买金额 -->
+    <property name="minIssueOrderAmount" column="MIN_ISSUE_ORDER_AMOUNT" type="big_decimal" />
+    <!-- 优惠券发行开始日时-->
+    <property name="minIssueStartDatetime" column="MIN_ISSUE_START_DATETIME" type="timestamp" />
+    <!-- 优惠券发行结束日时-->
+    <property name="minIssueEndDatetime" column="MIN_ISSUE_END_DATETIME" type="timestamp" />
+    <!-- 优惠金额 -->
+    <property name="couponAmount" column="COUPON_AMOUNT" type="big_decimal" />
+    <!-- 优惠券比例 -->
+    <property name="couponProportion" column="COUPON_PROPORTION" type="long" />
+    <!-- 优惠券利用最小购买金额 -->
+    <property name="minUseOrderAmount" column="MIN_USE_ORDER_AMOUNT" type="big_decimal" />
+    <!-- 优惠券利用开始日时-->
+    <property name="minUseStartDatetime" column="MIN_USE_START_DATETIME" type="timestamp" />
+    <!-- 优惠券利用结束日时 -->
+    <property name="minUseEndDatetime" column="MIN_USE_END_DATETIME" type="timestamp" />
+    <!-- 个人最大利用回数 -->
+    <property name="personalUseLimit" column="PERSONAL_USE_LIMIT" type="big_decimal" />
+     <!-- SITE最大利用回数 -->
+    <property name="siteUseLimit" column="SITE_USE_LIMIT" type="big_decimal" />
+    <!-- 发行理由 -->
+    <property name="issueReason" column="ISSUE_REASON" type="string" />
+    <!-- 备注 -->
+    <property name="memo" column="MEMO" type="string" />
+    <!-- 适用地域 -->
+    <property name="applicableArea" column="APPLICABLE_AREA" type="string" />
+    <!-- 对象商品集合字段-->
+    <property name="objectCommodities" column="OBJECT_COMMODITIES" type="string" />
+    <!-- 积分数换取优惠券-->
+    <property name="exchangePointAmount" column="EXCHANGE_POINT_AMOUNT" type="long" />
+    <!-- 优惠券发行金额类别-->
+    <property name="beforeAfterDiscountType" column="before_after_discount_type" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+    <!-- 优惠券利用最大购买金额 -->
+    <property name="maxUseOrderAmount" column="MAX_USE_ORDER_AMOUNT" type="big_decimal" />
+    
+    <!-- 优惠券利用开始日期-->
+    <property name="minUseStartNum" column="min_use_start_num" type="long" />
+    <!-- 优惠券利用结束日期-->
+    <property name="minUseEndNum" column="min_use_end_num" type="long" />
+    <!-- 指定关联商品区分-->
+    <property name="relatedCommodityFlg" column="related_commodity_flg" type="long" />
+    <!-- 关联对象使用类型 -->
+    <property name="useType" column="USE_TYPE" type="long" />
+    <!-- 对象品牌集合字段-->
+    <property name="objectBrand" column="OBJECT_BRAND" type="string" />
+    <!-- 对象分类集合字段-->
+    <property name="objectCategory" column="OBJECT_CATEGORY" type="string" />
+    
+  </class>
+</hibernate-mapping>

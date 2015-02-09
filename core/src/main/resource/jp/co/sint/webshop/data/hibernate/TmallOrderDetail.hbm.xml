@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 受注明細 -->
+  <class name="jp.co.sint.webshop.data.dto.TmallOrderDetail" table="TMALL_ORDER_DETAIL" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">TMALL_ORDER_DETAIL_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 受注番号 -->
+    <property name="orderNo" column="ORDER_NO" type="string" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- SKUコード -->
+    <property name="skuCode" column="SKU_CODE" type="string" />
+    <!-- 商品コード -->
+    <property name="commodityCode" column="COMMODITY_CODE" type="string" />
+    <!-- 商品名称 -->
+    <property name="commodityName" column="COMMODITY_NAME" type="string" />
+    <!-- 規格詳細1名称 -->
+    <property name="standardDetail1Name" column="STANDARD_DETAIL1_NAME" type="string" />
+    <!-- 規格詳細2名称 -->
+    <property name="standardDetail2Name" column="STANDARD_DETAIL2_NAME" type="string" />
+    <!-- 購入商品数 -->
+    <property name="purchasingAmount" column="PURCHASING_AMOUNT" type="long" />
+    <!-- 商品単価 -->
+    <property name="unitPrice" column="UNIT_PRICE" type="big_decimal" />
+    <!-- 販売価格 -->
+    <property name="retailPrice" column="RETAIL_PRICE" type="big_decimal" />
+    <!-- 販売時消費税額 -->
+    <property name="retailTax" column="RETAIL_TAX" type="big_decimal" />
+    <!-- 商品消費税率 -->
+    <property name="commodityTaxRate" column="COMMODITY_TAX_RATE" type="long" />
+    <!-- 商品消費税額 -->
+    <property name="commodityTax" column="COMMODITY_TAX" type="big_decimal" />
+    <!-- 商品消費税区分 -->
+    <property name="commodityTaxType" column="COMMODITY_TAX_TYPE" type="long" />
+    <!-- キャンペーンコード -->
+    <property name="campaignCode" column="CAMPAIGN_CODE" type="string" />
+    <!-- キャンペーン名称 -->
+    <property name="campaignName" column="CAMPAIGN_NAME" type="string" />
+    <!-- キャンペーン値引率 -->
+    <property name="campaignDiscountRate" column="CAMPAIGN_DISCOUNT_RATE" type="long" />
+    <!-- 適用ポイント付与率 -->
+    <property name="appliedPointRate" column="APPLIED_POINT_RATE" type="long" />
+    <!-- キャンペーン名称 -->
+    <property name="salePlanCode" column="SALE_PLAN_CODE" type="string" />
+     <!-- キャンペーン名称 -->
+    <property name="salePlanName" column="SALE_PLAN_NAME" type="string" />
+      <!-- キャンペーン名称 -->
+    <property name="featuredPlanCode" column="FEATURED_PLAN_CODE" type="string" />    
+      <!-- キャンペーン名称 -->
+    <property name="featuredPlanName" column="FEATURED_PLAN_NAME" type="string" />    
+      <!-- キャンペーン名称 -->
+    <property name="brandCode" column="BRAND_CODE" type="string" />
+     <!-- キャンペーン名称 -->
+    <property name="brandName" column="BRAND_NAME" type="string" />
+     <!-- キャンペーン名称 -->
+    <property name="tmallSkuCode" column="TMALL_SKU_CODE" type="string" />
+     <!-- キャンペーン名称 -->
+    <property name="tmallCommodityCode" column="TMALL_COMMODITY_CODE" type="string" />
+     <!-- キャンペーン名称 -->
+    <property name="tmallRefundStatus" column="TMALL_REFUND_STATUS" type="string" />     
+    <!--  交易修改时间 -->
+    <property name="tmallModifiedTime" column="TMALL_MODIFIED_TIME" type="timestamp" />
+    <!-- 適用ポイント付与率 -->
+    <property name="tmallRefundPaidPrice" column="TMALL_REFUND_PAID_PRICE" type="big_decimal" />
+    <!-- 淘宝退款ID -->
+    <property name="tmallRefundId" column="TMALL_REFUND_ID" type="string" />      
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+  </class>
+</hibernate-mapping>

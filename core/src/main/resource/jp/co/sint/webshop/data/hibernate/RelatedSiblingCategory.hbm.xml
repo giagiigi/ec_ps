@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping> 
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- タグ -->
+  <class name="jp.co.sint.webshop.data.dto.RelatedSiblingCategory" table="RELATED_SIBLING_CATEGORY" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">RELATED_SIBLING_CATEGORY_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    
+    <property name="commodityCode" column="commodity_code" type="string" />
+    
+    <!-- ショップコード -->
+    <property name="categoryCode" column="CATEGORY_CODE" type="string" />
+    <!-- プランド名称 -->
+    <property name="categoryName" column="category_NAME" type="string" />  
+    <!--商品描述(英文)--> 
+    <property name="categoryNameEn" column="CATEGORY_NAME_EN" type="string" />   
+    <!--商品描述(日文)--> 
+    <property name="categoryNameJp" column="CATEGORY_NAME_JP" type="string" />   
+    
+    <property name="displayFlag" column="DISPLAY_FLAG" type="long" />   
+    
+    <property name="displayOrder" column="DISPLAY_ORDER" type="long" />   
+    
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <property name="updatedDatetime" column="UPDATED_DATETIME" type="timestamp" /> 
+    <!-- timestampとして定義 -->
+
+  </class>
+</hibernate-mapping>

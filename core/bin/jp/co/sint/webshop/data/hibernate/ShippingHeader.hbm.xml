@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 出荷ヘッダ -->
+  <class name="jp.co.sint.webshop.data.dto.ShippingHeader" table="SHIPPING_HEADER" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">SHIPPING_HEADER_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 出荷番号 -->
+    <property name="shippingNo" column="SHIPPING_NO" type="string" />
+    <!-- 受注番号 -->
+    <property name="orderNo" column="ORDER_NO" type="string" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 顧客コード -->
+    <property name="customerCode" column="CUSTOMER_CODE" type="string" />
+    <!-- アドレス帳番号 -->
+    <property name="addressNo" column="ADDRESS_NO" type="long" />
+    <!-- 宛名：姓 -->
+    <property name="addressLastName" column="ADDRESS_LAST_NAME" type="string" />
+    <!-- 宛名：名 -->
+    <property name="addressFirstName" column="ADDRESS_FIRST_NAME" type="string" />
+    <!-- 宛名姓カナ -->
+    <property name="addressLastNameKana" column="ADDRESS_LAST_NAME_KANA" type="string" />
+    <!-- 宛名名カナ -->
+    <property name="addressFirstNameKana" column="ADDRESS_FIRST_NAME_KANA" type="string" />
+    <!-- 郵便番号 -->
+    <property name="postalCode" column="POSTAL_CODE" type="string" />
+    <!-- 都道府県コード -->
+    <property name="prefectureCode" column="PREFECTURE_CODE" type="string" />
+    <!-- 住所1 -->
+    <property name="address1" column="ADDRESS1" type="string" />
+    <!-- 住所2 -->
+    <property name="address2" column="ADDRESS2" type="string" />
+    <!-- 住所3 -->
+    <property name="address3" column="ADDRESS3" type="string" />
+    <!-- 住所4 -->
+    <property name="address4" column="ADDRESS4" type="string" />
+    <!-- 電話番号 -->
+    <property name="phoneNumber" column="PHONE_NUMBER" type="string" />
+    <!-- 配送先備考 -->
+    <property name="deliveryRemark" column="DELIVERY_REMARK" type="string" />
+    <!-- 獲得ポイント -->
+    <property name="acquiredPoint" column="ACQUIRED_POINT" type="big_decimal" />
+    <!-- 宅配便伝票番号 -->
+    <property name="deliverySlipNo" column="DELIVERY_SLIP_NO" type="string" />
+    <!-- 送料 -->
+    <property name="shippingCharge" column="SHIPPING_CHARGE" type="big_decimal" />
+    <!-- 送料消費税区分 -->
+    <property name="shippingChargeTaxType" column="SHIPPING_CHARGE_TAX_TYPE" type="long" />
+    <!-- 送料消費税率 -->
+    <property name="shippingChargeTaxRate" column="SHIPPING_CHARGE_TAX_RATE" type="long" />
+    <!-- 送料消費税額 -->
+    <property name="shippingChargeTax" column="SHIPPING_CHARGE_TAX" type="big_decimal" />
+    <!-- 配送種別番号 -->
+    <property name="deliveryTypeNo" column="DELIVERY_TYPE_NO" type="long" />
+    <!-- 配送種別名称 -->
+    <property name="deliveryTypeName" column="DELIVERY_TYPE_NAME" type="string" />
+    <!-- 配送指定日 -->
+    <property name="deliveryAppointedDate" column="DELIVERY_APPOINTED_DATE" type="string" />
+    <!-- 配送指定時間開始 -->
+    <property name="deliveryAppointedTimeStart" column="DELIVERY_APPOINTED_TIME_START" type="long" />
+    <!-- 配送指定時間終了 -->
+    <property name="deliveryAppointedTimeEnd" column="DELIVERY_APPOINTED_TIME_END" type="long" />
+    <!-- 到着予定日 -->
+    <property name="arrivalDate" column="ARRIVAL_DATE" type="timestamp" />
+    <!-- 到着時間開始 -->
+    <property name="arrivalTimeStart" column="ARRIVAL_TIME_START" type="long" />
+    <!-- 到着時間終了 -->
+    <property name="arrivalTimeEnd" column="ARRIVAL_TIME_END" type="long" />
+    <!-- 売上確定ステータス -->
+    <property name="fixedSalesStatus" column="FIXED_SALES_STATUS" type="long" />
+    <!-- 出荷ステータス -->
+    <property name="shippingStatus" column="SHIPPING_STATUS" type="long" />
+    <!-- 出荷指示日 -->
+    <property name="shippingDirectDate" column="SHIPPING_DIRECT_DATE" type="timestamp" />
+    <!-- 出荷日 -->
+    <property name="shippingDate" column="SHIPPING_DATE" type="timestamp" />
+    <!-- 元出荷番号 -->
+    <property name="originalShippingNo" column="ORIGINAL_SHIPPING_NO" type="long" />
+    <!-- 返品日 -->
+    <property name="returnItemDate" column="RETURN_ITEM_DATE" type="timestamp" />
+    <!-- 返品損金額 -->
+    <property name="returnItemLossMoney" column="RETURN_ITEM_LOSS_MONEY" type="big_decimal" />
+    <!-- 返品区分 -->
+    <property name="returnItemType" column="RETURN_ITEM_TYPE" type="long" />
+    <!-- 配送公司编号 -->
+    <property name="deliveryCompanyNo" column="DELIVERY_COMPANY_NO" type="string" />
+    <!-- 配送公司名称 -->
+    <property name="deliveryCompanyName" column="DELIVERY_COMPANY_NAME" type="string" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+    <!-- modify by V10-CH 170 start-->
+    <!-- 市コード -->
+    <property name="cityCode" column="CITY_CODE" type="string"/>
+    <property name="mobileNumber" column="MOBILE_NUMBER" type="string"/>
+    <!-- modify by V10-CH 170 end-->
+    <!-- 20120106 shen add start -->
+    <!-- 区县编号 -->
+    <property name="areaCode" column="AREA_CODE" type="string" />
+    <!-- 20120106 shen add end -->
+    <!-- 出荷ステータス -->
+    <property name="shippingStatusWms" column="SHIPPING_STATUS_WMS" type="long" />
+  </class>
+</hibernate-mapping>

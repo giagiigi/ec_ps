@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- ポイントルール -->
+  <class name="jp.co.sint.webshop.data.dto.OnlineService" table="ONLINE_SERVICE" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">ONLINE_SERVICE_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ポイントルール番号 -->
+    <property name="onlineServiceNo" column="ONLINE_SERVICE_NO" type="long" />
+    <!-- ポイント機能使用フラグ -->
+    <property name="enabledFlg" column="ENABLED_FLG" type="long" />
+    <!-- script1 -->
+    <property name="scriptText1" column="SCRIPT_TEXT1" type="string" />
+    <!-- script2 -->
+    <property name="scriptText2" column="SCRIPT_TEXT2" type="string" />    
+     <!-- script3 -->
+    <property name="scriptText3" column="SCRIPT_TEXT3" type="string" />   
+    <!-- Add by V10-CH start -->
+     <!-- shopCode -->
+     <property name="shopCode" column="SHOP_CODE" type="string" />   
+    <!-- Add by V10-CH end -->
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping> 
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 商品ヘッダ -->
+  <class name="jp.co.sint.webshop.data.dto.CommodityHeader" table="COMMODITY_HEADER" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">COMMODITY_HEADER_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 商品コード -->
+    <property name="commodityCode" column="COMMODITY_CODE" type="string" />
+    <!-- 商品名称 -->
+    <property name="commodityName" column="COMMODITY_NAME" type="string" />
+    <!-- 代表SKUコード -->
+    <property name="representSkuCode" column="REPRESENT_SKU_CODE" type="string" />
+    <!-- 代表SKU単価 -->
+    <property name="representSkuUnitPrice" column="REPRESENT_SKU_UNIT_PRICE" type="big_decimal" />
+    <!-- 在庫状況番号 -->
+    <property name="stockStatusNo" column="STOCK_STATUS_NO" type="long" />
+    <!-- 在庫管理区分 -->
+    <property name="stockManagementType" column="STOCK_MANAGEMENT_TYPE" type="long" />
+    <!-- 商品消費税区分 -->
+    <property name="commodityTaxType" column="COMMODITY_TAX_TYPE" type="long" />
+    <!-- 商品区分 -->
+    <property name="commodityType" column="COMMODITY_TYPE" type="long" />
+    <!-- 套装商品区分 -->
+    <property name="setCommodityFlg" column="SET_COMMODITY_FLG" type="long" />
+    <!-- PC商品説明 -->
+    <property name="commodityDescriptionPc" column="COMMODITY_DESCRIPTION_PC" type="string" />
+    <!-- 携帯商品説明 -->
+    <property name="commodityDescriptionMobile" column="COMMODITY_DESCRIPTION_MOBILE" type="string" />
+    <!-- 商品検索ワード -->
+    <property name="commoditySearchWords" column="COMMODITY_SEARCH_WORDS" type="string" />
+    <!-- シャドウ検索ワード -->
+    <property name="shadowSearchWords" column="SHADOW_SEARCH_WORDS" type="string" />
+    <!-- 販売開始日時 -->
+    <property name="saleStartDatetime" column="SALE_START_DATETIME" type="timestamp" />
+    <!-- 販売終了日時 -->
+    <property name="saleEndDatetime" column="SALE_END_DATETIME" type="timestamp" />
+    <!-- 価格改定日時 -->
+    <property name="changeUnitPriceDatetime" column="CHANGE_UNIT_PRICE_DATETIME" type="timestamp" />
+    <!-- 特別価格開始日時 -->
+    <property name="discountPriceStartDatetime" column="DISCOUNT_PRICE_START_DATETIME" type="timestamp" />
+    <!-- 特別価格終了日時 -->
+    <property name="discountPriceEndDatetime" column="DISCOUNT_PRICE_END_DATETIME" type="timestamp" />
+    <!-- 予約開始日時 -->
+    <property name="reservationStartDatetime" column="RESERVATION_START_DATETIME" type="timestamp" />
+    <!-- 予約終了日時 -->
+    <property name="reservationEndDatetime" column="RESERVATION_END_DATETIME" type="timestamp" />
+    <!-- 配送種別番号 -->
+    <property name="deliveryTypeNo" column="DELIVERY_TYPE_NO" type="long" />
+    <!-- リンクURL -->
+    <property name="linkUrl" column="LINK_URL" type="string" />
+    <!-- おすすめ商品順位 -->
+    <property name="recommendCommodityRank" column="RECOMMEND_COMMODITY_RANK" type="long" />
+    <!-- 人気順位 -->
+    <property name="commodityPopularRank" column="COMMODITY_POPULAR_RANK" type="long" />
+    <!-- 規格名称1 -->
+    <property name="commodityStandard1Name" column="COMMODITY_STANDARD1_NAME" type="string" />
+    <!-- 規格名称2 -->
+    <property name="commodityStandard2Name" column="COMMODITY_STANDARD2_NAME" type="string" />
+    <!-- 商品別ポイント付与率 -->
+    <property name="commodityPointRate" column="COMMODITY_POINT_RATE" type="long" />
+    <!-- 商品別ポイント付与開始日時 -->
+    <property name="commodityPointStartDatetime" column="COMMODITY_POINT_START_DATETIME" type="timestamp" />
+    <!-- 商品別ポイント付与終了日時 -->
+    <property name="commodityPointEndDatetime" column="COMMODITY_POINT_END_DATETIME" type="timestamp" />
+    <!-- 販売フラグ -->
+    <property name="saleFlg" column="SALE_FLG" type="long" />
+    <!-- 表示クライアント区分 -->
+    <property name="displayClientType" column="DISPLAY_CLIENT_TYPE" type="long" />
+    <!-- 入荷お知らせ可能フラグ -->
+    <property name="arrivalGoodsFlg" column="ARRIVAL_GOODS_FLG" type="long" />
+    <!-- 商品名称英字 -->
+    <property name="commodityNameEn" column="commodity_name_en" type="string" />
+    <!-- 商品目录路径 -->
+    <property name="categoryPath" column="category_path" type="string" />
+    <!-- 商品属性 -->
+    <property name="categoryAttribute1" column="category_attribute1" type="string" />
+    <!-- add by cs_yuli 20120615 start -->
+    <!-- 商品属性英文 -->
+    <property name="categoryAttribute1En" column="category_attribute1_en" type="string" />
+    
+    <!-- 商品属性日文 -->
+    <property name="categoryAttribute1Jp" column="category_attribute1_jp" type="string" />
+    <!-- add by cs_yuli 20120615 end -->
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- add by os014 begin -->
+    <property name="returnFlg" column="return_Flg" type="long" />
+    <!-- 返品不可フラグ -->
+    <property name="warningFlag" column="warning_Flag" type="string" />
+    <!-- ワーニング区分 -->
+    <property name="leadTime" column="lead_Time" type="long" />
+    <!-- リードタイム -->
+    <property name="saleFlag" column="sale_Flag" type="string" />
+    <!-- セール区分 -->
+    <property name="specFlag" column="spec_Flag" type="string" />
+    <!-- 特集区分 -->
+    <property name="brandCode" column="brand_Code" type="string" />
+    <!-- ブランドコード -->
+    <!-- add by os014 end -->
+    <!-- add by cs_yuli 20120514 start -->
+    <!-- 商品名称日文 -->
+    <property name="commodityNameJp" column="COMMODITY_NAME_JP" type="string" />
+    <!-- PC商品説明日文 -->
+    <property name="commodityDescriptionPcJp" column="COMMODITY_DESCRIPTION_PC_JP" type="string" />
+    <!-- PC商品説明英文 -->
+    <property name="commodityDescriptionPcEn" column="COMMODITY_DESCRIPTION_PC_EN" type="string" />
+    <!-- 携帯商品説明日文 -->
+    <property name="commodityDescriptionMobileJp" column="COMMODITY_DESCRIPTION_MOBILE_JP" type="string" />
+    <!-- 携帯商品説明英文 -->
+    <property name="commodityDescriptionMobileEn" column="COMMODITY_DESCRIPTION_MOBILE_EN" type="string" />
+    <!-- 規格名称1英文 -->
+    <property name="commodityStandard1NameEn" column="COMMODITY_STANDARD1_NAME_EN" type="string" />
+    <!-- 規格名称2英文 -->
+    <property name="commodityStandard2NameEn" column="COMMODITY_STANDARD2_NAME_EN" type="string" />
+    <!-- 規格名称1日文 -->
+    <property name="commodityStandard1NameJp" column="COMMODITY_STANDARD1_NAME_JP" type="string" />
+    <!-- 規格名称2日文 -->
+    <property name="commodityStandard2NameJp" column="COMMODITY_STANDARD2_NAME_JP" type="string" />
+    <!-- add by cs_yuli 20120514 end -->
+    <!-- 産地中文 -->
+    <property name="originalPlace" column="ORIGINAL_PLACE" type="string" />
+    <!-- 産地英文 -->
+    <property name="originalPlaceEn" column="ORIGINAL_PLACE_EN" type="string" />
+    <!-- 産地日文 -->
+    <property name="originalPlaceJp" column="ORIGINAL_PLACE_JP" type="string" />
+    <!--保管日数-->
+    <property name="shelfLifeDays" column="SHELF_LIFE_DAYS" type="long" />
+    <!--商品期限管理フラグ  -->
+    <property name="shelfLifeFlag" column="SHELF_LIFE_FLAG" type="long" />
+    <!-- 进口商品区分 -->
+    <property name="importCommodityType" column="IMPORT_COMMODITY_TYPE" type="long" />
+    <!-- 清仓商品区分 -->
+    <property name="clearCommodityType" column="CLEAR_COMMODITY_TYPE" type="long" />
+    <!-- 预留商品区分1 -->
+    <property name="reserveCommodityType1" column="RESERVE_COMMODITY_TYPE1" type="long" />
+    <!-- 预留商品区分2 -->
+    <property name="reserveCommodityType2" column="RESERVE_COMMODITY_TYPE2" type="long" />
+    <!-- 预留商品区分3 -->
+    <property name="reserveCommodityType3" column="RESERVE_COMMODITY_TYPE3" type="long" />
+  	<!-- 预留商品区分1* -->
+    <property name="newReserveCommodityType1" column="NEW_RESERVE_COMMODITY_TYPE1" type="long" />
+  	<!-- 预留商品区分2* -->
+    <property name="newReserveCommodityType2" column="NEW_RESERVE_COMMODITY_TYPE2" type="long" />
+    <!-- 预留商品区分3* -->
+    <property name="newReserveCommodityType3" column="NEW_RESERVE_COMMODITY_TYPE3" type="long" />
+    <!-- 预留商品区分4* -->
+    <property name="newReserveCommodityType4" column="NEW_RESERVE_COMMODITY_TYPE4" type="long" />
+    <!-- 预留商品区分5* -->
+    <property name="newReserveCommodityType5" column="NEW_RESERVE_COMMODITY_TYPE5" type="long" />
+    <!-- 産地编号 -->
+    <property name="originalCode" column="ORIGINAL_CODE" type="string" />
+    <!-- 20130527 zhangzhengtao add start -->
+    <property name="keywordCn1" column="KEYWORD_CN1" type="string" />
+    <property name="keywordEn1" column="KEYWORD_EN1" type="string" />
+    <property name="keywordJp1" column="KEYWORD_JP1" type="string" />
+    <property name="keywordCn2" column="KEYWORD_CN2" type="string" />
+    <property name="keywordEn2" column="KEYWORD_EN2" type="string" />
+    <property name="keywordJp2" column="KEYWORD_JP2" type="string" />
+    <!-- 20130527 zhangzhengtao add end -->
+        <!-- 20130607 zhangzhengtao add start -->
+    <property name="originalCommodityCode" column="ORIGINAL_COMMODITY_CODE" type="string" />
+    <property name="combinationAmount" column="COMBINATION_AMOUNT" type="long" />
+    <!-- 20130607 zhangzhengtao add end -->
+    <property name="hotFlgEn" column="hot_flg_en" type="long" />
+    <property name="hotFlgJp" column="hot_flg_jp" type="long" />
+    
+    <!-- TITLE -->
+    <property name="title" column="TITLE" type="string" />
+    <!-- TITLE(英文) -->
+    <property name="titleEn" column="TITLE_EN" type="string" />
+    <!-- TITLE(日文) -->
+    <property name="titleJp" column="TITLE_JP" type="string" />
+    <!-- DESCRIPTION -->
+    <property name="description" column="DESCRIPTION" type="string" />
+    <!-- DESCRIPTION(英文) -->
+    <property name="descriptionEn" column="DESCRIPTION_EN" type="string" />
+    <!-- DESCRIPTION(日文) -->
+    <property name="descriptionJp" column="DESCRIPTION_JP" type="string" />
+    <!-- KEYWORD -->
+    <property name="keyword" column="KEYWORD" type="string" />
+    <!-- KEYWORD(英文) -->
+    <property name="keywordEn" column="KEYWORD_EN" type="string" />
+    <!-- KEYWORD(日文) -->
+    <property name="keywordJp" column="KEYWORD_JP" type="string" />
+    <!-- 品店精选排序字段 -->
+    <property name="chosenSortRank" column="chosen_sort_rank" type="long" />
+    
+  </class>
+</hibernate-mapping>

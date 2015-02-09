@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- 出荷明細 -->
+  <class name="jp.co.sint.webshop.data.dto.TmallShippingDetail" table="TMALL_SHIPPING_DETAIL" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">TMALL_SHIPPING_DETAIL_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 出荷番号 -->
+    <property name="shippingNo" column="SHIPPING_NO" type="string" />
+    <!-- 出荷明細番号 -->
+    <property name="shippingDetailNo" column="SHIPPING_DETAIL_NO" type="long" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- SKUコード -->
+    <property name="skuCode" column="SKU_CODE" type="string" />
+    <!-- 商品単価 -->
+    <property name="unitPrice" column="UNIT_PRICE" type="big_decimal" />
+    <!-- 特別価格 -->
+    <property name="discountPrice" column="DISCOUNT_PRICE" type="big_decimal" />
+    <!-- 値引額 -->
+    <property name="discountAmount" column="DISCOUNT_AMOUNT" type="big_decimal" />
+    <!-- 販売価格 -->
+    <property name="retailPrice" column="RETAIL_PRICE" type="big_decimal" />
+    <!-- 販売時消費税額 -->
+    <property name="retailTax" column="RETAIL_TAX" type="big_decimal" />
+    <!-- 購入商品数 -->
+    <property name="purchasingAmount" column="PURCHASING_AMOUNT" type="long" />
+    <!-- ギフトコード -->
+    <property name="giftCode" column="GIFT_CODE" type="string" />
+    <!-- ギフト名称 -->
+    <property name="giftName" column="GIFT_NAME" type="string" />
+    <!-- ギフト価格 -->
+    <property name="giftPrice" column="GIFT_PRICE" type="big_decimal" />
+    <!-- ギフト消費税率 -->
+    <property name="giftTaxRate" column="GIFT_TAX_RATE" type="long" />
+    <!-- ギフト消費税額 -->
+    <property name="giftTax" column="GIFT_TAX" type="big_decimal" />
+    <!-- ギフト消費税区分 -->
+    <property name="giftTaxType" column="GIFT_TAX_TYPE" type="long" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->
+  </class>
+</hibernate-mapping>

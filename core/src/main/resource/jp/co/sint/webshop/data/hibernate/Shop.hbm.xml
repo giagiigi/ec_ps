@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- ショップ -->
+  <class name="jp.co.sint.webshop.data.dto.Shop" table="SHOP" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">SHOP_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- ショップコード -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- ショップ開店日時 -->
+    <property name="openDatetime" column="OPEN_DATETIME" type="timestamp" />
+    <!-- ショップ閉店日時 -->
+    <property name="closeDatetime" column="CLOSE_DATETIME" type="timestamp" />
+    <!-- ショップ名称 -->
+    <property name="shopName" column="SHOP_NAME" type="string" />
+    <!-- ショップ略名 -->
+    <property name="shortShopName" column="SHORT_SHOP_NAME" type="string" />
+    <!-- ショップ紹介URL -->
+    <property name="shopIntroducedUrl" column="SHOP_INTRODUCED_URL" type="string" />
+    <!-- メールアドレス -->
+    <property name="email" column="EMAIL" type="string" />
+    <!-- 郵便番号 -->
+    <property name="postalCode" column="POSTAL_CODE" type="string" />
+    <!-- 都道府県コード -->
+    <property name="prefectureCode" column="PREFECTURE_CODE" type="string" />
+    <!-- 住所1 -->
+    <property name="address1" column="ADDRESS1" type="string" />
+    <!-- 住所2 -->
+    <property name="address2" column="ADDRESS2" type="string" />
+    <!-- 住所3 -->
+    <property name="address3" column="ADDRESS3" type="string" />
+    <!-- 住所4 -->
+    <property name="address4" column="ADDRESS4" type="string" />
+    <!-- 電話番号 -->
+    <property name="phoneNumber" column="PHONE_NUMBER" type="string" />
+    <!-- 担当者 -->
+    <property name="personInCharge" column="PERSON_IN_CHARGE" type="string" />
+    <!-- SSLページ -->
+    <property name="sslPage" column="SSL_PAGE" type="string" />
+    <!-- ショップ区分 -->
+    <property name="shopType" column="SHOP_TYPE" type="long" />
+    <!-- 顧客キャンセルフラグ -->
+    <property name="customerCancelableFlg" column="CUSTOMER_CANCELABLE_FLG" type="long" />
+    <!-- ICP登録コード -->
+    <property name="icpCode" column="ICP_CODE" type="string" />
+    <!-- データ行ID -->
+    <!-- idとして定義 -->
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 更新日時 -->
+    <!-- timestampとして定義 -->    
+    <!-- add by V10-CH 170 start -->
+    <property name="cityCode" column="CITY_CODE" type="string" />
+    <property name="mobileNumber" column="MOBILE_NUMBER" type="string" />
+    <!-- add by V10-CH 170 end -->
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <!-- このファイルはEDMファイルから自動生成されます。直接編集しないでください。 -->
+  <!-- タグ -->
+  <class name="jp.co.sint.webshop.data.dto.JdOrderHeader" table="JD_ORDER_HEADER" lazy="false">
+    <!-- Row Unique Identifier -->
+    <id name="ormRowid" column="ORM_ROWID" type="long">
+      <generator class="sequence">
+        <param name="sequence">JD_ORDER_HEADER_SEQ</param>
+      </generator>
+    </id>
+    <!-- Row Version Identifier -->      
+    <timestamp name="updatedDatetime" column="UPDATED_DATETIME" />
+    <!-- 订单编号 -->
+    <property name="orderNo" column="ORDER_NO" type="string" />
+    <!-- 店铺编号 -->
+    <property name="shopCode" column="SHOP_CODE" type="string" />
+    <!-- 订单作成时间 -->
+    <property name="orderDatetime" column="ORDER_DATETIME" type="timestamp" />
+    <!-- 京东订单号 -->
+    <property name="customerCode" column="CUSTOMER_CODE" type="string" />
+    <!-- 访客区分 -->
+    <property name="guestFlg" column="GUEST_FLG" type="long" /> 
+    <!-- 收货人姓名 -->
+    <property name="lastName" column="LAST_NAME" type="string" />
+    <!-- first_name -->
+    <property name="firstName" column="FIRST_NAME" type="string" /> 
+    <!-- last_name_kana -->
+    <property name="lastNameKana" column="LAST_NAME_KANA" type="string" /> 
+    <!-- first_name_kana -->
+    <property name="firstNameKana" column="FIRST_NAME_KANA" type="string" /> 
+    <!-- 收货人邮箱 -->
+    <property name="email" column="EMAIL" type="string" /> 
+    <!-- 邮政编码 -->
+    <property name="postalCode" column="POSTAL_CODE" type="string" /> 
+    <!-- 省份编号 -->
+    <property name="prefectureCode" column="PREFECTURE_CODE" type="string" /> 
+    <!-- 省份名 -->
+    <property name="address1" column="ADDRESS1" type="string" /> 
+    <!-- 城市名 -->
+    <property name="address2" column="ADDRESS2" type="string" /> 
+    <!-- 区县名 -->
+    <property name="address3" column="ADDRESS3" type="string" />
+    <!-- 收货人填写详细地址 -->
+    <property name="address4" column="ADDRESS4" type="string" /> 
+    <!-- 收货人固定电话 -->
+    <property name="phoneNumber" column="PHONE_NUMBER" type="string" /> 
+    <!-- advance_later_flg -->
+    <property name="advanceLaterFlg" column="ADVANCE_LATER_FLG" type="long" /> 
+    <!-- 支付方式编号 -->
+    <property name="paymentMethodNo" column="PAYMENT_METHOD_NO" type="long" /> 
+    <!-- 支付方式区分 -->
+    <property name="paymentMethodType" column="PAYMENT_METHOD_TYPE" type="string" /> 
+    <!-- 支付方式名称（京东在线支付） -->
+    <property name="paymentMethodName" column="PAYMENT_METHOD_NAME" type="string" /> 
+    <!-- payment_commission -->
+    <property name="paymentCommission" column="PAYMENT_COMMISSION" type="big_decimal" /> 
+    <!-- payment_commission_tax_rate -->
+    <property name="paymentCommissionTaxRate" column="PAYMENT_COMMISSION_TAX_RATE" type="long" /> 
+    <!-- payment_commission_tax -->
+    <property name="paymentCommissionTax" column="PAYMENT_COMMISSION_TAX" type="big_decimal" /> 
+    <!-- payment_commission_tax_type -->
+    <property name="paymentCommissionTaxType" column="PAYMENT_COMMISSION_TAX_TYPE" type="long" /> 
+    <!-- 使用京豆（100京豆=1块钱） -->
+    <property name="usedPoint" column="USED_POINT" type="big_decimal" /> 
+    <!-- 付款日期 -->
+    <property name="paymentDate" column="PAYMENT_DATE" type="timestamp" />
+    <!-- 支付期限日 -->
+    <property name="paymentLimitDate" column="PAYMENT_LIMIT_DATE" type="timestamp" />
+    <!-- 支付状态（0为支付 1已支付） -->
+    <property name="paymentStatus" column="PAYMENT_STATUS" type="long" /> 
+    <!-- 顾客组编号 -->
+    <property name="customerGroupCode" column="CUSTOMER_GROUP_CODE" type="string" />
+    <!-- 付款数据导出标志（0是未导出 1已导出） -->
+    <property name="dataTransportStatus" column="DATA_TRANSPORT_STATUS" type="long" /> 
+    <!-- 订单状态（1为正常订单 2为取消） -->
+    <property name="orderStatus" column="ORDER_STATUS" type="long" /> 
+    <!-- client_group -->
+    <property name="clientGroup" column="CLIENT_GROUP" type="string" />
+    <!-- 买家留言 -->
+    <property name="caution" column="CAUTION" type="string" />
+    <!-- message -->
+    <property name="message" column="MESSAGE" type="string" />
+    <!-- 交易流水号 -->
+    <property name="paymentOrderId" column="PAYMENT_ORDER_ID" type="long" /> 
+    <!-- cvs_code -->
+    <property name="cvsCode" column="CVS_CODE" type="string" />
+    <!-- payment_receipt_no -->
+    <property name="paymentReceiptNo" column="PAYMENT_RECEIPT_NO" type="string" />
+    <!-- payment_receipt_url -->
+    <property name="paymentReceiptUrl" column="PAYMENT_RECEIPT_URL" type="string" />
+    <!-- digital_cash_type -->
+    <property name="digitalCashType" column="DIGITAL_CASH_TYPE" type="string" />
+    <!-- warning_message -->
+    <property name="warningMessage" column="WARNING_MESSAGE" type="string" />
+    <!-- 作成ユーザ -->
+    <property name="createdUser" column="CREATED_USER" type="string" />
+    <!-- 作成日時 -->
+    <property name="createdDatetime" column="CREATED_DATETIME" type="timestamp" />
+    <!-- 更新ユーザ -->
+    <property name="updatedUser" column="UPDATED_USER" type="string" />
+    <!-- 收货人城市编号 -->
+    <property name="cityCode" column="CITY_CODE" type="string" /> 
+    <!-- 收货人手机号码 -->
+    <property name="mobileNumber" column="MOBILE_NUMBER" type="string" /> 
+    <!-- coupon_price -->
+    <property name="couponPrice" column="COUPON_PRICE" type="big_decimal" /> 
+    <!-- 订单总金额 -->
+    <property name="paidPrice" column="PAID_PRICE" type="big_decimal" /> 
+    <!-- 发票领取标志（0未领取或1领取） -->
+    <property name="invoiceFlg" column="INVOICE_FLG" type="long" /> 
+    <!-- discount_type -->
+    <property name="discountType" column="DISCOUNT_TYPE" type="long" /> 
+    <!-- discount_mode -->
+    <property name="discountMode" column="DISCOUNT_MODE" type="long" /> 
+    <!-- discount_rate -->
+    <property name="discountRate" column="DISCOUNT_RATE" type="big_decimal" /> 
+    <!-- 除去京豆以外的全部优惠金额 -->
+    <property name="discountPrice" column="DISCOUNT_PRICE" type="big_decimal" /> 
+    <!-- discount_code -->
+    <property name="discountCode" column="DISCOUNT_CODE" type="string" /> 
+    <!-- discount_name -->
+    <property name="discountName" column="DISCOUNT_NAME" type="string" /> 
+    <!-- discount_detail_code -->
+    <property name="discountDetailCode" column="DISCOUNT_DETAIL_CODE" type="string" /> 
+    <!-- 订单检查标志（0未检查 1已检查 2tmall订单拦截 3京东订单拦截） -->
+    <property name="orderFlg" column="ORDER_FLG" type="long" /> 
+    <!-- 结单时间 -->
+    <property name="jdEndTime" column="JD_END_TIME" type="timestamp" /> 
+    <!-- 买家留言 -->
+    <property name="jdBuyerMessage" column="JD_BUYER_MESSAGE" type="string" /> 
+    <!-- 交易状态 -->
+    <property name="jdOrderStatus" column="JD_ORDER_STATUS" type="string" /> 
+    <!-- 京东上订单更新时间 -->
+    <property name="jdModifiedTime" column="JD_MODIFIED_TIME" type="timestamp" /> 
+    <!-- 京东交易编号 -->
+    <property name="jdOrderNo" column="JD_ORDER_NO" type="string" /> 
+    <!-- 用户应付金额 -->
+    <property name="orderPayment" column="ORDER_PAYMENT" type="big_decimal" /> 
+    <!-- 订单货款金额（订单总金额-商家优惠金额） -->
+    <property name="orderSellerPrice" column="ORDER_SELLER_PRICE" type="big_decimal" /> 
+    <!-- 京东发票内容 -->
+    <property name="jdInvoiceName" column="JD_INVOICE_NAME" type="string" /> 
+    <!-- 区县编号 -->
+    <property name="areaCode" column="AREA_CODE" type="string" /> 
+    <!-- timestampとして定義 --> 
+  </class>
+</hibernate-mapping>
